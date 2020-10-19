@@ -18,7 +18,7 @@ jobs:
             command: yarn run test --passWithNoTests
             name: Run all the tests
 
-  deploy:
+  deploy-to-netlify:
     docker:
       - image: cimg/base:2020.10
     steps:
@@ -27,18 +27,14 @@ jobs:
   
 orbs:
   node: circleci/node@4.1.0
-  
+
 workflows:
   test-deploy:
     jobs:
       - build-and-test
       - deploy:
-        filters:
-          branches:
-            only: master
-        requires:
-          - build-and-test
-  
-  
-  
-  
+          filters:
+            branches:
+              only: master
+          requires:
+            - build-and-test
