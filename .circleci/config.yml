@@ -1,5 +1,16 @@
 version: 2.1
 jobs:
+  build-and-test:
+      executor:
+        name: node/default
+      steps:
+        - checkout
+        - node/with-cache:
+            steps:
+              - run: yarn install
+              - run: yarn run format
+              - run: yarn run test --passWithNoTests
+              - run: export CI=1
   deploy:
     executor: win/default
     steps:
@@ -9,10 +20,11 @@ orbs:
   node: circleci/node@3.0.0
   win: circleci/windows@2.3.0
 workflows:
-  node-tests:
+  test-deploy:
     jobs:
       - node/test
       - deploy:
         filters:
           branches:
             only: master
+              
