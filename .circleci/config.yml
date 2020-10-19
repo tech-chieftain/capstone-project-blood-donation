@@ -32,7 +32,7 @@ workflows:
   test-deploy:
     jobs:
       - build-and-test
-      - deploy:
+      - deploy-to-netlify:
           filters:
             branches:
               only: master
