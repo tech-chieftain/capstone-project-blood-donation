@@ -3,29 +3,34 @@ jobs:
   build-and-test:
       executor:
         name: node/default
+        tag: '13'
       steps:
         - checkout
-        - node/with-cache:
-            steps:
-              - run: yarn install
-              - run: yarn run format
-              - run: "[[ -z $(git --no-pager diff -- . ':(exclude)yarn.lock' ':(exclude)yarn.lock') ]]"
-              - run: yarn run test --passWithNoTests
-              - run: export CI=1
+        - node/install-packages:
+            pkg-manager: yarn
+        - run:
+            command: yarn run format
+            name: Format all the files
+        - run:
+            command: yarn run test --passWithNoTests
+            name: Run all the tests
+        - run:
+            command: Export 
+            name: export CI=1
+
   deploy:
     executor: win/default
     steps:
       - run: curl -X POST -d {} ${deploy_master}
   
 orbs:
-  node: circleci/node@3.0.0
+  node: circleci/node@4.1.0
   win: circleci/windows@2.3.0
 workflows:
   test-deploy:
     jobs:
-      - node/test
+      - build-and-test
       - deploy:
         filters:
           branches:
             only: master
-              
