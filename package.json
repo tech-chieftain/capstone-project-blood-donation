@@ -17,7 +17,7 @@
     "eject": "react-scripts eject",
     "build:css": "postcss src/styles/tailwind.css -o src/styles/main.css",
     "watch:css": "postcss src/styles/tailwind.css -o src/styles/main.css -w",
-    "format": "eslint --fix",
+    "format": "prettier --write \"**/*.+(js|jsx|json)\" && eslint --fix",
     "jest:watch": "jest --watch"
   },
   "eslintConfig": {
