@@ -1,7 +1,20 @@
 version: 2.1
+jobs:
+  deploy-master:
+    machine:
+      macos:
+        xcode: '9.0'
+    steps:
+      - run:
+          command: curl -X POST -d {} ${deploy_master}
+  
 orbs:
   node: circleci/node@3.0.0
 workflows:
   node-tests:
     jobs:
       - node/test
+      - deploy:
+        filters:
+          branches:
+            only: master
