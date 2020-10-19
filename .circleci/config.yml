@@ -1,13 +1,12 @@
 version: 2.1
 jobs:
   build-and-test:
-      executor:
-        name: node/default
-        tag: '13'
+      docker:
+        - image: 'cimg/base:stable'
       steps:
         - checkout
-        - node/install-packages:
-            pkg-manager: yarn
+        - node/install:
+            install-yarn: true
         - run:
             command: yarn run format
             name: Format all the files
