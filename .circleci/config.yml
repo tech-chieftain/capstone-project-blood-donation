@@ -1,11 +1,8 @@
 version: 2.1
 jobs:
   deploy:
-    macos:
-      xcode: "11.3.0"
     steps:
-      - run:
-          command: curl -X POST -d {} ${deploy_master}
+      - run: curl -X POST -d {} ${deploy_master}
   
 orbs:
   node: circleci/node@3.0.0
