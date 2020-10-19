@@ -19,13 +19,15 @@ jobs:
             name: Run all the tests
 
   deploy:
-    executor: win/default
+    docker:
+      - image: cimg/base:2020.10
     steps:
+      - checkout
       - run: curl -X POST -d {} ${deploy_master}
   
 orbs:
   node: circleci/node@4.1.0
-  win: circleci/windows@2.3.0
+  
 workflows:
   test-deploy:
     jobs:
@@ -34,3 +36,9 @@ workflows:
         filters:
           branches:
             only: master
+        requires:
+          - build-and-test
+  
+  
+  
+  
