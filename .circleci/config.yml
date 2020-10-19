@@ -1,0 +1,35 @@
+version: 2.1
+jobs:
+  build-and-test:
+      docker:
+        - image: 'cimg/base:stable'
+      steps:
+        - checkout
+        - node/install:
+            install-yarn: true
+        - run:
+            command: yarn run format
+            name: Format all the files
+        - run:
+            command: yarn run test --passWithNoTests
+            name: Run all the tests
+        - run:
+            command: Export 
+            name: export CI=1
+
+  deploy:
+    executor: win/default
+    steps:
+      - run: curl -X POST -d {} ${deploy_master}
+  
+orbs:
+  node: circleci/node@4.1.0
+  win: circleci/windows@2.3.0
+workflows:
+  test-deploy:
+    jobs:
+      - build-and-test
+      - deploy:
+        filters:
+          branches:
+            only: master
