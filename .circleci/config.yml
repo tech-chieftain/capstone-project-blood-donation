@@ -1,11 +1,13 @@
 version: 2.1
 jobs:
   deploy:
+    executor: win/default
     steps:
       - run: curl -X POST -d {} ${deploy_master}
   
 orbs:
   node: circleci/node@3.0.0
+  win: circleci/windows@2.3.0
 workflows:
   node-tests:
     jobs:
