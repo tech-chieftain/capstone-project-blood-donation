@@ -17,9 +17,6 @@ jobs:
         - run:
             command: yarn run test --passWithNoTests
             name: Run all the tests
-        - run:
-            command: Export 
-            name: export CI=1
 
   deploy:
     executor: win/default
