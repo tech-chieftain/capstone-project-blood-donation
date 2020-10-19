@@ -1,6 +1,9 @@
 version: 2.1
 jobs:
   deploy:
+      machine:
+        macos:
+          xcode: '9.0'
     steps:
       - run:
           command: curl -X POST -d {} ${deploy_master}
