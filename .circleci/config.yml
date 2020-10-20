@@ -6,7 +6,7 @@ jobs:
     steps:
     - checkout
     - node/install:
-      install-yarn: true
+        install-yarn: true
     - restore_cache:
         name: Restore node modules cache
         key: node_modules-{{ checksum "yarn.lock" }}
