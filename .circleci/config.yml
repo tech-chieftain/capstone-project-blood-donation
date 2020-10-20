@@ -26,6 +26,9 @@ jobs:
         - checkout
         - node/install:
             install-yarn: true
+        - restore_cache:
+            name: Restore node modules cache
+            key: node_modules-{{ checksum "yarn.lock" }}
         - run:
             command: yarn format
             name: Format all the files
