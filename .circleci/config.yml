@@ -7,15 +7,23 @@ jobs:
         - checkout
         - node/install:
             install-yarn: true
+        - restore_cache:
+          name: Restore Yarn Package Cache
+          keys:
+            - yarn-packages-{{ checksum "yarn.lock" }}
         - run:
-            command: yarn
+            command: yarn install --immutable
             name: Add all dependencies
+        - save_cache:
+          name: Save Yarn Package Cache
+          key: yarn-packages-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
         - run:
-            command: yarn run format
+            command: yarn format
             name: Format all the files
-  
         - run:
-            command: yarn run test --passWithNoTests
+            command: yarn test --passWithNoTests
             name: Run all the tests
 
   deploy-to-netlify:
