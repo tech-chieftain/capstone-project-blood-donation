@@ -16,7 +16,8 @@
   "scripts": {
     "start": "concurrently \"yarn watch:css\" \"react-scripts start\"",
     "build": "concurrently \"yarn build:css\" \"react-scripts build\"",
-    "test": "react-scripts test",
+    "test": "react-scripts test ",
+    "test:coverage": "yarn test -- --coverage --watchAll=false ",
     "eject": "react-scripts eject",
     "build:css": "postcss src/styles/tailwind.css -o src/styles/main.css",
     "watch:css": "postcss src/styles/tailwind.css -o src/styles/main.css -w",
