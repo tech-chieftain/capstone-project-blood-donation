@@ -48,8 +48,8 @@ workflows:
     jobs:
       - prepare
       - build-and-test:
-        requires:
-          - prepare
+          requires:
+            - prepare
       - deploy-to-netlify:
           filters:
             branches:
