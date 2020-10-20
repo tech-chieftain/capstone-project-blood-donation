@@ -26,6 +26,8 @@ jobs:
             name: Run all the tests
 
   deploy-to-netlify:
+    docker:
+      - image: 'cimg/base:2020.10'
     steps:
       - checkout
       - run: curl -X POST -d {} ${deploy_master}
@@ -36,7 +38,7 @@ orbs:
 workflows:
   test-deploy:
     jobs:
-      - build-and-test:
+      - build-and-test
       - deploy-to-netlify:
           filters:
             branches:
