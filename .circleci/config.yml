@@ -12,7 +12,7 @@ jobs:
         key: node_modules-{{ checksum "yarn.lock" }}
     - run:
         name: Add all dependencies
-        command: yarn install --immutable
+        command: yarn 
     - save_cache:
         name: Save node modules cache
         key: node_modules-{{ checksum "yarn.lock" }}
