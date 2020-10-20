@@ -1,27 +1,8 @@
 version: 2.1
 jobs:
-  prepare:
-    docker:
-      - image: 'cimg/base:stable'
-    steps:
-    - checkout
-    - node/install:
-        install-yarn: true
-    - restore_cache:
-        name: Restore node modules cache
-        key: node_modules-{{ checksum "package.json" }}
-    - run:
-        name: Add all dependencies
-        command: yarn 
-    - save_cache:
-        name: Save node modules cache
-        key: node_modules-{{ checksum "package.json" }}
-        paths:
-          - node_modules
-
   build-and-test:
       docker:
-        - image: 'cimg/base:stable'
+        - image: 'cimg/base:2020.10'
       steps:
         - checkout
         - node/install:
@@ -30,6 +11,14 @@ jobs:
             name: Restore node modules cache
             key: node_modules-{{ checksum "package.json" }}
         - run:
+            name: Add all dependencies
+            command: yarn install --immutable
+        - save_cache:
+            name: Save node modules cache
+            key: node_modules-{{ checksum "package.json" }}
+            paths:
+              - node_modules
+        - run:
             command: yarn format
             name: Format all the files
         - run:
@@ -37,8 +26,6 @@ jobs:
             name: Run all the tests
 
   deploy-to-netlify:
-    docker:
-      - image: cimg/base:2020.10
     steps:
       - checkout
       - run: curl -X POST -d {} ${deploy_master}
@@ -49,10 +36,7 @@ orbs:
 workflows:
   test-deploy:
     jobs:
-      - prepare
       - build-and-test:
-          requires:
-            - prepare
       - deploy-to-netlify:
           filters:
             branches:
