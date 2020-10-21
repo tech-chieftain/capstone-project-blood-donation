@@ -10,7 +10,7 @@ it('renders correctly', () => {
       <Router>
         <Button
           text="Value"
-          styleName="px-6 py-1 mt-4 text-base inline-block md:mt-0 text-white  hover:text-gray-100 border-b-2 border-transparent hover:border-white md:mr-4 lg:mr-8 mr-2"
+          styleName="buttonRed"
           path="/donate"
           onClick={() => console.log('saleem')}
         />

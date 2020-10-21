@@ -2,6 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <a
+  className="inline-block text-sm md:text-base text-center tracking-normal font-medium transition duration-500 ease-in-out bg-primary px-8 md:px-12 py-1 md:py-2 mt-8 md:mt-0  ml-6 text-white hover:bg-primary-100 rounded"
   href="/donate"
   onClick={[Function]}
 >
