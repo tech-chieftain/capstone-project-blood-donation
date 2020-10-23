@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
-import NavLinks from '../Navlinks/Navlinks';
+import NavLink from '../Navlinks/Navlinks';
 
 function Navbar() {
+  // this  state to control the shown menu icon
   const [show, setShow] = useState(false);
+  // this  state to control the class of unordered list in navelinks
   const [classname, setclassna] = useState('hidden');
-
+  // when meue icon clicked the label changes depending on the value of show
+  // stytleflage is used to decide the way of stayling the donate links inside navlinks where it is at the navbar shwon like button where at the footer it is shown as link
   return (
     <div className="bg-primary p-4 flex justify-between flex-wrap items-center">
       <h1>
@@ -20,7 +23,6 @@ function Navbar() {
         </svg>
       </h1>
       {show ? (
-        // eslint-disable-next-line jsx-a11y/label-has-associated-control
         <label
           htmlFor="menu-toggle"
           className="mr-8 md:hidden text-white text-2xl sm:text-3xl cursor-pointer"
@@ -31,7 +33,6 @@ function Navbar() {
             className="hidden"
             id="menu-toggle"
             onChange={(e) => {
-              console.log(e.target.checked);
               const name = show ? 'hidden' : '';
               setclassna(name);
               setShow(e.target.checked);
@@ -57,7 +58,7 @@ function Navbar() {
           />
         </label>
       )}
-      <NavLinks classname={classname} stytleflage={false} />
+      <NavLink classname={classname} stytleflage={false} />
     </div>
   );
 }
