@@ -7,10 +7,12 @@ import Instructions from './containers/Instruction';
 import Process from './containers/Process';
 import Search from './containers/Search';
 import Donate from './containers/Donate';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <Router>
+      <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/About" component={About} />
