@@ -1,9 +1,9 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import App from './App';
+import Donate from '../Donate';
 
 // tests will use to compare to.
 it('renders correctly', () => {
-  const tree = renderer.create(<App />).toJSON();
+  const tree = renderer.create(<Donate />).toJSON();
   expect(tree).toMatchSnapshot();
 });
