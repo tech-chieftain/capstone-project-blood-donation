@@ -59,8 +59,12 @@ exports[`renders correctly 1`] = `
       classname="flex justify-center flex-wrap"
     >
       <nav>
-        <ul>
-          <li>
+        <ul
+          className=" text-white sm:flex justify-center flex-wrap "
+        >
+          <li
+            className="mr-2 hover:bg-blue-500"
+          >
             <a
               href="/"
               onClick={[Function]}
@@ -68,7 +72,9 @@ exports[`renders correctly 1`] = `
               Home
             </a>
           </li>
-          <li>
+          <li
+            className="mr-2  hover:bg-blue-500"
+          >
             <a
               href="/about"
               onClick={[Function]}
@@ -76,15 +82,19 @@ exports[`renders correctly 1`] = `
               About
             </a>
           </li>
-          <li>
+          <li
+            className="mr-2  hover:bg-blue-500"
+          >
             <a
-              href="/instructions"
+              href="/instruction"
               onClick={[Function]}
             >
               Instructions
             </a>
           </li>
-          <li>
+          <li
+            className="mr-2  hover:bg-blue-500"
+          >
             <a
               href="/process"
               onClick={[Function]}
@@ -92,7 +102,9 @@ exports[`renders correctly 1`] = `
               Process
             </a>
           </li>
-          <li>
+          <li
+            className="mr-2  hover:bg-blue-500"
+          >
             <a
               href="/search"
               onClick={[Function]}
@@ -100,7 +112,9 @@ exports[`renders correctly 1`] = `
               Search
             </a>
           </li>
-          <li>
+          <li
+            className="mr-2  hover:bg-blue-500"
+          >
             <a
               href="/donate"
               onClick={[Function]}

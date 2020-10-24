@@ -15,9 +15,9 @@ import Donate from '../../../containers/Donate';
 function FooterNav(){
     return (
 <Router>
-<div classname=" md:flex justify-center flex-wrap">
+<div classname="flex justify-center flex-wrap">
         <nav>
-          <ul className=" text-white md:flex justify-center flex-wrap ">
+          <ul className=" text-white sm:flex justify-center flex-wrap ">
             <li className="mr-2 hover:bg-blue-500">
               <Link to="/">Home</Link>
             </li>
