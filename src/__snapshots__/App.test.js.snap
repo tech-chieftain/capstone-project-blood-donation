@@ -21,7 +21,9 @@ Array [
       className="mr-2 md:mr-4 md:hidden text-white text-2xl sm:text-3xl cursor-pointer"
       htmlFor="menu-toggle"
     >
-      ☰
+      <span>
+         ☰
+      </span>
       <input
         checked={false}
         className="hidden"
