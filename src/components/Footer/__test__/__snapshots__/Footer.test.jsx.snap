@@ -56,6 +56,65 @@ exports[`renders correctly 1`] = `
       </p>
     </div>
     <div
+      classname="flex justify-center flex-wrap"
+    >
+      <nav>
+        <ul>
+          <li>
+            <a
+              href="/"
+              onClick={[Function]}
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              href="/about"
+              onClick={[Function]}
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              href="/instructions"
+              onClick={[Function]}
+            >
+              Instructions
+            </a>
+          </li>
+          <li>
+            <a
+              href="/process"
+              onClick={[Function]}
+            >
+              Process
+            </a>
+          </li>
+          <li>
+            <a
+              href="/search"
+              onClick={[Function]}
+            >
+              Search
+            </a>
+          </li>
+          <li>
+            <a
+              href="/donate"
+              onClick={[Function]}
+            >
+              Donate
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        Home
+      </div>
+    </div>
+    <div
       className="flex"
     >
       <svg

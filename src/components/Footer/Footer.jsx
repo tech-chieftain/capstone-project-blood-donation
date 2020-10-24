@@ -1,5 +1,6 @@
 import React from "react"
 import SocialIcons from './SocialIcons/SocialIcons'
+import FooterNav from './FooterNav/FooterNav'
 
 // import { propTypes } from 'prop-types'
 
@@ -27,6 +28,7 @@ function Footer(){
                 ipsum quia dolor sit amet, 
                 consectetur, adipisci velit</p>
                 </div>
+                <FooterNav />
                 <SocialIcons />
                 </div>
                 

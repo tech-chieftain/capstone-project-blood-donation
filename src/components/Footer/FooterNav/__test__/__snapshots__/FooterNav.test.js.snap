@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  classname=" md:flex justify-center flex-wrap"
+>
+  <nav>
+    <ul
+      className=" text-white md:flex justify-center flex-wrap "
+    >
+      <li
+        className="mr-2 hover:bg-blue-500"
+      >
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+          Home
+        </a>
+      </li>
+      <li
+        className="mr-2  hover:bg-blue-500"
+      >
+        <a
+          href="/about"
+          onClick={[Function]}
+        >
+          About
+        </a>
+      </li>
+      <li
+        className="mr-2  hover:bg-blue-500"
+      >
+        <a
+          href="/instruction"
+          onClick={[Function]}
+        >
+          Instructions
+        </a>
+      </li>
+      <li
+        className="mr-2  hover:bg-blue-500"
+      >
+        <a
+          href="/process"
+          onClick={[Function]}
+        >
+          Process
+        </a>
+      </li>
+      <li
+        className="mr-2  hover:bg-blue-500"
+      >
+        <a
+          href="/search"
+          onClick={[Function]}
+        >
+          Search
+        </a>
+      </li>
+      <li
+        className="mr-2  hover:bg-blue-500"
+      >
+        <a
+          href="/donate"
+          onClick={[Function]}
+        >
+          Donate
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div>
+    Home
+  </div>
+</div>
+`;
