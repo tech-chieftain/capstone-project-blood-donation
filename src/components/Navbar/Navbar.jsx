@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import NavLink from '../Navlinks/Navlinks';
-import Logo from '../images/Logo';
+import Logo from '../../images/Logo';
 
 function Navbar() {
   // this  state to control the shown menu icon
