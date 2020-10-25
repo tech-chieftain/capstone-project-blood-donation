@@ -9,7 +9,7 @@ function Footer(){
 
     return (
         <div>
-            <div className="bg-primary flex flex-col  items-center p-10 ">
+            <div className="bg-primary flex flex-col justify-center  items-center p-10 ">
                 <div className="mb-5">
                 <svg width="142" height="34" viewBox="0 0 142 34" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0)">
