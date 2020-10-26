@@ -8,7 +8,6 @@ import Process from './containers/Process';
 import Search from './containers/Search';
 import Donate from './containers/Donate';
 import Navbar from './components/Navbar';
-import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -24,7 +23,6 @@ function App() {
           <Route path="/Donate" component={Donate} />
         </Switch>
       </Router>
-      <Footer />
     </div>
   );
 }
