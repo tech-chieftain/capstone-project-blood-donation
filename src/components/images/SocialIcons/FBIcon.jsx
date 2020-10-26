@@ -8,6 +8,7 @@ function FBIcon() {
       height="18.74"
       fill="none"
       viewBox="0 0 18 22"
+      className="mr-4"
     >
       <path
         fill="#fff"

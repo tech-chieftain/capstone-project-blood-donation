@@ -8,6 +8,7 @@ function InstaIcon() {
       height="18.74"
       fill="none"
       viewBox="0 0 17 22"
+      className="mr-4"
     >
       <path
         fill="#fff"
