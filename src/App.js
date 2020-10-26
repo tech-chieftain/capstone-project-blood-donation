@@ -23,8 +23,8 @@ function App() {
           <Route path="/Search" component={Search} />
           <Route path="/Donate" component={Donate} />
         </Switch>
+        <Footer />
       </Router>
-      <Footer />
     </div>
   );
 }

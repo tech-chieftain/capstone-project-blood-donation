@@ -32,7 +32,7 @@ exports[`renders correctly 1`] = `
     />
   </label>
   <ul
-    className="md:flex  hidden   md:w-auto w-full text-start mt-6 md:mt-0"
+    className="md:flex  hidden   md:w-auto w-full text-start mt-4 md:mt-0"
   >
     <li>
       <a
