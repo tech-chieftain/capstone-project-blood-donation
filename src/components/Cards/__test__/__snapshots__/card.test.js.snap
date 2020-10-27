@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="Card"
+  >
+    <div
+      className="max-w-sm  shadow-lg ml-8 mt-15 border rounded"
+      data-testid="cardImage"
+    >
+      <section
+        className="hero container max-w-screen-lg mx-auto"
+      >
+        <img
+          alt="screenshot"
+          className="mx-auto mt-8"
+          src="https://apifortress.com/doc/wp-content/uploads/2019/04/ForgeIcon_Black.svg"
+        />
+      </section>
+      <div
+        className="px-6 py-4"
+      >
+        <div
+          className="text-orange-800  font-bold text-xl mb-2"
+          data-testid="cardTitle"
+        >
+           Title 
+        </div>
+        <p
+          className="text-gray-700 text-lg"
+          data-testid="cardDesc"
+        >
+           Description 
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
