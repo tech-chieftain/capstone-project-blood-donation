@@ -7,12 +7,22 @@ import UtupeIcon from '../../images/SocialIcons/UtupeIcon';
 
 function SocialIcons() {
   return (
-    <div className="flex">
-      <FBIcon className="mr-4" />
-      <InstaIcon className="mr-4" />
-      <LinkedInIcon className="mr-4" />
-      <TwitterIcon className="mr-4" />
-      <UtupeIcon className="mr-4" />
+    <div className="flex my-8">
+      <a href="www.Facebook.com">
+        <FBIcon />
+      </a>
+      <a href="www.Instegram.com">
+        <InstaIcon />
+      </a>
+      <a href="www.Linkedin.com">
+        <LinkedInIcon />
+      </a>
+      <a href="www.Twitter.com">
+        <TwitterIcon />
+      </a>
+      <a href="www.YouTupe.com">
+        <UtupeIcon className="mr-4" />
+      </a>
     </div>
   );
 }

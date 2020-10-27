@@ -4,11 +4,11 @@ function FBIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="17.68"
-      height="18.74"
+      width="35.68"
+      height="32.74"
       fill="none"
       viewBox="0 0 18 22"
-      className="mr-4"
+      className="mr-4 "
     >
       <path
         fill="#fff"
