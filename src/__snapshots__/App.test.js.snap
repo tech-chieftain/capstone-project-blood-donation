@@ -92,7 +92,32 @@ Array [
     </ul>
   </div>,
   <div>
-    Home
+    <div
+      className="Card"
+    >
+      <div
+        className="max-w-sm my-5 ml-8 bg-gray-200 border rounded shadow-lg mt-15"
+      >
+        <div
+          className="w-32 mt-0 ml-20 mb-0"
+        >
+          <img
+            alt="icon"
+            className="w-full h-full"
+          />
+        </div>
+        <div
+          className="px-6 py-0 pb-1 my-5"
+        >
+          <div
+            className="text-orange-800 text-lg font-bold text-xl mb-2"
+          />
+          <p
+            className="text-gray-700 text-lg"
+          />
+        </div>
+      </div>
+    </div>
   </div>,
 ]
 `;
