@@ -6,30 +6,27 @@ exports[`renders correctly 1`] = `
     className="Card"
   >
     <div
-      className="max-w-sm  shadow-lg ml-8 mt-15 border rounded"
-      data-testid="cardImage"
+      className="max-w-sm my-5 ml-8 bg-gray-200 border rounded shadow-lg mt-15"
     >
-      <section
-        className="hero container max-w-screen-lg mx-auto"
+      <div
+        className="w-32 mt-0 ml-20 mb-0"
       >
         <img
-          alt="screenshot"
-          className="mx-auto mt-8"
+          alt="icon"
+          className="w-full h-full"
           src="https://apifortress.com/doc/wp-content/uploads/2019/04/ForgeIcon_Black.svg"
         />
-      </section>
+      </div>
       <div
-        className="px-6 py-4"
+        className="px-6 py-0 pb-1 my-5"
       >
         <div
-          className="text-orange-800  font-bold text-xl mb-2"
-          data-testid="cardTitle"
+          className="text-orange-800 text-lg font-bold text-xl mb-2"
         >
            Title 
         </div>
         <p
           className="text-gray-700 text-lg"
-          data-testid="cardDesc"
         >
            Description 
         </p>
