@@ -22,7 +22,7 @@ function Card({ cardImage, cardTitle, cardDesc }) {
             />
          </div>
 
-          <div className="px-6 py-0 pb-1">
+          <div className="px-6 py-0 pb-1 my-5">
             <div data-testid="cardTitle" className={classesObjectStyles.cardTitle}>
               {cardTitle}
             </div>
