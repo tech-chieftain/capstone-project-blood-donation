@@ -20,7 +20,6 @@ const Form = () => {
 
   const onClickHandling = (event) => {
     event.preventDefault();
-    console.log(form);
   };
   return (
     <form className="shadow-xl w-10/12 lg:w-8/12 mx-auto  flex flex-col mt-6 p-6 sm:p-8 md:p-12">
