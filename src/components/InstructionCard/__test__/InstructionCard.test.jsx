@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import InstructionCard from './InstructionCard';
+import InstructionCard from '../InstructionCard';
 
 // tests will use to compare to.
 
