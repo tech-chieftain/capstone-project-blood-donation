@@ -99,7 +99,7 @@ Array [
         className="max-w-sm my-5 ml-8 bg-gray-200 border rounded shadow-lg mt-15"
       >
         <div
-          className="w-32 mt-0 ml-20 mb-0"
+          className="w-32 mt-0 ml-32 mb-0"
         >
           <img
             alt="icon"
@@ -110,10 +110,10 @@ Array [
           className="px-6 py-0 pb-1 my-5"
         >
           <div
-            className="text-orange-800 text-lg font-bold text-xl mb-2"
+            className="text-orange-800 text-lg font-bold text-xl mb-2  text-undefined"
           />
           <p
-            className="text-gray-700 text-lg"
+            className="text-gray-700 text-lg text-undefined"
           />
         </div>
       </div>
