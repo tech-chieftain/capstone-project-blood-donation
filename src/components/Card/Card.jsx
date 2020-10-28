@@ -1,13 +1,13 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 
-function Card({ cardImage, cardTitle, cardDesc }) {
+function Card({ cardImage, cardTitle, cardDesc, orientationText }) {
   const classesObjectStyles = {
     // cardProperties:'bg-gray-200 max-w-sm my-5  shadow-lg ml-8 mt-15 border rounded',
-    cardImagediv: 'w-32 mt-0 ml-20 mb-0',
+    cardImagediv: 'w-32 mt-0 ml-32 mb-0',
     // cardimageProperties: 'h-full w-full',
-    cardTitle: 'text-orange-800 text-lg font-bold text-xl mb-2',
-    cardParagraph: 'text-gray-700 text-lg',
+    cardTitle: `text-orange-800 text-lg font-bold text-xl mb-2  text-${orientationText}`,
+    cardParagraph: `text-gray-700 text-lg text-${orientationText}`,
   };
   return (
     <div>
@@ -28,7 +28,8 @@ function Card({ cardImage, cardTitle, cardDesc }) {
 }
 Card.propTypes = {
   cardImage: PropTypes.string,
-  cardTitle: PropTypes.string.isRequired,
+  cardTitle: PropTypes.string,
   cardDesc: PropTypes.string.isRequired,
+  orientationText: PropTypes.string,
 };
 export default Card;
