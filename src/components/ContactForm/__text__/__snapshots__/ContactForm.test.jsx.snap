@@ -11,11 +11,11 @@ exports[`renders correctly 1`] = `
       className="flex-1 flex flex-col  mb-4 "
     >
       <label
-        className="flex-1 mb-2 text-sm sm:text-base font-semibold undefined"
+        className="flex-1 mb-2 text-sm sm:text-base font-semibold"
         htmlFor="name"
       />
       <input
-        className="flex-1  mr-4 p-2 text-sm sm:text-base tracking-normal font-semibold  border-2 border-gray-300 focus:outline-none bg-white placeholder-gray-800"
+        className="flex-1  mr-4 p-2 text-sm sm:text-base tracking-normal font-semibold  border-2 border-gray-300 focus:outline-none  bg-white placeholder-gray-800"
         id="name"
         name="name"
         onChange={[Function]}
@@ -28,11 +28,11 @@ exports[`renders correctly 1`] = `
       className="flex-1 flex flex-col  mb-4 "
     >
       <label
-        className="flex-1 mb-2 text-sm sm:text-base font-semibold undefined"
+        className="flex-1 mb-2 text-sm sm:text-base font-semibold"
         htmlFor="email"
       />
       <input
-        className="flex-1  mr-4 p-2 text-sm sm:text-base tracking-normal font-semibold  border-2 border-gray-300 focus:outline-none bg-white placeholder-gray-800"
+        className="flex-1  mr-4 p-2 text-sm sm:text-base tracking-normal font-semibold  border-2 border-gray-300 focus:outline-none  bg-white placeholder-gray-800"
         id="email"
         name="email"
         onChange={[Function]}
@@ -46,7 +46,7 @@ exports[`renders correctly 1`] = `
     className=" flex-1 mr-4 p-2 text-base tracking-normal font-semibold placeholder-gray-800 border-2 border-gray-300 focus:outline-none "
     name="massege"
     onChange={[Function]}
-    placeholder="massege"
+    placeholder="massage"
     rows="6"
     value=""
   />
