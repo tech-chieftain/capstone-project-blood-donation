@@ -2,17 +2,13 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="bg-gray-200 w-screen"
+  className="bg-gray-100"
 >
-  <div
-    className=" w-11/12 ml-12 "
-  >
-    <h1
-      className="text-primary-100 font-bold pt-5 pb-5"
-    />
-    <p
-      className="text-center"
-    />
-  </div>
+  <h1
+    className="text-primary-100  sm:text-xl md:text-2xl lg:text-3xl pt-1 font-semibold  text-center"
+  />
+  <p
+    className=" pt-3 pb-5  sm:text-sm md:text-base lg:text-lg  text-center "
+  />
 </div>
 `;

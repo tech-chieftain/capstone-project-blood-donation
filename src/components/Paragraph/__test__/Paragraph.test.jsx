@@ -4,7 +4,7 @@ import Paragraph from '../Paragraph';
 
 it('renders correctly', () => {
   const tree = renderer
-    .create(<Paragraph headerText paragraphText headerCenter ParagraphCenter />)
+    .create(<Paragraph headerText paragraphText headerFlag paragraphFlag />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
