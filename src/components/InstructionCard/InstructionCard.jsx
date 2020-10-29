@@ -10,10 +10,10 @@ function InstructionCard({ image, title, description, directionFlag }) {
           <img src={image} alt="img" />
         </div>
         <div className="flex-1 my-6 mr-4 sm:mr-4">
-          <p className="text-primary-100 text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">
+          <p className="text-primary-100 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">
             {title}
           </p>
-          <p className="text-black text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">
+          <p className="text-black text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
             {description}
           </p>
         </div>
@@ -28,10 +28,10 @@ function InstructionCard({ image, title, description, directionFlag }) {
         <img src={image} alt="img" />
       </div>
       <div className="flex-1 my-6 mr-4 text-left sm:text-right sm:mr-4">
-        <p className="text-primary-100 text-sm sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">
+        <p className="text-primary-100 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">
           {title}
         </p>
-        <p className="text-black text-base sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">
+        <p className="text-black text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
           {description}
         </p>
       </div>
