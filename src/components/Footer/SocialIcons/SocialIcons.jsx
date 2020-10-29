@@ -8,19 +8,19 @@ import UtupeIcon from '../../images/SocialIcons/UtupeIcon';
 function SocialIcons() {
   return (
     <div className="flex my-8">
-      <a href="www.Facebook.com">
+      <a target="_blank" rel="noreferrer" href="http://www.facebook.com">
         <FBIcon />
       </a>
-      <a href="www.Instegram.com">
+      <a target="_blank" rel="noreferrer" href="https://www.instagram.com/">
         <InstaIcon />
       </a>
-      <a href="www.Linkedin.com">
+      <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/">
         <LinkedInIcon />
       </a>
-      <a href="www.Twitter.com">
+      <a target="_blank" rel="noreferrer" href="https://twitter.com/">
         <TwitterIcon />
       </a>
-      <a href="www.YouTupe.com">
+      <a target="_blank" rel="noreferrer" href="https://www.youtube.com/">
         <UtupeIcon className="mr-4" />
       </a>
     </div>

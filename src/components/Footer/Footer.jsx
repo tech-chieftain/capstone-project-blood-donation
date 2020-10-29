@@ -3,7 +3,6 @@ import SocialIcons from './SocialIcons/SocialIcons';
 import NavLinks from '../Navlinks';
 import Logo from '../images/Logo';
 
-
 function Footer() {
   return (
     <div>
@@ -18,7 +17,7 @@ function Footer() {
           </p>
         </div>
         <div>
-        <NavLinks classname="flex justify-center flex-wrap" classFlag />
+          <NavLinks classname="flex justify-center flex-wrap" classFlag />
         </div>
         <SocialIcons />
       </div>
