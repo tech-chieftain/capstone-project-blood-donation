@@ -11,7 +11,7 @@ function Paragraph({ headerText, paragraphText, headerFlag, paragraphFlag }) {
     } `,
   };
   return (
-    <div className="bg-gray-100">
+    <div >
       <h1 className={styleClass.headerStyle}>{headerText}</h1>
       <p className={styleClass.paragrphStyle}>{paragraphText}</p>
     </div>
