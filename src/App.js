@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import './styles/main.css';
 import Home from './containers/Home';
 import About from './containers/About';
@@ -11,6 +12,11 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer/Footer';
 
 function App() {
+  const { i18n } = useTranslation();
+  useEffect(() => {
+    document.dir = i18n.dir();
+  }, [i18n, i18n.language]);
+
   return (
     <Router>
       <Navbar />
