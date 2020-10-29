@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import InputFiled from '../InputField';
 import Button from '../Button';
 
-const Form = () => {
+const ContactForm = () => {
   const data = {
     name: '',
     email: '',
@@ -54,4 +54,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default ContactForm;
