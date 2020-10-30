@@ -1,37 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<div>
+<div
+  className="max-w-3xl my-5 ml-6 mr-6 bg-gray-200 rounded sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/3"
+>
   <div
-    className="Card"
+    className="flex justify-center"
+  >
+    <img
+      alt="icon"
+      className="w-1/3 h-1/3"
+      src="https://apifortress.com/doc/wp-content/uploads/2019/04/ForgeIcon_Black.svg"
+    />
+  </div>
+  <div
+    className="px-6 py-0 pb-6 my-5"
   >
     <div
-      className="max-w-sm my-5 ml-8 bg-gray-200 border rounded shadow-lg mt-15"
+      className="text-primary-100 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold my-3 text-left"
     >
-      <div
-        className="w-32 mt-0 ml-32 mb-0"
-      >
-        <img
-          alt="icon"
-          className="w-full h-full"
-          src="https://apifortress.com/doc/wp-content/uploads/2019/04/ForgeIcon_Black.svg"
-        />
-      </div>
-      <div
-        className="px-6 py-0 pb-1 my-5"
-      >
-        <div
-          className="text-orange-800 text-lg font-bold text-xl mb-2  text-left"
-        >
-           Title 
-        </div>
-        <p
-          className="text-gray-700 text-lg text-left"
-        >
-           Description 
-        </p>
-      </div>
+       Title 
     </div>
+    <p
+      className="text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl text-left"
+    >
+       Description 
+    </p>
   </div>
 </div>
 `;
