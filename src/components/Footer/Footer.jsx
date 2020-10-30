@@ -6,12 +6,13 @@ import Logo from '../images/Logo';
 function Footer() {
   return (
     <div>
-      <div className="bg-primary flex flex-col justify-center  items-center p-10 ">
+      <div className="bg-primary flex flex-col justify-center items-center p-4 sm:p-6 md:p-8 ">
         <div className="mb-5">
           <Logo />
         </div>
-        <div>
-          <p className="text-white text-center mb-4">
+        <div className="w-8/12 lg:w-6/12">
+          {/* text-black text-xl sm:text-1xl md:text-2xl lg:text-2xl */}
+          <p className="text-white text-center mb-2">
             Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
             velit
           </p>

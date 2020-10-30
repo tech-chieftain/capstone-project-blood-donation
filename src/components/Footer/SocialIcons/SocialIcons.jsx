@@ -7,7 +7,7 @@ import UtupeIcon from '../../images/SocialIcons/UtupeIcon';
 
 function SocialIcons() {
   return (
-    <div className="flex my-8">
+    <div className="flex my-4">
       <a target="_blank" rel="noreferrer" href="http://www.facebook.com">
         <FBIcon />
       </a>

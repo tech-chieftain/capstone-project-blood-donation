@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="flex my-8"
+  className="flex my-4"
 >
   <a
     href="http://www.facebook.com"
