@@ -92,7 +92,9 @@ exports[`renders correctly 1`] = `
       className="flex my-8"
     >
       <a
-        href="www.Facebook.com"
+        href="http://www.facebook.com"
+        rel="noreferrer"
+        target="_blank"
       >
         <svg
           className="mr-4 "
@@ -125,7 +127,9 @@ exports[`renders correctly 1`] = `
         </svg>
       </a>
       <a
-        href="www.Instegram.com"
+        href="https://www.instagram.com/"
+        rel="noreferrer"
+        target="_blank"
       >
         <svg
           className="mr-4"
@@ -158,7 +162,9 @@ exports[`renders correctly 1`] = `
         </svg>
       </a>
       <a
-        href="www.Linkedin.com"
+        href="https://www.linkedin.com/"
+        rel="noreferrer"
+        target="_blank"
       >
         <svg
           className="mr-4"
@@ -191,7 +197,9 @@ exports[`renders correctly 1`] = `
         </svg>
       </a>
       <a
-        href="www.Twitter.com"
+        href="https://twitter.com/"
+        rel="noreferrer"
+        target="_blank"
       >
         <svg
           className="mr-4"
@@ -224,7 +232,9 @@ exports[`renders correctly 1`] = `
         </svg>
       </a>
       <a
-        href="www.YouTupe.com"
+        href="https://www.youtube.com/"
+        rel="noreferrer"
+        target="_blank"
       >
         <svg
           className="mr-4"
