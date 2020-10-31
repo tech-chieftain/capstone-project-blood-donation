@@ -34,7 +34,7 @@ function Navbar() {
           }}
         />
       </label>
-      <NavLink classname={classname} menuClose={closeMenu} />
+      <NavLink classname={classname} menuClose={closeMenu} classFlag={false} />
     </div>
   );
 }
