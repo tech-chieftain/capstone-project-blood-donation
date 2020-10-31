@@ -7,10 +7,8 @@ function ReadytoDonate({ header, text }) {
   const history = useHistory();
   return (
     <div className="bg-white ">
-      <div className="text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">
-        {header}
-      </div>
-      <div className="text-black text-xl sm:text-1xl md:text-2xl lg:text-2xl">{text}</div>
+      <div className="text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl">{header}</div>
+      <div className="text-black text-lg sm:text-1xl md:text-2xl lg:text-2xl">{text}</div>
       <div>
         <Button text="Donate" onclick={() => history.push('./Donate')} />
       </div>

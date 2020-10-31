@@ -8,7 +8,6 @@ import Process from './containers/Process';
 import Search from './containers/Search';
 import Donate from './containers/Donate';
 import Navbar from './components/Navbar';
-import ReadytoDonate from './components/ReadytoDonate';
 
 function App() {
   return (
