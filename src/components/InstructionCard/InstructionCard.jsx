@@ -5,15 +5,13 @@ function InstructionCard({ image, title, description, directionFlag }) {
   // if directionFlag set to true the left direction of Instruction Card will retune
   if (directionFlag) {
     return (
-      <div className="flex bg-white h-40 sm:h-48 shadow-2xl rounded w-full m-2 p-2">
-        <div className="flex-none h-16 w-16 md:h-24 md:w-24 rounded-full m-auto mr-2 sm:mr-4  bg-gray-200">
-          <img src={image} alt="img" />
+      <div className="flex bg-white h-auto shadow-xl rounded w-full items-center p-4 md:p-6">
+        <div className="flex-none h-16 w-16 md:h-20 md:w-20 rounded-full m-auto mr-2 sm:mr-4  bg-gray-200">
+          <img className="h-16 w-16 md:h-20 md:w-20 object-contain" src={image} alt="img" />
         </div>
-        <div className="flex-1 my-6 mr-4 sm:mr-4">
-          <p className="text-primary-100 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">
-            {title}
-          </p>
-          <p className="text-black text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
+        <div className="flex-1 mr-4 sm:mr-4">
+          <p className="text-primary-100 text-lg sm:text-xl md:text-2xl font-bold">{title}</p>
+          <p className="text-black text-sm sm:text-base md:text-lg tracking-wide leading-normal">
             {description}
           </p>
         </div>
@@ -23,15 +21,13 @@ function InstructionCard({ image, title, description, directionFlag }) {
   // if directionFlag set to false the right  direction of Instruction Card will retune
   return (
     // if show on mobile  the Instruction Card will go from right to left
-    <div className="flex sm:flex-row-reverse bg-white h-40 sm:h-48 shadow-2xl rounded w-full m-2 p-2">
-      <div className="flex-none h-16 w-16 md:h-24 md:w-24 rounded-full m-auto mr-2 sm:mr-4  bg-gray-200">
-        <img src={image} alt="img" />
+    <div className="flex sm:flex-row-reverse bg-white h-auto shadow-xl rounded w-full items-center p-4 md:p-6">
+      <div className="flex-none h-16 w-16 md:h-20 md:w-20 rounded-full m-auto mr-2 bg-gray-200">
+        <img className="h-16 w-16 md:h-20 md:w-20 object-contain" src={image} alt="img" />
       </div>
-      <div className="flex-1 my-6 mr-4 text-left sm:text-right sm:mr-4">
-        <p className="text-primary-100 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">
-          {title}
-        </p>
-        <p className="text-black text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
+      <div className="flex-1 text-left sm:text-right mr-4 sm:mr-4">
+        <p className="text-primary-100 text-lg sm:text-xl md:text-2xl font-bold">{title}</p>
+        <p className="text-black text-sm sm:text-base md:text-lg tracking-wide leading-normal">
           {description}
         </p>
       </div>
@@ -39,7 +35,7 @@ function InstructionCard({ image, title, description, directionFlag }) {
   );
 }
 InstructionCard.propTypes = {
-  image: PropTypes.element.isRequired,
+  image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   directionFlag: PropTypes.bool.isRequired,
