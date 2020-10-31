@@ -2,7 +2,7 @@ import React from 'react';
 import { PropTypes } from 'prop-types';
 import Navlink from '../Navlink';
 
-function NavLinks({ classname, menuClose }) {
+function NavLinks({ classname, menuClose, classFlag }) {
   const classesObject = {
     //  nav link with border at button and white text
     navStyleUnderline:
@@ -13,7 +13,7 @@ function NavLinks({ classname, menuClose }) {
   };
 
   return (
-    <ul className={`md:flex  ${classname}   md:w-auto w-full text-start mt-6 md:mt-0`}>
+    <ul className={`md:flex  ${classname}   md:w-auto w-full text-start mt-4 md:mt-0`}>
       <Navlink
         path="/"
         styleName={classesObject.navStyleUnderline}
@@ -46,7 +46,7 @@ function NavLinks({ classname, menuClose }) {
       />
       <Navlink
         path="/donate"
-        styleName={classesObject.navStyleButton}
+        styleName={classFlag ? classesObject.navStyleUnderline : classesObject.navStyleButton}
         text="Donate"
         menuClose={menuClose}
       />
@@ -55,6 +55,7 @@ function NavLinks({ classname, menuClose }) {
 }
 NavLinks.propTypes = {
   classname: PropTypes.string.isRequired,
-  menuClose: PropTypes.func.isRequired,
+  menuClose: PropTypes.func,
+  classFlag: PropTypes.bool.isRequired,
 };
 export default NavLinks;

@@ -1,14 +1,14 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { BrowserRouter as Router } from 'react-router-dom';
-import NavLinks from '../Navlinks';
+import Footer from '../Footer';
 
 // tests will use to compare to.
 it('renders correctly', () => {
   const tree = renderer
     .create(
       <Router>
-        <NavLinks classname="hidden" menuClose={() => console.log('Donate')} classFlag={false} />
+    <Footer />
       </Router>
     )
     .toJSON();
