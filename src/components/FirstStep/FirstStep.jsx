@@ -41,10 +41,7 @@ function FirstStep({ donor, onChange, setStep }) {
       <div className="p-6 sm:p-8 md:p-10 border-gray-300 shadow-xl border-2 rounded">
         <Prgress steps={1} />
         <SubHeader text="A few questions before we get started" />
-        <Donateparagraph
-          text="A few quick questions up front to find out if you can donate blood or not. If you can't
-          donate, don't worry you can help the NHS in other ways."
-        />
+        <Donateparagraph text="A few quick questions up front to find out if you can donate blood or not. If you can't donate, don't worry you can help the NHS in other ways." />
         <SubHeader text="All fields marked with * are required" />
         <div className=" flex flex-col items-start mb-8">
           <label className="mb-2 tracking-normal font-medium">1 . Date of birth*</label>

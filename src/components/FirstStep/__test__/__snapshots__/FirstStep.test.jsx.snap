@@ -51,8 +51,7 @@ exports[`renders correctly 1`] = `
     <div
       className="text-sm sm:text-base md:text-lg  mb-10 leading-relaxed w-10/12"
     >
-      A few quick questions up front to find out if you can donate blood or not. If you can't
- donate, don't worry you can help the NHS in other ways.
+      A few quick questions up front to find out if you can donate blood or not. If you can't donate, don't worry you can help the NHS in other ways.
     </div>
     <div
       className="text-base md:text-lg lg:text-xl font-medium mb-6"
