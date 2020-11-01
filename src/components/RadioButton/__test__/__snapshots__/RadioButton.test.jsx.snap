@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="block mb-8"
+  name="sickness"
+  onChange={[Function]}
+  value=""
+>
+  <span
+    className="text-sm sm:text-base md:text-lg font-medium inline-block mb-2"
+  >
+    3 . Have you ever had a cancer other than basal cell carcinoma or cervical carcinoma insitu (CIN)?*
+  </span>
+  <div
+    className="mt-2"
+  >
+    <label
+      className="inline-flex items-center"
+      htmlFor="sa"
+    >
+      <input
+        className="form-radio text-green-500 h-6 w-6"
+        name="sickness"
+        type="radio"
+        value="Yes"
+      />
+      <span
+        className="ml-4"
+      >
+        Yes
+      </span>
+    </label>
+  </div>
+  <div
+    className="mt-2"
+  >
+    <label
+      className="inline-flex items-center"
+      htmlFor="sa"
+    >
+      <input
+        className="form-radio text-green-500 h-6 w-6"
+        name="sickness"
+        type="radio"
+        value="No"
+      />
+      <span
+        className="ml-4"
+      >
+        No
+      </span>
+    </label>
+  </div>
+</div>
+`;
