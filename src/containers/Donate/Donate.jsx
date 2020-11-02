@@ -13,6 +13,7 @@ function Donate() {
     sickness: '',
     bloodType: '',
     gender: '',
+    city: '',
   };
   const [donor, setDonoe] = useState(data);
   const [step, setstep] = useState(1);
