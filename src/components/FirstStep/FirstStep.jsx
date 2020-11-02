@@ -21,10 +21,10 @@ function FirstStep({ donor, onChange, setStep }) {
     );
   };
   const onClickHandling = () => {
-    const birthday = dateDiff(donor.date);
-    if (donor.weight === 'No' || donor.sickness === 'Yes' || birthday < 18) {
+    const Age = dateDiff(donor.date);
+    if (donor.weight === 'No' || donor.sickness === 'Yes' || Age < 18) {
       history.push('/Cantdonate');
-    } else if (donor.weight !== '' || donor.sickness !== '') {
+    } else if (donor.weight !== '' && donor.sickness !== '' && !Number.isNaN(Age)) {
       setStep(2);
     }
   };
