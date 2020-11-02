@@ -1,14 +1,16 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React from 'react';
 import { PropTypes } from 'prop-types';
+import { useHistory } from 'react-router-dom';
 import Button from '../Button';
 import RadioButton from '../RadioButton';
 import HeaderPharagrph from '../Paragraph';
 import SubHeader from '../SubHeader';
 import Donateparagraph from '../Donateparagraph';
-import Prgress from '../Prgress';
+import Progress from '../Progress';
 
 function FirstStep({ donor, onChange, setStep }) {
+  const history = useHistory();
   const dateDiff = function (date2) {
     const dt1 = new Date(date2);
     const dt2 = new Date();
@@ -20,10 +22,8 @@ function FirstStep({ donor, onChange, setStep }) {
   };
   const onClickHandling = () => {
     const birthday = dateDiff(donor.date);
-    console.log(donor);
-    console.log(birthday);
-    if (donor.weight === 'Yes' || donor.sickness === 'Yes' || birthday < 18) {
-      setStep(4);
+    if (donor.weight === 'No' || donor.sickness === 'Yes' || birthday < 18) {
+      history.push('/Cantdonate');
     } else if (donor.weight !== '' || donor.sickness !== '') {
       setStep(2);
     }
@@ -39,7 +39,7 @@ function FirstStep({ donor, onChange, setStep }) {
         />
       </div>
       <div className="p-6 sm:p-8 md:p-10 border-gray-300 shadow-xl border-2 rounded">
-        <Prgress steps={1} />
+        <Progress steps={1} />
         <SubHeader text="A few questions before we get started" />
         <Donateparagraph text="A few quick questions up front to find out if you can donate blood or not. If you can't donate, don't worry you can help the NHS in other ways." />
         <SubHeader text="All fields marked with * are required" />
@@ -57,7 +57,7 @@ function FirstStep({ donor, onChange, setStep }) {
         <RadioButton
           donor={donor}
           onChange={onChange}
-          radiotext="2 . Do you weigh less than 50kg (7 stone 12lbs)?*"
+          radiotext="2 . Do you weigh more than 50kg (7 stone 12lbs)?*"
           RadioOptions={['Yes', 'No']}
           name="weight"
         />

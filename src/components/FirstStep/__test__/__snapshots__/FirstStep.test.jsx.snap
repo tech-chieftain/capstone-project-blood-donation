@@ -84,7 +84,7 @@ exports[`renders correctly 1`] = `
       <span
         className="text-sm sm:text-base md:text-lg font-medium inline-block mb-2"
       >
-        2 . Do you weigh less than 50kg (7 stone 12lbs)?*
+        2 . Do you weigh more than 50kg (7 stone 12lbs)?*
       </span>
       <div
         className="mt-2"
