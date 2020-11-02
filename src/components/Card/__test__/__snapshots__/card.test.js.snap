@@ -5,7 +5,7 @@ exports[`renders correctly 1`] = `
   className="rounded"
 >
   <div
-    className="flex justify-center w-full h-40"
+    className="flex justify-center"
   >
     <img
       alt="icon"

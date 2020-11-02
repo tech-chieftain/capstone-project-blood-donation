@@ -8,7 +8,7 @@ function Card({ cardImage, cardTitle, cardDesc, orientationText }) {
   };
   return (
     <div className="rounded">
-      <div className="flex justify-center w-full h-40">
+      <div className="flex justify-center">
         <img src={cardImage} alt="icon" />
       </div>
 
