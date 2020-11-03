@@ -2,6 +2,25 @@
 
 exports[`renders correctly 1`] = `
 <div>
-  Home
+  app_name
+   
+  <div
+    className="select"
+  >
+    <select
+      onChange={[Function]}
+    >
+      <option
+        value="en"
+      >
+        English
+      </option>
+      <option
+        value="ar"
+      >
+        عربي
+      </option>
+    </select>
+  </div>
 </div>
 `;
