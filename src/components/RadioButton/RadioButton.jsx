@@ -2,7 +2,7 @@ import React from 'react';
 import { PropTypes } from 'prop-types';
 
 const RadioButton = ({ donor, onChange, radiotext, RadioOptions, name }) => (
-  <div className="block mb-8" value={donor.weight} name={name} onChange={onChange}>
+  <div className="block mb-8" value={donor[name]} name={name} onChange={onChange}>
     <span className="text-sm sm:text-base md:text-lg font-medium inline-block mb-2">
       {radiotext}
     </span>

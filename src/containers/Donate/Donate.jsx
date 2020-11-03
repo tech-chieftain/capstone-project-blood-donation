@@ -16,7 +16,7 @@ function Donate() {
     city: '',
   };
   const [donor, setDonoe] = useState(data);
-  const [step, setstep] = useState(1);
+  const [step, setstep] = useState(3);
   const onChangeHandling = (e) => {
     const { name, value } = e.target;
     setDonoe({
@@ -28,13 +28,24 @@ function Donate() {
     event.preventDefault();
     console.log(donor);
   };
+  const chooseBlood = (value) => {
+    setDonoe({
+      ...donor,
+      bloodType: value,
+    });
+  };
   return (
     <div className=" py-16 sm:py-20 md:py-24 w-11/12 sm:w-10/12 mx-auto">
       {step === 1 ? (
         <FirstStep donor={donor} onChange={onChangeHandling} setStep={setstep} />
       ) : null}
       {step === 2 ? (
-        <SecondStep donor={donor} onChange={onChangeHandling} setStep={setstep} />
+        <SecondStep
+          donor={donor}
+          onChange={onChangeHandling}
+          setStep={setstep}
+          chooseBlood={chooseBlood}
+        />
       ) : null}
       {step === 3 ? (
         <ThirdStep
