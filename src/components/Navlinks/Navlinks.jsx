@@ -1,8 +1,10 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 import Navlink from '../Navlink';
+import { useTranslation } from 'react-i18next';
 
 function NavLinks({ classname, menuClose, classFlag }) {
+  const { t } = useTranslation();
   const classesObject = {
     //  nav link with border at button and white text
     navStyleUnderline:
@@ -13,41 +15,47 @@ function NavLinks({ classname, menuClose, classFlag }) {
   };
 
   return (
-    <ul className={`md:flex  ${classname}   md:w-auto w-full text-start mt-4 md:mt-0`}>
+    <ul
+      className={`md:flex  ${classname}   md:w-auto w-full text-start mt-4 md:mt-0`}
+    >
       <Navlink
         path="/"
         styleName={classesObject.navStyleUnderline}
-        text="Home"
+        text={t('nav.home')}
         menuClose={menuClose}
       />
       <Navlink
         path="/about"
         styleName={classesObject.navStyleUnderline}
-        text="About"
+        text={t('nav.about')}
         menuClose={menuClose}
       />
       <Navlink
         path="/instructions"
         styleName={classesObject.navStyleUnderline}
-        text="Instruction"
+        text={t('nav.instructions')}
         menuClose={menuClose}
       />
       <Navlink
         path="/process"
         styleName={classesObject.navStyleUnderline}
-        text="Process"
+        text={t('nav.process')}
         menuClose={menuClose}
       />
       <Navlink
         path="/search"
         styleName={classesObject.navStyleUnderline}
-        text="Search"
+        text={t('nav.search')}
         menuClose={menuClose}
       />
       <Navlink
         path="/donate"
-        styleName={classFlag ? classesObject.navStyleUnderline : classesObject.navStyleButton}
-        text="Donate"
+        styleName={
+          classFlag
+            ? classesObject.navStyleUnderline
+            : classesObject.navStyleButton
+        }
+        text={t('nav.donate')}
         menuClose={menuClose}
       />
     </ul>
