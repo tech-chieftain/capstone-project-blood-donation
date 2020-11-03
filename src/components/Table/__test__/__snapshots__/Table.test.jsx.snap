@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <table
+    className="border table-auto  min-w-full"
+  >
+    <thead>
+      <tr
+        className="bg-primary"
+      >
+        <th
+          className="border px-4 py-2 text-white leading-4 text-sm tracking-wider text-left"
+        >
+          Name
+        </th>
+        <th
+          className="border px-4 py-2 text-white leading-4 text-sm tracking-wider text-left"
+        >
+          City
+        </th>
+        <th
+          className="border px-4 py-2 text-white leading-4 text-sm tracking-wider text-left"
+        >
+          BloodType
+        </th>
+        <th
+          className="border px-4 py-2 text-white leading-4 text-sm tracking-wider text-left"
+        >
+          Phone
+        </th>
+        <th
+          className="border px-4 py-2 text-white leading-4 text-sm tracking-wider text-left"
+        >
+          Email
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="we-full bg-red"
+      >
+        <td
+          className="border px-4 py-2 lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray"
+        >
+          ali
+        </td>
+        <td
+          className="border px-4 py-2 lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray"
+        >
+          sanaa
+        </td>
+        <td
+          className="border px-4 py-2 lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray"
+        >
+          A+
+        </td>
+        <td
+          className="border px-4 py-2 lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray"
+        >
+          772455696
+        </td>
+        <td
+          className="border px-4 py-2 lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray"
+        >
+          ali@gmail.com
+        </td>
+      </tr>
+      <tr
+        className="w-full bg-gray-200"
+      >
+        <td
+          className="border px-4 py-2 lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray"
+        >
+          mohamed
+        </td>
+        <td
+          className="border px-4 py-2 lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray"
+        >
+          Aden
+        </td>
+        <td
+          className="border px-4 py-2 lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray"
+        >
+          A+
+        </td>
+        <td
+          className="border px-4 py-2 lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray"
+        >
+          772455696
+        </td>
+        <td
+          className="border px-4 py-2 lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray"
+        >
+          mo@gmail.com
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
