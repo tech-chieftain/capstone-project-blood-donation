@@ -1,5 +1,6 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
+import { useTranslation } from 'react-i18next';
 import Button from '../Button';
 import RadioButton from '../RadioButton';
 import HeaderPharagrph from '../Paragraph';
@@ -9,6 +10,7 @@ import Progress from '../Progress';
 import InputSelect from '../InputSelect';
 
 function SecondStep({ donor, onChange, setStep, chooseBlood }) {
+  const { t } = useTranslation();
   const onClickNext = () => {
     if (donor.city !== '' && donor.bloodType !== '') {
       setStep(3);
@@ -46,30 +48,33 @@ function SecondStep({ donor, onChange, setStep, chooseBlood }) {
   return (
     <div>
       <div className="text-primary-100  sm:text-xl md:text-2xl lg:text-3xl pt-1 font-semibold mb-6 ">
-        Great!
+        {t('donate_second_page.great')}
       </div>
       <div className=" w-11/12 xl:w-10/12 mb-6 sm:mb-8 md:mb-12">
         <HeaderPharagrph
-          headerText="It looks like you can join the community to donate."
+          headerText={t('donate_second_page.title')}
           headerFlag={false}
-          paragraphText="Please note that these eligibility questions only cover the most common reasons that people can’t give blood. Our staff will make the final checks as to whether you can donate when you attend your donation session. This ensures we keep both you and patients safe."
+          paragraphText={t('donate_second_page.paragrph')}
           paragraphFlag={false}
         />
       </div>
       <div className="p-6 sm:p-8 md:p-10 border-gray-300 shadow-xl border-2 rounded">
         <Progress steps={2} />
-        <SubHeader text="Finding out more about you" />
-        <Donateparagraph text="Knowing more about you is really important and helps us to prioritise when we might ask you to donate. We only collect the right amount and types of blood to meet hospital demand as we don’t want to waste your donation if it’s not needed right now." />
-        <SubHeader text="All fields marked with * are required" />
+        <SubHeader text={t('donate_second_page.subHeader1')} />
+        <Donateparagraph text={t('donate_second_page.subparagrph')} />
+        <SubHeader text={t('donate_second_page.subHeader2')} />
         <RadioButton
           donor={donor}
           onChange={onChange}
-          radiotext="1. Gender"
-          RadioOptions={['Male', 'Female']}
+          radiotext={t('donate_second_page.male_text')}
+          RadioOptions={[
+            t('donate_second_page.option_male'),
+            t('donate_second_page.option_female'),
+          ]}
           name="gender"
         />
         <div className="text-sm sm:text-base md:text-lg font-medium inline-block mb-4 sm:mb-6">
-          2. Please select blood type (if known)?*
+          {t('donate_second_page.blood_type_text')}
         </div>
         <div className="flex ml-4 flex-wrap mb-8">
           {bloodTypes.map((blood) => (
@@ -88,16 +93,24 @@ function SecondStep({ donor, onChange, setStep, chooseBlood }) {
             donor={donor}
             onChange={onChange}
             name="city"
-            text="3. Please select your city ?*"
+            text={t('donate_second_page.city')}
             options={cities}
           />
         </div>
         <div className="flex  mb-8">
-          <div className="mr-4 sm:mr-8 text-center">
-            <Button text="previous" onclick={onClickPrevious} classFlag />
+          <div className="mx-4 sm:mx-8 text-center">
+            <Button
+              text={t('donate_second_page.button_previous')}
+              onclick={onClickPrevious}
+              classFlag
+            />
           </div>
           <div>
-            <Button text="Next" onclick={onClickNext} classFlag={false} />
+            <Button
+              text={t('donate_second_page.button_next')}
+              onclick={onClickNext}
+              classFlag={false}
+            />
           </div>
         </div>
       </div>

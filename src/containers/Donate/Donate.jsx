@@ -15,11 +15,11 @@ function Donate() {
     gender: '',
     city: '',
   };
-  const [donor, setDonoe] = useState(data);
+  const [donor, setDonor] = useState(data);
   const [step, setstep] = useState(1);
   const onChangeHandling = (e) => {
     const { name, value } = e.target;
-    setDonoe({
+    setDonor({
       ...donor,
       [name]: value,
     });
@@ -28,7 +28,7 @@ function Donate() {
     console.log(donor);
   };
   const chooseBlood = (value) => {
-    setDonoe({
+    setDonor({
       ...donor,
       bloodType: value,
     });

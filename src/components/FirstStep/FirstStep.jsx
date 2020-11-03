@@ -2,6 +2,7 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 import { useHistory } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import Button from '../Button';
 import RadioButton from '../RadioButton';
 import HeaderPharagrph from '../Paragraph';
@@ -10,8 +11,9 @@ import Donateparagraph from '../Donateparagraph';
 import Progress from '../Progress';
 
 function FirstStep({ donor, onChange, setStep }) {
+  const { t } = useTranslation();
   const history = useHistory();
-  const dateDiff = function (date2) {
+  const dateDiff = (date2) => {
     const dt1 = new Date(date2);
     const dt2 = new Date();
     return Math.floor(
@@ -22,7 +24,11 @@ function FirstStep({ donor, onChange, setStep }) {
   };
   const onClickHandling = () => {
     const Age = dateDiff(donor.date);
-    if (donor.weight === 'No' || donor.sickness === 'Yes' || Age < 18) {
+    if (
+      donor.weight === t('donate_first_page.radio_option_no') ||
+      donor.sickness === t('donate_first_page.radio_option_yes') ||
+      Age < 18
+    ) {
       history.push('/Cantdonate');
     } else if (donor.weight !== '' && donor.sickness !== '' && !Number.isNaN(Age)) {
       setStep(2);
@@ -32,19 +38,21 @@ function FirstStep({ donor, onChange, setStep }) {
     <div>
       <div className=" w-11/12 xl:w-10/12 mb-6 sm:mb-8 md:mb-12">
         <HeaderPharagrph
-          headerText="Register your interest in becoming a blood donor."
+          headerText={t('donate_first_page.title')}
           headerFlag={false}
-          paragraphText="Thank you for your interest in saving lives and donating blood. You will be joining a community of blood donors who are called upon when needed by the NHS. We need 5,000 blood donations every day."
+          paragraphText={t('donate_first_page.paragrph')}
           paragraphFlag={false}
         />
       </div>
       <div className="p-6 sm:p-8 md:p-10 border-gray-300 shadow-xl border-2 rounded">
         <Progress steps={1} />
-        <SubHeader text="A few questions before we get started" />
-        <Donateparagraph text="A few quick questions up front to find out if you can donate blood or not. If you can't donate, don't worry you can help the NHS in other ways." />
-        <SubHeader text="All fields marked with * are required" />
+        <SubHeader text={t('donate_first_page.subHeader1')} />
+        <Donateparagraph text={t('donate_first_page.subparagrph')} />
+        <SubHeader text={t('donate_first_page.subHeader2')} />
         <div className=" flex flex-col items-start mb-8">
-          <label className="mb-2 tracking-normal font-medium">1 . Date of birth*</label>
+          <label className="mb-2 tracking-normal font-medium">
+            {t('donate_first_page.birth_text')}
+          </label>
           <input
             id="date"
             className=" mt-4 py-2 px-4 text-sm sm:text-base tracking-normal   border-2 border-gray-300 focus:outline-none bg-white placeholder-gray-800"
@@ -57,18 +65,24 @@ function FirstStep({ donor, onChange, setStep }) {
         <RadioButton
           donor={donor}
           onChange={onChange}
-          radiotext="2 . Do you weigh more than 50kg (7 stone 12lbs)?*"
-          RadioOptions={['Yes', 'No']}
+          radiotext={t('donate_first_page.radio_text1')}
+          RadioOptions={[
+            t('donate_first_page.radio_option_yes'),
+            t('donate_first_page.radio_option_no'),
+          ]}
           name="weight"
         />
         <RadioButton
           donor={donor}
           onChange={onChange}
-          radiotext="3 . Have you ever had a cancer other than basal cell carcinoma or cervical carcinoma insitu (CIN)?*"
-          RadioOptions={['Yes', 'No']}
+          radiotext={t('donate_first_page.radio_text2')}
+          RadioOptions={[
+            t('donate_first_page.radio_option_yes'),
+            t('donate_first_page.radio_option_no'),
+          ]}
           name="sickness"
         />
-        <Button text="Next" onclick={onClickHandling} classFlag={false} />
+        <Button text={t('donate_first_page.button')} onclick={onClickHandling} classFlag={false} />
       </div>
     </div>
   );

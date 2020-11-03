@@ -15,7 +15,7 @@ const RadioButton = ({ donor, onChange, radiotext, RadioOptions, name }) => (
             name={name}
             value={option}
           />
-          <span className="ml-4">{option}</span>
+          <span className="mx-4">{option}</span>
         </label>
       </div>
     ))}

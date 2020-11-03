@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { PropTypes } from 'prop-types';
+import { useTranslation } from 'react-i18next';
 import Button from '../Button';
 import HeaderPharagrph from '../Paragraph';
 import SubHeader from '../SubHeader';
@@ -9,6 +10,7 @@ import InputField from '../InputField';
 import donate from './images/donate.svg';
 
 function ThirdStep({ donor, onChange, setStep, onRegister }) {
+  const { t } = useTranslation();
   const [agree, setAgree] = useState(false);
   const onClickNext = () => {
     if (donor.name !== '' && donor.email !== '' && donor.phone !== '' && agree) {
@@ -22,23 +24,23 @@ function ThirdStep({ donor, onChange, setStep, onRegister }) {
     <div>
       <div className=" w-11/12 xl:w-10/12 mb-6 sm:mb-8 md:mb-12">
         <HeaderPharagrph
-          headerText="We needs people like you."
+          headerText={t('donate_third_page.title')}
           headerFlag={false}
-          paragraphText="Male donors are particularly needed because they can donate more frequently and have higher iron levels."
+          paragraphText={t('donate_third_page.paragrph')}
           paragraphFlag={false}
         />
       </div>
       <div className="p-6 sm:p-8 md:p-10 border-gray-300 shadow-xl border-2 rounded">
         <Progress steps={3} />
-        <SubHeader text="Personal Information" />
-        <Donateparagraph text="We just need a little more information about you, to help us finish this stage and contact you about the next steps." />
+        <SubHeader text={t('donate_third_page.subHeader1')} />
+        <Donateparagraph text={t('donate_third_page.subparagrph')} />
         <div className="flex items-start ">
           <div className="w-9/12 md:flex-1 ">
-            <SubHeader text="All fields marked with * are required" />
+            <SubHeader text={t('donate_first_page.subHeader2')} />
             <div className="mb-8 md:mb-16">
               <InputField
-                labelText="Name*"
-                placeholder="Enter your name"
+                labelText={t('donate_third_page.name')}
+                placeholder={t('donate_third_page.name_placeholder')}
                 onChange={onChange}
                 inputValue={donor.name}
                 inputName="name"
@@ -47,8 +49,8 @@ function ThirdStep({ donor, onChange, setStep, onRegister }) {
             </div>
             <div className="mb-8 md:mb-16">
               <InputField
-                labelText="Phone *"
-                placeholder="Enter your phone numbre"
+                labelText={t('donate_third_page.phone')}
+                placeholder={t('donate_third_page.phone_placeholder')}
                 onChange={onChange}
                 inputValue={donor.phone}
                 inputName="phone"
@@ -57,8 +59,8 @@ function ThirdStep({ donor, onChange, setStep, onRegister }) {
             </div>
             <div className="mb-8  md:mb-16">
               <InputField
-                labelText="Email*"
-                placeholder="Enter your email"
+                labelText={t('donate_third_page.email')}
+                placeholder={t('donate_third_page.email_placeholder')}
                 onChange={onChange}
                 inputValue={donor.email}
                 inputName="email"
@@ -74,8 +76,8 @@ function ThirdStep({ donor, onChange, setStep, onRegister }) {
                   checked={agree}
                   onChange={(e) => setAgree(e.target.checked)}
                 />
-                <span className="ml-2 text-sm sm:text-base md:text-lg">
-                  agree to be there on these conditions
+                <span className="mx-2 text-sm sm:text-base md:text-lg">
+                  {t('donate_third_page.agree')}
                 </span>
               </label>
             </div>
@@ -91,11 +93,19 @@ function ThirdStep({ donor, onChange, setStep, onRegister }) {
         </div>
 
         <div className="flex  mb-8">
-          <div className="mr-4 sm:mr-8 text-center">
-            <Button text="previous" onclick={onClickPrevious} classFlag />
+          <div className="mx-4 sm:mx-8 text-center">
+            <Button
+              text={t('donate_third_page.button_previous')}
+              onclick={onClickPrevious}
+              classFlag
+            />
           </div>
           <div>
-            <Button text="Register" onclick={onClickNext} classFlag={false} />
+            <Button
+              text={t('donate_third_page.button_next')}
+              onclick={onClickNext}
+              classFlag={false}
+            />
           </div>
         </div>
       </div>
