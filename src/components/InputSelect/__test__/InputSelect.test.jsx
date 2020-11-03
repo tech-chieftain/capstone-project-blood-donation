@@ -8,11 +8,21 @@ it('renders correctly', () => {
   const tree = renderer
     .create(
       <InputSelect
-        placeholder="Name"
-        onChange={() => console.log('send')}
-        inputValue="name"
-        inputName="name"
-        Inputtype="text"
+        donor={{
+          name: '',
+          email: '',
+          phone: '',
+          date: '',
+          weight: '',
+          sickness: '',
+          bloodType: '',
+          gender: '',
+          city: '',
+        }}
+        onChange={() => console.log('donate')}
+        name="city"
+        text="3. Please select your city ?*"
+        options={['Abyan', 'Aden', 'Al Mahrah', 'Hadramaut', 'Lahij']}
       />
     )
     .toJSON();

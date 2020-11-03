@@ -11,7 +11,6 @@ import InputSelect from '../InputSelect';
 function SecondStep({ donor, onChange, setStep, chooseBlood }) {
   const onClickNext = () => {
     if (donor.city !== '' && donor.bloodType !== '') {
-      console.log(donor);
       setStep(3);
     }
   };

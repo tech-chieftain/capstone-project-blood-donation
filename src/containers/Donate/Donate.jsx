@@ -16,7 +16,7 @@ function Donate() {
     city: '',
   };
   const [donor, setDonoe] = useState(data);
-  const [step, setstep] = useState(3);
+  const [step, setstep] = useState(1);
   const onChangeHandling = (e) => {
     const { name, value } = e.target;
     setDonoe({
@@ -24,8 +24,7 @@ function Donate() {
       [name]: value,
     });
   };
-  const onClickHandling = (event) => {
-    event.preventDefault();
+  const onClickHandling = () => {
     console.log(donor);
   };
   const chooseBlood = (value) => {
@@ -52,7 +51,7 @@ function Donate() {
           donor={donor}
           onChange={onChangeHandling}
           setStep={setstep}
-          onClickHandling={onClickHandling}
+          onRegister={onClickHandling}
         />
       ) : null}
     </div>
