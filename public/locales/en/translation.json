@@ -7,5 +7,11 @@
     "process": "Process",
     "search": "Search",
     "donate": "Donate"
+  },
+  "dontDonate":{
+    "header":"We are sorry but you are unable to donate.",
+    "firstParagraph":"We really appreciate your support but unfortunately you will not be able to donate.",
+    "secondParagraph":" We realise this can be disappointing but we thank you for coming forward today.",
+    "thirdParagraph":" Ask your friends and family to join the blood donor community"
   }
 }
