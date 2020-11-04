@@ -57,7 +57,9 @@ function SecondStep({ donor, onChange, setStep, chooseBlood, city }) {
             <button
               type="button"
               key={blood}
-              className=" py-2 px-2 sm:py-2 sm:px-4 lg:py-4 lg:px-8 border-2 border-gray-400 hover:bg-primary hover:text-white hover:border-primary text-sm sm:textt-base md:text-lg"
+              className={`${
+                donor.bloodType === blood ? 'bg-primary text-white' : ''
+              } py-2 px-2 sm:py-2 sm:px-4 lg:py-4 lg:px-8 border-2 rounded-none border-gray-400 hover:bg-primary hover:text-white hover:border-primary text-sm sm:textt-base md:text-lg`}
               onClick={() => chooseBlood(blood)}
             >
               {blood}

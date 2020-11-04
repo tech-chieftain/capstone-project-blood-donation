@@ -127,70 +127,70 @@ exports[`renders correctly 1`] = `
       className="flex ml-4 flex-wrap mb-8"
     >
       <button
-        className=" py-2 px-2 sm:py-2 sm:px-4 lg:py-4 lg:px-8 border-2 border-gray-400 hover:bg-primary hover:text-white hover:border-primary text-sm sm:textt-base md:text-lg"
+        className=" py-2 px-2 sm:py-2 sm:px-4 lg:py-4 lg:px-8 border-2 rounded-none border-gray-400 hover:bg-primary hover:text-white hover:border-primary text-sm sm:textt-base md:text-lg"
         onClick={[Function]}
         type="button"
       >
         b
       </button>
       <button
-        className=" py-2 px-2 sm:py-2 sm:px-4 lg:py-4 lg:px-8 border-2 border-gray-400 hover:bg-primary hover:text-white hover:border-primary text-sm sm:textt-base md:text-lg"
+        className=" py-2 px-2 sm:py-2 sm:px-4 lg:py-4 lg:px-8 border-2 rounded-none border-gray-400 hover:bg-primary hover:text-white hover:border-primary text-sm sm:textt-base md:text-lg"
         onClick={[Function]}
         type="button"
       >
         l
       </button>
       <button
-        className=" py-2 px-2 sm:py-2 sm:px-4 lg:py-4 lg:px-8 border-2 border-gray-400 hover:bg-primary hover:text-white hover:border-primary text-sm sm:textt-base md:text-lg"
+        className=" py-2 px-2 sm:py-2 sm:px-4 lg:py-4 lg:px-8 border-2 rounded-none border-gray-400 hover:bg-primary hover:text-white hover:border-primary text-sm sm:textt-base md:text-lg"
         onClick={[Function]}
         type="button"
       >
         o
       </button>
       <button
-        className=" py-2 px-2 sm:py-2 sm:px-4 lg:py-4 lg:px-8 border-2 border-gray-400 hover:bg-primary hover:text-white hover:border-primary text-sm sm:textt-base md:text-lg"
+        className=" py-2 px-2 sm:py-2 sm:px-4 lg:py-4 lg:px-8 border-2 rounded-none border-gray-400 hover:bg-primary hover:text-white hover:border-primary text-sm sm:textt-base md:text-lg"
         onClick={[Function]}
         type="button"
       >
         o
       </button>
       <button
-        className=" py-2 px-2 sm:py-2 sm:px-4 lg:py-4 lg:px-8 border-2 border-gray-400 hover:bg-primary hover:text-white hover:border-primary text-sm sm:textt-base md:text-lg"
+        className=" py-2 px-2 sm:py-2 sm:px-4 lg:py-4 lg:px-8 border-2 rounded-none border-gray-400 hover:bg-primary hover:text-white hover:border-primary text-sm sm:textt-base md:text-lg"
         onClick={[Function]}
         type="button"
       >
         d
       </button>
       <button
-        className=" py-2 px-2 sm:py-2 sm:px-4 lg:py-4 lg:px-8 border-2 border-gray-400 hover:bg-primary hover:text-white hover:border-primary text-sm sm:textt-base md:text-lg"
+        className=" py-2 px-2 sm:py-2 sm:px-4 lg:py-4 lg:px-8 border-2 rounded-none border-gray-400 hover:bg-primary hover:text-white hover:border-primary text-sm sm:textt-base md:text-lg"
         onClick={[Function]}
         type="button"
       >
         T
       </button>
       <button
-        className=" py-2 px-2 sm:py-2 sm:px-4 lg:py-4 lg:px-8 border-2 border-gray-400 hover:bg-primary hover:text-white hover:border-primary text-sm sm:textt-base md:text-lg"
+        className=" py-2 px-2 sm:py-2 sm:px-4 lg:py-4 lg:px-8 border-2 rounded-none border-gray-400 hover:bg-primary hover:text-white hover:border-primary text-sm sm:textt-base md:text-lg"
         onClick={[Function]}
         type="button"
       >
         y
       </button>
       <button
-        className=" py-2 px-2 sm:py-2 sm:px-4 lg:py-4 lg:px-8 border-2 border-gray-400 hover:bg-primary hover:text-white hover:border-primary text-sm sm:textt-base md:text-lg"
+        className=" py-2 px-2 sm:py-2 sm:px-4 lg:py-4 lg:px-8 border-2 rounded-none border-gray-400 hover:bg-primary hover:text-white hover:border-primary text-sm sm:textt-base md:text-lg"
         onClick={[Function]}
         type="button"
       >
         p
       </button>
       <button
-        className=" py-2 px-2 sm:py-2 sm:px-4 lg:py-4 lg:px-8 border-2 border-gray-400 hover:bg-primary hover:text-white hover:border-primary text-sm sm:textt-base md:text-lg"
+        className=" py-2 px-2 sm:py-2 sm:px-4 lg:py-4 lg:px-8 border-2 rounded-none border-gray-400 hover:bg-primary hover:text-white hover:border-primary text-sm sm:textt-base md:text-lg"
         onClick={[Function]}
         type="button"
       >
         e
       </button>
       <button
-        className=" py-2 px-2 sm:py-2 sm:px-4 lg:py-4 lg:px-8 border-2 border-gray-400 hover:bg-primary hover:text-white hover:border-primary text-sm sm:textt-base md:text-lg"
+        className=" py-2 px-2 sm:py-2 sm:px-4 lg:py-4 lg:px-8 border-2 rounded-none border-gray-400 hover:bg-primary hover:text-white hover:border-primary text-sm sm:textt-base md:text-lg"
         onClick={[Function]}
         type="button"
       >
