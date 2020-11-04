@@ -9,7 +9,7 @@ import Donateparagraph from '../Donateparagraph';
 import Progress from '../Progress';
 import InputSelect from '../InputSelect';
 
-function SecondStep({ donor, onChange, setStep, chooseBlood }) {
+function SecondStep({ donor, onChange, setStep, chooseBlood, city }) {
   const { t } = useTranslation();
   const onClickNext = () => {
     if (donor.city !== '' && donor.bloodType !== '') {
@@ -19,32 +19,8 @@ function SecondStep({ donor, onChange, setStep, chooseBlood }) {
   const onClickPrevious = () => {
     setStep(1);
   };
-  const bloodTypes = ['O-', 'O+', ' B-', 'B+', ' A-', 'A+', 'AB-', 'AB+'];
-  const cities = [
-    'Abyan',
-    'Aden',
-    'Al Mahrah',
-    'Hadramaut',
-    'Lahij',
-    'Shabwah',
-    'Dhale',
-    'AmranAl',
-    'Bayda',
-    'Al HudaydahAl',
-    'Jawf',
-    'Al Mahwit',
-    'Amanat',
-    'Al Asimah',
-    'Dhamar',
-    'Hajjah',
-    'Ibb',
-    "Ma'rib",
-    'Raymah',
-    'Saada',
-    "Sana'a",
-    'Taiz',
-    'Socotra',
-  ];
+  const bloodTypes = Array.from(t('bloodTypes', { returnObjects: true }));
+  const cities =Array.from(t('cities', { returnObjects: true }));
   return (
     <div>
       <div className="text-primary-100  sm:text-xl md:text-2xl lg:text-3xl pt-1 font-semibold mb-6 ">
@@ -81,7 +57,7 @@ function SecondStep({ donor, onChange, setStep, chooseBlood }) {
             <button
               type="button"
               key={blood}
-              className=" py-2 px-2 sm:py-2 sm:px-4 lg:py-4 lg:px-8 border-2 border-gray-400 hover:bg-primary hover:text-white hover:border-primary visited:text-gray-100 text-sm sm:textt-base md:text-lg"
+              className=" py-2 px-2 sm:py-2 sm:px-4 lg:py-4 lg:px-8 border-2 border-gray-400 hover:bg-primary hover:text-white hover:border-primary text-sm sm:textt-base md:text-lg"
               onClick={() => chooseBlood(blood)}
             >
               {blood}
@@ -90,7 +66,7 @@ function SecondStep({ donor, onChange, setStep, chooseBlood }) {
         </div>
         <div className="w-8/12 sm:w-6/12 lg:w-4/12">
           <InputSelect
-            donor={donor}
+            city={city}
             onChange={onChange}
             name="city"
             text={t('donate_second_page.city')}
@@ -119,6 +95,7 @@ function SecondStep({ donor, onChange, setStep, chooseBlood }) {
 }
 SecondStep.propTypes = {
   donor: PropTypes.object.isRequired,
+  city: PropTypes.string.isRequired,
   setStep: PropTypes.func.isRequired,
   onChange: PropTypes.func.isRequired,
   chooseBlood: PropTypes.func.isRequired,

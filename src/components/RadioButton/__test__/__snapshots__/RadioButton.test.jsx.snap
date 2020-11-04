@@ -21,12 +21,13 @@ exports[`renders correctly 1`] = `
     >
       <input
         className="form-radio text-green-500 h-6 w-6"
+        defaultChecked={false}
         name="sickness"
         type="radio"
         value="Yes"
       />
       <span
-        className="ml-4"
+        className="mx-4"
       >
         Yes
       </span>
@@ -41,12 +42,13 @@ exports[`renders correctly 1`] = `
     >
       <input
         className="form-radio text-green-500 h-6 w-6"
+        defaultChecked={false}
         name="sickness"
         type="radio"
         value="No"
       />
       <span
-        className="ml-4"
+        className="mx-4"
       >
         No
       </span>

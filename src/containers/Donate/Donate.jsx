@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { addDonor } from '../../Utilities/FirebaseUtilities';
 import FirstStep from '../../components/FirstStep';
 import SecondStep from '../../components/SecondStep';
 import ThirdStep from '../../components/ThirdStep';
+import FourthStep from '../../components/FourthStep';
 
 function Donate() {
   const data = {
@@ -15,17 +18,32 @@ function Donate() {
     gender: '',
     city: '',
   };
+  const { t, i18n } = useTranslation();
   const [donor, setDonor] = useState(data);
   const [step, setstep] = useState(1);
+  const [city, setcity] = useState('');
   const onChangeHandling = (e) => {
     const { name, value } = e.target;
-    setDonor({
-      ...donor,
-      [name]: value,
-    });
+    // if the languge is arabic and the name is of the property is city then take the arabic word
+    if (i18n.language === 'ar' && name === 'city') {
+      const cities = t('cities', { returnObjects: true });
+      const index = cities.indexOf(value);
+      const citiesEnglish = t('cities', { lng: 'en', returnObjects: true });
+      setDonor({
+        ...donor,
+        [name]: citiesEnglish[index],
+      });
+    } else {
+      setDonor({
+        ...donor,
+        [name]: value,
+      });
+    }
+    setcity(value);
   };
   const onClickHandling = () => {
-    console.log(donor);
+    addDonor(donor);
+    setstep(4);
   };
   const chooseBlood = (value) => {
     setDonor({
@@ -44,6 +62,7 @@ function Donate() {
           onChange={onChangeHandling}
           setStep={setstep}
           chooseBlood={chooseBlood}
+          city={city}
         />
       ) : null}
       {step === 3 ? (
@@ -54,6 +73,7 @@ function Donate() {
           onRegister={onClickHandling}
         />
       ) : null}
+      {step === 4 ? <FourthStep /> : null}
     </div>
   );
 }

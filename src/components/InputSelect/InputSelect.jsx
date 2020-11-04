@@ -1,7 +1,7 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 
-function InputSelect({ donor, text, onChange, name, options }) {
+function InputSelect({ city, text, onChange, name, options }) {
   return (
     <div className="mb-4 sm:mb-6">
       <label htmlFor="nowhere" className="block">
@@ -10,7 +10,7 @@ function InputSelect({ donor, text, onChange, name, options }) {
         </div>
         <select
           className="form-select block w-full border-gray-300 border-2 py-2 px-4 text-sm sm:text-base md:text-lg "
-          value={donor[name]}
+          value={city}
           name={name}
           onChange={onChange}
           onBlur={onChange}
@@ -25,7 +25,7 @@ function InputSelect({ donor, text, onChange, name, options }) {
 }
 
 InputSelect.propTypes = {
-  donor: PropTypes.object.isRequired,
+  city: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   options: PropTypes.array.isRequired,

@@ -48,8 +48,37 @@
     "name_placeholder": "Enter your name",
     "phone_placeholder": "Enter your phone",
     "email_placeholder": "Enter your email",
-    "agree": "I have read and accept the terms and conditions of the Blood Donor  Service",
+    "agree": "I have read and accept the terms and conditions of ",
+    "terms": " the Blood Donor  Service",
     "button_next": "Register",
     "button_previous": "Previous"
-  }
+  },
+  "donate_fourth_page": {
+    "title": "You have been added to the donation list",
+    "paragrph": "We would like to thank you for your supporting and becoming part of the blood donation . "
+  },
+  "cities": [
+    "Abyan",
+    "Aden",
+    "Al Mahrah",
+    "Hadramaut",
+    "Lahij",
+    "Shabwah",
+    "Dhale",
+    "Amran",
+    "Al Bayda",
+    "Al Hudaydah",
+    "Al Jawf",
+    "Al Mahwit",
+    "Dhamar",
+    "Hajjah",
+    "Ibb",
+    "Ma'rib",
+    "Raymah",
+    "Saada",
+    "Sana'a",
+    "Taiz",
+    "Socotra"
+  ],
+  "bloodTypes": ["O-", "O+", " B-", "B+", " A-", "A+", "AB-", "AB+"]
 }

@@ -21,6 +21,7 @@ it('renders correctly', () => {
         onChange={() => console.log('donate')}
         setStep={() => console.log('donate')}
         chooseBlood={() => console.log('donate')}
+        city="Sanaa"
       />
     )
     .toJSON();

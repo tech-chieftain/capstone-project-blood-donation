@@ -68,16 +68,23 @@ function ThirdStep({ donor, onChange, setStep, onRegister }) {
               />
             </div>
             <div>
-              <label htmlFor="check" className="inline-flex items-center">
+              <label htmlFor="check" className="inline-flex items-start">
                 <input
                   type="checkbox"
-                  className="form-checkbox h-4 w-4 "
+                  className="form-checkbox h-6 w-6 "
                   name="agree"
                   checked={agree}
                   onChange={(e) => setAgree(e.target.checked)}
                 />
-                <span className="mx-2 text-sm sm:text-base md:text-lg">
-                  {t('donate_third_page.agree')}
+                <span className="mx-2 text-sm sm:text-base ">
+                  {t('donate_third_page.agree')}{' '}
+                  <a
+                    href="www.facebook.com"
+                    target="_blank"
+                    className="border-b-2  border-primary text-sm sm:text-base  text-primary"
+                  >
+                    {t('donate_third_page.terms')}
+                  </a>
                 </span>
               </label>
             </div>

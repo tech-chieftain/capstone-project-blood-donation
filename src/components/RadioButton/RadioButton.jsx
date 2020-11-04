@@ -14,6 +14,7 @@ const RadioButton = ({ donor, onChange, radiotext, RadioOptions, name }) => (
             className="form-radio text-green-500 h-6 w-6"
             name={name}
             value={option}
+            defaultChecked={donor[name] === option}
           />
           <span className="mx-4">{option}</span>
         </label>
