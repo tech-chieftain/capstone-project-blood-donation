@@ -10,6 +10,8 @@
   },
   "ready_donate":{
     "header":"Ready to Donate?",
-    "text":"It does not make much time and every donation has the power to save up to three lives"
+    "text":"It does not make much time and every donation has the power to save up to three lives",
+    "button":"Donate"
   }
 }
+

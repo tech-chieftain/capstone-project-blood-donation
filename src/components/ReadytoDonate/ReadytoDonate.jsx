@@ -9,14 +9,10 @@ function ReadytoDonate({ header, text }) {
   const { t } = useTranslation();
   return (
     <div>
-      <div className="text-black text-lg sm:text-xl md:text-2xl font-semibold">
-        {t('ready_donate.header')}
-      </div>
-      <div className="text-black w-6/12 text-sm sm:text-base md:text-lg tracking-wide leading-wide">
-        {t('ready_donate.text')}
-      </div>
+      <div className="text-black text-lg sm:text-xl md:text-2xl font-semibold">{header}</div> 
+      <div className="text-black w-6/12 text-sm sm:text-base md:text-lg tracking-wide leading-wide">{text}</div>
       <div>
-        <Button text="Donate" onclick={() => history.push('./Donate')} />
+        <Button text={t('ready_donate.button')} onclick={() => history.push('./Donate')} />
       </div>
     </div>
   );

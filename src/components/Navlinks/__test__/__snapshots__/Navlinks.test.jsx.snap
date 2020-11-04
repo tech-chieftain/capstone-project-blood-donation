@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <ul
-  className="md:flex  hidden   md:w-auto w-full text-start mt-6 md:mt-0"
+  className="md:flex  hidden   md:w-auto w-full text-start mt-4 md:mt-0"
 >
   <li>
     <a
@@ -10,7 +10,7 @@ exports[`renders correctly 1`] = `
       href="/"
       onClick={[Function]}
     >
-      Home
+      nav.home
     </a>
   </li>
   <li>
@@ -19,7 +19,7 @@ exports[`renders correctly 1`] = `
       href="/about"
       onClick={[Function]}
     >
-      About
+      nav.about
     </a>
   </li>
   <li>
@@ -28,7 +28,7 @@ exports[`renders correctly 1`] = `
       href="/instructions"
       onClick={[Function]}
     >
-      Instruction
+      nav.instructions
     </a>
   </li>
   <li>
@@ -37,7 +37,7 @@ exports[`renders correctly 1`] = `
       href="/process"
       onClick={[Function]}
     >
-      Process
+      nav.process
     </a>
   </li>
   <li>
@@ -46,7 +46,7 @@ exports[`renders correctly 1`] = `
       href="/search"
       onClick={[Function]}
     >
-      Search
+      nav.search
     </a>
   </li>
   <li>
@@ -55,7 +55,7 @@ exports[`renders correctly 1`] = `
       href="/donate"
       onClick={[Function]}
     >
-      Donate
+      nav.donate
     </a>
   </li>
 </ul>

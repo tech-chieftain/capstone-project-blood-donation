@@ -16,6 +16,6 @@ NavLink.propTypes = {
   text: PropTypes.string.isRequired,
   styleName: PropTypes.string.isRequired,
   path: PropTypes.string.isRequired,
-  menuClose: PropTypes.func.isRequired,
+  menuClose: PropTypes.func,
 };
 export default NavLink;
