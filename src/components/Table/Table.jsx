@@ -5,7 +5,7 @@ function Table() {
         grayColor: 'w-full bg-gray-200',
         whiteColor: 'we-full bg-red',
         ceilClass: 'border px-4 py-2 lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray',
-         headerStyle:'border px-4 py-2 text-white leading-4 text-sm tracking-wider text-left'
+        headerStyle:'border px-4 py-2 text-white leading-4 text-sm tracking-wider text-left'
     }
   
         const donors = [
@@ -49,7 +49,7 @@ function Table() {
           <tr className="bg-primary">
             <th className={StylesClass.headerStyle}>Name</th>
             <th className={StylesClass.headerStyle}>City</th>
-            <th className={StylesClass.headerStyle}>BloodType</th>
+            <th className={StylesClass.headerStyle}>Blood Type</th>
             <th className={StylesClass.headerStyle}>Phone</th>
             <th className={StylesClass.headerStyle}>Email</th>
           </tr>
