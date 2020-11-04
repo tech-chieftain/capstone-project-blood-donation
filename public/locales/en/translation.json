@@ -1,0 +1,11 @@
+{
+  "app_name": "Blood Donation",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "instructions": "Instructions",
+    "process": "Process",
+    "search": "Search",
+    "donate": "Donate"
+  }
+}
