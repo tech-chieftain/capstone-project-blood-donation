@@ -7,5 +7,12 @@
     "process": "Process",
     "search": "Search",
     "donate": "Donate"
+  },
+  "table":{
+    "name":"Donor Name",
+    "bloodType":"Blood Type",
+    "city":"City",
+    "phone":"Phone Number",
+    "email":"Email Address"
   }
 }
