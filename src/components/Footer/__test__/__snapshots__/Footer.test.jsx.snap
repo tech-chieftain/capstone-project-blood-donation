@@ -27,7 +27,7 @@ exports[`renders correctly 1`] = `
       <p
         className="text-white text-center mb-2"
       >
-        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit
+        footer_text
       </p>
     </div>
     <div>
