@@ -40,7 +40,7 @@ exports[`renders correctly 1`] = `
         href="/"
         onClick={[Function]}
       >
-        Home
+        nav.home
       </a>
     </li>
     <li>
@@ -49,7 +49,7 @@ exports[`renders correctly 1`] = `
         href="/about"
         onClick={[Function]}
       >
-        About
+        nav.about
       </a>
     </li>
     <li>
@@ -58,7 +58,7 @@ exports[`renders correctly 1`] = `
         href="/instructions"
         onClick={[Function]}
       >
-        Instruction
+        nav.instructions
       </a>
     </li>
     <li>
@@ -67,7 +67,7 @@ exports[`renders correctly 1`] = `
         href="/process"
         onClick={[Function]}
       >
-        Process
+        nav.process
       </a>
     </li>
     <li>
@@ -76,7 +76,7 @@ exports[`renders correctly 1`] = `
         href="/search"
         onClick={[Function]}
       >
-        Search
+        nav.search
       </a>
     </li>
     <li>
@@ -85,7 +85,7 @@ exports[`renders correctly 1`] = `
         href="/donate"
         onClick={[Function]}
       >
-        Donate
+        nav.donate
       </a>
     </li>
   </ul>
