@@ -10,29 +10,29 @@ exports[`renders correctly 1`] = `
         className="bg-primary"
       >
         <th
-          className="border px-4 py-2 text-white leading-4 text-sm tracking-wider text-left"
+          className="border px-4 py-2 text-white text-center leading-4 text-sm tracking-wider text-left"
         >
-          Name
+          table.name
         </th>
         <th
-          className="border px-4 py-2 text-white leading-4 text-sm tracking-wider text-left"
+          className="border px-4 py-2 text-white text-center leading-4 text-sm tracking-wider text-left"
         >
-          City
+          table.bloodType
         </th>
         <th
-          className="border px-4 py-2 text-white leading-4 text-sm tracking-wider text-left"
+          className="border px-4 py-2 text-white text-center leading-4 text-sm tracking-wider text-left"
         >
-          BloodType
+          table.city
         </th>
         <th
-          className="border px-4 py-2 text-white leading-4 text-sm tracking-wider text-left"
+          className="border px-4 py-2 text-white text-center leading-4 text-sm tracking-wider text-left"
         >
-          Phone
+          table.phone
         </th>
         <th
-          className="border px-4 py-2 text-white leading-4 text-sm tracking-wider text-left"
+          className="border px-4 py-2 text-white text-center leading-4 text-sm tracking-wider text-left"
         >
-          Email
+          table.email
         </th>
       </tr>
     </thead>
@@ -41,27 +41,27 @@ exports[`renders correctly 1`] = `
         className="we-full bg-red"
       >
         <td
-          className="border px-4 py-2 lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray"
+          className="border px-4 py-2 text-center lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray"
         >
           ali
         </td>
         <td
-          className="border px-4 py-2 lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray"
-        >
-          sanaa
-        </td>
-        <td
-          className="border px-4 py-2 lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray"
+          className="border px-4 py-2 text-center lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray"
         >
           A+
         </td>
         <td
-          className="border px-4 py-2 lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray"
+          className="border px-4 py-2 text-center lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray"
+        >
+          sanaa
+        </td>
+        <td
+          className="border px-4 py-2 text-center lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray"
         >
           772455696
         </td>
         <td
-          className="border px-4 py-2 lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray"
+          className="border px-4 py-2 text-center lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray"
         >
           ali@gmail.com
         </td>
@@ -70,27 +70,27 @@ exports[`renders correctly 1`] = `
         className="w-full bg-gray-200"
       >
         <td
-          className="border px-4 py-2 lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray"
+          className="border px-4 py-2 text-center lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray"
         >
           mohamed
         </td>
         <td
-          className="border px-4 py-2 lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray"
-        >
-          Aden
-        </td>
-        <td
-          className="border px-4 py-2 lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray"
+          className="border px-4 py-2 text-center lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray"
         >
           A+
         </td>
         <td
-          className="border px-4 py-2 lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray"
+          className="border px-4 py-2 text-center lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray"
+        >
+          Aden
+        </td>
+        <td
+          className="border px-4 py-2 text-center lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray"
         >
           772455696
         </td>
         <td
-          className="border px-4 py-2 lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray"
+          className="border px-4 py-2 text-center lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray"
         >
           mo@gmail.com
         </td>
