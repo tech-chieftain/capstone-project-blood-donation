@@ -16,7 +16,7 @@ exports[`renders correctly 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Donate
+      ready_donate.button
     </button>
   </div>
 </div>
