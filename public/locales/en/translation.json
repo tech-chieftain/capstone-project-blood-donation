@@ -1,0 +1,15 @@
+{
+  "app_name": "Blood Donation",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "instructions": "Instructions",
+    "process": "Process",
+    "search": "Search",
+    "donate": "Donate"
+  },
+  "ready_donate":{
+    "header":"Ready to Donate?",
+    "text":"It does not make much time and every donation has the power to save up to three lives"
+  }
+}
