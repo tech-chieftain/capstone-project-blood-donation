@@ -1,6 +1,6 @@
 import React from 'react';
-import image from './images/doctor-office-and-blood-donation-design-vector-22887400.jpg';
 import { useTranslation } from 'react-i18next';
+import image from './images/doctor-office-and-blood-donation-design-vector-22887400.jpg';
 
 function DontDonate() {
   const { t } = useTranslation();
