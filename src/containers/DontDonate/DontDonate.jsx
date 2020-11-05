@@ -12,10 +12,10 @@ function DontDonate() {
   return (
     <div className="flex">
       <div className="  sm:w-full  md:w-full lg:w-6/12 p-10  ">
-        <h1 className={styleClass.headerStyle } >{t('dontDonate.header')} </h1>
-        <p className={styleClass.paragrphStyle} >
-          <br /> {t('dontDonate.firstParagraph')}<br />
-          <br /> {t('dontDonate.secondParagraph')}<br />
+        <h1 className={styleClass.headerStyle}>{t('dontDonate.header')} </h1>
+        <p className={styleClass.paragrphStyle}>
+          <br /> {t('dontDonate.firstParagraph')} <br />
+          <br /> {t('dontDonate.secondParagraph')} <br />
           <br />
           {t('dontDonate.thirdParagraph')}
         </p>
