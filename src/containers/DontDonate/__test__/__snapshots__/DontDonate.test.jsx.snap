@@ -19,10 +19,12 @@ exports[`renders correctly 1`] = `
       <br />
        
       dontDonate.firstParagraph
+       
       <br />
       <br />
        
       dontDonate.secondParagraph
+       
       <br />
       <br />
       dontDonate.thirdParagraph
