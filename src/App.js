@@ -28,7 +28,7 @@ function App() {
         <Route path="/Process" component={Process} />
         <Route path="/Search" component={Search} />
         <Route path="/Donate" component={Donate} />
-        <Route path="/Dontdonate" component={DontDonate} />
+        <Route path="/Cantdonate" component={DontDonate} />
       </Switch>
       <Footer />
     </Router>
