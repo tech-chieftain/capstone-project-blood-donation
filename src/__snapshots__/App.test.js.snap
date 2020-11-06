@@ -112,6 +112,288 @@ Array [
         </option>
       </select>
     </div>
+    <div
+      className="flex w-100  h-screen bg-no-repeat bg-cover"
+      style={
+        Object {
+          "backgroundImage": "linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(HeroImage.png)",
+        }
+      }
+    >
+      <div
+        className=" py-4 px-4 md:px-8 flex-col justify-between flex-wrap my-auto"
+      >
+        <p
+          className="text-white leading-normal tracking-normal text-xl md:text-4xl	"
+        >
+          HomePage.HeroTitle
+        </p>
+        <button
+          className="inline-block text-primary-100 text-base md:text-lg  text-center md:font-medium bg-white  md:mt-8 mt-4 px-8 md:px-12 lg:px-16 py-1 lg:py-2  shadow-md transition duration-500 ease-in-out transform hover:scale-95"
+          onClick={[Function]}
+          type="button"
+        >
+          Donate
+        </button>
+      </div>
+    </div>
+    <div
+      className="py-4 px-4 md:px-8 flex-col justify-between"
+    >
+      <div>
+        <h1
+          className="text-primary-100  sm:text-xl md:text-2xl lg:text-3xl pt-1 font-semibold  text-center"
+        >
+          HomePage.DonateOverviewTitle
+        </h1>
+        <p
+          className=" pt-3 pb-5  sm:text-sm md:text-base lg:text-lg  text-center "
+        >
+          HomePage.DonateOverviewDecs
+        </p>
+      </div>
+      <div>
+        <h1
+          className="text-primary-100  sm:text-xl md:text-2xl lg:text-3xl pt-1 font-semibold  text-center"
+        >
+          HomePage.DonateProcessTitle
+        </h1>
+        <p
+          className=" pt-3 pb-5  sm:text-sm md:text-base lg:text-lg  text-center "
+        >
+          HomePage.DonateProcessDecs
+        </p>
+      </div>
+      <div>
+        <h1
+          className="text-primary-100  sm:text-xl md:text-2xl lg:text-3xl pt-1 font-semibold  text-center"
+        >
+          HomePage.CommonConcernTitle
+        </h1>
+        <p
+          className=" pt-3 pb-5  sm:text-sm md:text-base lg:text-lg  text-center "
+        >
+          HomePage.CommonConcernDecs
+        </p>
+      </div>
+      <div
+        className=" flex justify-center flex-wrap p-4 m-2 "
+      >
+        <div
+          className="flex-auto w-full md:w-2/6 lg:w-1/4 h-auto border-2  border-gray-500 rounded p-6 m-2"
+        >
+          <div
+            className="rounded"
+          >
+            <div
+              className="flex justify-center"
+            >
+              <img
+                alt="icon"
+                src="syringe-needle.svg"
+              />
+            </div>
+            <div
+              className="px-6 py-0 pb-6 my-5"
+            >
+              <div
+                className="text-primary-100 text-lg sm:text-xl md:text-2xl font-bold my-3 text-center"
+              >
+                HomePage.CardOneTitle
+              </div>
+              <p
+                className="text-black text-sm sm:text-base md:text-lg lg:text-xl text-center"
+              >
+                HomePage.CardOneDecs
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          className="flex-auto w-full md:w-2/6 lg:w-1/4 h-auto border-2  border-gray-500 rounded p-6 m-2"
+        >
+          <div
+            className="rounded"
+          >
+            <div
+              className="flex justify-center"
+            >
+              <img
+                alt="icon"
+                src="face-mask.svg"
+              />
+            </div>
+            <div
+              className="px-6 py-0 pb-6 my-5"
+            >
+              <div
+                className="text-primary-100 text-lg sm:text-xl md:text-2xl font-bold my-3 text-center"
+              >
+                HomePage.CardTwoTitle
+              </div>
+              <p
+                className="text-black text-sm sm:text-base md:text-lg lg:text-xl text-center"
+              >
+                HomePage.CardTwoDecs
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          className="flex-auto w-full md:w-2/6 lg:w-1/4 h-auto border-2  border-gray-500 rounded p-6 m-2"
+        >
+          <div
+            className="rounded"
+          >
+            <div
+              className="flex justify-center"
+            >
+              <img
+                alt="icon"
+                src="dizziness.svg"
+              />
+            </div>
+            <div
+              className="px-6 py-0 pb-6 my-5"
+            >
+              <div
+                className="text-primary-100 text-lg sm:text-xl md:text-2xl font-bold my-3 text-center"
+              >
+                HomePage.CardThreeTitle
+              </div>
+              <p
+                className="text-black text-sm sm:text-base md:text-lg lg:text-xl text-center"
+              >
+                HomePage.CardThreeDecs
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="flex justify-center bg-gray-100 mb-4 p-4"
+    >
+      <div>
+        <div
+          className="text-black text-lg sm:text-xl md:text-2xl font-semibold"
+        >
+          Ready to Donate?
+        </div>
+        <div
+          className="text-black w-6/12 text-sm sm:text-base md:text-lg tracking-wide leading-wide"
+        >
+          It does not make much time and every donation has the power to save up to three lives
+        </div>
+        <div>
+          <button
+            className="inline-block text-white text-base md:text-lg  text-center md:font-medium bg-primary  md:mt-8 mt-4 px-8 md:px-12 lg:px-16 py-1 lg:py-2  shadow-md transition duration-500 ease-in-out transform hover:scale-95"
+            onClick={[Function]}
+            type="button"
+          >
+            Donate
+          </button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h1
+        className="text-primary-100  sm:text-xl md:text-2xl lg:text-3xl pt-1 font-semibold  text-center"
+      >
+        HomePage.Partners
+      </h1>
+      <p
+        className=" pt-3 pb-5  sm:text-sm md:text-base lg:text-lg   "
+      />
+    </div>
+    <div
+      className=" flex justify-center flex-wrap p-2 m-2 "
+    >
+      <div
+        className="flex-auto w-full md:w-2/6 lg:w-1/4 p-2 m-2"
+      >
+        <div
+          className="rounded"
+        >
+          <div
+            className="flex justify-center"
+          >
+            <img
+              alt="icon"
+              src="Bg.svg"
+            />
+          </div>
+          <div
+            className="px-6 py-0 pb-6 my-5"
+          >
+            <div
+              className="text-primary-100 text-lg sm:text-xl md:text-2xl font-bold my-3 text-center"
+            />
+            <p
+              className="text-black text-sm sm:text-base md:text-lg lg:text-xl text-center"
+            >
+              HomePage.PartnerOne
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        className="flex-auto w-full md:w-2/6 lg:w-1/4 p-2 m-2"
+      >
+        <div
+          className="rounded"
+        >
+          <div
+            className="flex justify-center"
+          >
+            <img
+              alt="icon"
+              src="Bg.svg"
+            />
+          </div>
+          <div
+            className="px-6 py-0 pb-6 my-5"
+          >
+            <div
+              className="text-primary-100 text-lg sm:text-xl md:text-2xl font-bold my-3 text-center"
+            />
+            <p
+              className="text-black text-sm sm:text-base md:text-lg lg:text-xl text-center"
+            >
+              HomePage.PartnerTwo
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        className="flex-auto w-full md:w-2/6 lg:w-1/4 p-2 m-2"
+      >
+        <div
+          className="rounded"
+        >
+          <div
+            className="flex justify-center"
+          >
+            <img
+              alt="icon"
+              src="Bg.svg"
+            />
+          </div>
+          <div
+            className="px-6 py-0 pb-6 my-5"
+          >
+            <div
+              className="text-primary-100 text-lg sm:text-xl md:text-2xl font-bold my-3 text-center"
+            />
+            <p
+              className="text-black text-sm sm:text-base md:text-lg lg:text-xl text-center"
+            >
+              HomePage.PartnerThree
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>,
   <div>
     <div
