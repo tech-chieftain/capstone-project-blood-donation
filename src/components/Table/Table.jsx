@@ -1,13 +1,16 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import DonorRow from './DonorRow';
 
 function Table() {
   const { t } = useTranslation();
   const StylesClass = {
     grayColor: 'w-full bg-gray-200',
     whiteColor: 'we-full bg-red',
-    ceilClass: 'border px-4 py-2 text-center lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray',
-    headerStyle: 'border px-4 py-2 text-white text-center leading-4 text-sm tracking-wider text-left',
+    ceilClass:
+      'border px-4 py-2 text-center lg:px-6 mt-4 md:mt-0  whitespace-no-wrap border-b bg-gray',
+    headerStyle:
+      'border px-4 py-2 text-white text-center leading-4 text-sm tracking-wider text-left',
   };
 
   const donors = [
@@ -29,16 +32,7 @@ function Table() {
     },
   ];
 
-  //   const renderDonors = donors.map((donor) => <DonorRow key={donor.id} {...donor} />);
-  const renderDonors = donors.map((donor) => (
-    <tr className={donor.id % 2 === 0 ? StylesClass.grayColor : StylesClass.whiteColor}>
-      <td className={StylesClass.ceilClass}>{donor.name}</td>
-      <td className={StylesClass.ceilClass}>{donor.bloodType}</td>
-      <td className={StylesClass.ceilClass}>{donor.city}</td>
-      <td className={StylesClass.ceilClass}>{donor.phone}</td>
-      <td className={StylesClass.ceilClass}>{donor.email}</td>
-    </tr>
-  ));
+  const renderDonors = donors.map((donor) => <DonorRow key={donor.id} {...donor} />);
 
   return (
     <div>
