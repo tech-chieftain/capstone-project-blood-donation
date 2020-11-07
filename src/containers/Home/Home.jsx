@@ -20,34 +20,42 @@ function Home() {
     <div>
       {t('app_name')} <LanguageSwitcher />
       <Hero img={HeroImage}>
-        <div className=" py-4 px-4 md:px-8 flex-col justify-between flex-wrap my-auto">
-          <p className="text-white leading-normal tracking-normal text-xl md:text-4xl	">
+        <div className=" items-center mx-8 flex-wrap my-auto">
+          <p className="text-white subpixel-antialiased tracking-wide   text-3xl sm:text-4x md:text-6xl ">
             {t('HomePage.HeroTitle')}
           </p>
-          <Button text="Donate" onclick={() => history.push('./Donate')} classFlag />
+          <Button text={t('HomePage.donate')} onclick={() => history.push('./Donate')} classFlag />
         </div>
       </Hero>
-      <div className="py-4 px-4 md:px-8 flex-col justify-between">
-        <Paragraph
-          headerText={t('HomePage.DonateOverviewTitle')}
-          paragraphText={t('HomePage.DonateOverviewDecs')}
-          headerFlag
-          paragraphFlag
-        />
-        <Paragraph
-          headerText={t('HomePage.DonateProcessTitle')}
-          paragraphText={t('HomePage.DonateProcessDecs')}
-          headerFlag
-          paragraphFlag
-        />
+      <div className=" bg-gray-100 py-8 sm:py-12 px-6 sm:px-0  ">
+        <div className="mb-8 sm:mb-12 md:mb-16 w-100 sm:w-10/12 mx-auto ">
+          <Paragraph
+            headerText={t('HomePage.DonateOverviewTitle')}
+            paragraphText={t('HomePage.DonateOverviewDecs')}
+            headerFlag
+            paragraphFlag={false}
+          />
+        </div>
+        <div className=" w-100 sm:w-10/12 mx-auto ">
+          <Paragraph
+            headerText={t('HomePage.DonateProcessTitle')}
+            paragraphText={t('HomePage.DonateProcessDecs')}
+            headerFlag
+            paragraphFlag={false}
+          />
+        </div>
+      </div>
+      <div className="px-6 sm:px-0 py-8 sm-py-12  w-100 sm:w-8/12 mx-auto ">
         <Paragraph
           headerText={t('HomePage.CommonConcernTitle')}
           paragraphText={t('HomePage.CommonConcernDecs')}
           headerFlag
           paragraphFlag
         />
-        <div className=" flex justify-center flex-wrap p-4 m-2 ">
-          <div className="flex-auto w-full md:w-2/6 lg:w-1/4 h-auto border-2  border-gray-500 rounded p-6 m-2">
+      </div>
+      <div className=" flex justify-around items-stretch flex-wrap pb-8 sm:pb-12 md:pb-20">
+        <div className=" sm:w-8/12 md:w-6/12 xl:w-3/12 mt-12 ">
+          <div className=" h-full w-3/4  xl:w-full shadow-md border-1 border-gray-300  mx-auto">
             <Card
               cardImage={Icon1}
               cardTitle={t('HomePage.CardOneTitle')}
@@ -55,7 +63,9 @@ function Home() {
               orientationText="center"
             />
           </div>
-          <div className="flex-auto w-full md:w-2/6 lg:w-1/4 h-auto border-2  border-gray-500 rounded p-6 m-2">
+        </div>
+        <div className="sm:w-8/12 md:w-6/12 xl:w-3/12  mt-12">
+          <div className=" h-full w-3/4  xl:w-full shadow-md border-1 border-gray-300  mx-auto">
             <Card
               cardImage={Icon2}
               cardTitle={t('HomePage.CardTwoTitle')}
@@ -63,7 +73,9 @@ function Home() {
               orientationText="center"
             />
           </div>
-          <div className="flex-auto w-full md:w-2/6 lg:w-1/4 h-auto border-2  border-gray-500 rounded p-6 m-2">
+        </div>
+        <div className="sm:w-8/12 md:w-6/12 xl:w-3/12  mt-12">
+          <div className="h-full w-3/4  xl:w-full shadow-md border-1 border-gray-300   mx-auto">
             <Card
               cardImage={Icon3}
               cardTitle={t('HomePage.CardThreeTitle')}
@@ -73,11 +85,15 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center bg-gray-100 mb-4 p-4">
-        <ReadytoDonate />
+      <div className=" bg-gray-100 py-8 sm:py-12">
+        <div className=" w-10/12 sm:w-9/12 md:w-6/12 mx-auto">
+          <ReadytoDonate />
+        </div>
       </div>
-      <Paragraph headerText={t('HomePage.Partners')} headerFlag />
-      <div className=" flex justify-center flex-wrap p-2 m-2 ">
+      <div className="pt-6 sm:pt-8">
+        <Paragraph headerText={t('HomePage.Partners')} headerFlag />
+      </div>
+      <div className=" flex justify-center flex-wrap ">
         <div className="flex-auto w-full md:w-2/6 lg:w-1/4 p-2 m-2">
           <Card cardImage={Image} cardDesc={t('HomePage.PartnerOne')} orientationText="center" />
         </div>
@@ -91,5 +107,4 @@ function Home() {
     </div>
   );
 }
-
 export default Home;
