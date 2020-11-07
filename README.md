@@ -10,7 +10,13 @@ Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
+<<<<<<< HEAD
+You will also see any lint errors in the console.
+||||||| 8870958
+You will also see any lint errors in the console.l
+=======
 You will also see any lint errors in the console.l2
+>>>>>>> b49da7d6b069adf7f129048c0b92065b5f9783fa
 
 ### `yarn test
 
