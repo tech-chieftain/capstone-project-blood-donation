@@ -21,8 +21,11 @@ function Home() {
       {t('app_name')} <LanguageSwitcher />
       <Hero img={HeroImage}>
         <div className=" items-center mx-8 flex-wrap my-auto">
-          <p className="text-white subpixel-antialiased tracking-wide   text-3xl sm:text-4x md:text-6xl ">
-            {t('HomePage.HeroTitle')}
+          <p className="text-white subpixel-antialiased tracking-wide text-3xl sm:text-4x md:text-6xl ">
+            {t('HomePage.HeroTitle1')}
+          </p>
+          <p className="text-white subpixel-antialiased tracking-wide text-3xl sm:text-4x md:text-6xl ">
+            {t('HomePage.HeroTitle2')}
           </p>
           <Button text={t('HomePage.donate')} onclick={() => history.push('./Donate')} classFlag />
         </div>
@@ -45,7 +48,7 @@ function Home() {
           />
         </div>
       </div>
-      <div className="px-6 sm:px-0 py-8 sm-py-12  w-100 sm:w-8/12 mx-auto ">
+      <div className="px-6 sm:px-0 py-8 sm:py-12  w-100 sm:w-8/12 mx-auto ">
         <Paragraph
           headerText={t('HomePage.CommonConcernTitle')}
           paragraphText={t('HomePage.CommonConcernDecs')}
