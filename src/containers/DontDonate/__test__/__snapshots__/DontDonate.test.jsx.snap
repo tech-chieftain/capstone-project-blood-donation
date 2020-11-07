@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="flex"
+>
+  <div
+    className="  sm:w-full  md:w-full lg:w-6/12 p-10  "
+  >
+    <h1
+      className="text-primary-100  sm:text-xl md:text-2xl lg:text-3xl text-center font-semibold "
+    >
+      dontDonate.header
+       
+    </h1>
+    <p
+      className="  sm:text-sm md:text-base lg:text-lg text-center "
+    >
+      <br />
+       
+      dontDonate.firstParagraph
+       
+      <br />
+      <br />
+       
+      dontDonate.secondParagraph
+       
+      <br />
+      <br />
+      dontDonate.thirdParagraph
+    </p>
+  </div>
+  <div
+    className="  sm: hidden  md: hidden 	lg:flex w-6/12  p-10 "
+  >
+    <img
+      alt="donateImage "
+      src="doctor-office-and-blood-donation-design-vector-22887400.jpg"
+    />
+  </div>
+</div>
+`;
