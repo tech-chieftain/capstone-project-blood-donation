@@ -8,11 +8,11 @@
     "search": "Search",
     "donate": "Donate"
   },
-  "dontDonate":{
-    "header":"We are sorry but you are unable to donate.",
-    "firstParagraph":"We really appreciate your support but unfortunately you will not be able to donate.",
-    "secondParagraph":" We realise this can be disappointing but we thank you for coming forward today.",
-    "thirdParagraph":" Ask your friends and family to join the blood donor community"
+  "dontDonate": {
+    "header": "We are sorry but you are unable to donate.",
+    "firstParagraph": "We really appreciate your support but unfortunately you will not be able to donate.",
+    "secondParagraph": " We realise this can be disappointing but we thank you for coming forward today.",
+    "thirdParagraph": " Ask your friends and family to join the blood donor community"
   },
   "donate_first_page": {
     "title": "Register your interest in becoming a blood donor.",
@@ -86,5 +86,11 @@
     "Taiz",
     "Socotra"
   ],
-  "bloodTypes": ["O-", "O+", " B-", "B+", " A-", "A+", "AB-", "AB+"]
+  "bloodTypes": ["O-", "O+", " B-", "B+", " A-", "A+", "AB-", "AB+"],
+  "search_page": {
+    "herotext": "Please select a blood type and city name in order to get Donnors",
+    "bloodtype": "Select blood type",
+    "city": "Select city",
+    "searchbutton": "Search"
+  }
 }
