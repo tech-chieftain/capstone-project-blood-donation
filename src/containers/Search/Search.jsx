@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { getDonaor } from '../../Utilities/FirebaseUtilities';
-import BackgroundImage from './images/searchHero.svg';
+import BackgroundImage from './images/search.png';
 import Hero from '../../components/Hero';
 import Button from '../../components/Button';
 import InputSelect from '../../components/InputSelect';
