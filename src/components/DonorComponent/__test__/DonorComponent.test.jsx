@@ -7,9 +7,10 @@ it('renders correctly', () => {
     .create(
       <DonorComponent
         donorName="Emad Alhattami"
-        blodType="A+"
+        bloodType="A-"
         phoneNumber="774373827"
         address="Sana'a"
+        email="emad@gmail.com"
       />
     )
     .toJSON();
