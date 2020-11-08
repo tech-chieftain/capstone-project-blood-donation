@@ -1,8 +1,9 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { PropTypes } from 'prop-types';
 import DonorRow from './DonorRow';
 
-function Table() {
+function Table({ donors }) {
   const { t } = useTranslation();
   const StylesClass = {
     grayColor: 'w-full bg-gray-200',
@@ -13,26 +14,7 @@ function Table() {
       'border px-4 py-2 text-white text-center leading-4 text-sm tracking-wider text-left',
   };
 
-  const donors = [
-    {
-      id: 1,
-      name: 'ali',
-      city: 'sanaa',
-      bloodType: 'A+',
-      phone: '772455696',
-      email: 'ali@gmail.com',
-    },
-    {
-      id: 2,
-      name: 'mohamed',
-      city: 'Aden',
-      bloodType: 'A+',
-      phone: '772455696',
-      email: 'mo@gmail.com',
-    },
-  ];
-
-  const renderDonors = donors.map((donor) => <DonorRow key={donor.id} {...donor} />);
+  const renderDonors = donors.map((donor) => <DonorRow donor={donor} />);
 
   return (
     <div>
@@ -51,4 +33,7 @@ function Table() {
     </div>
   );
 }
+Table.propTypes = {
+  donors: PropTypes.array,
+};
 export default Table;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 
-function DonorRow(donor) {
+function DonorRow({ donor }) {
   const StylesClass = {
     grayColor: 'w-full bg-gray-200',
     whiteColor: 'we-full bg-red',
@@ -24,7 +24,7 @@ function DonorRow(donor) {
 }
 
 DonorRow.propTypes = {
-  donor: PropTypes,
+  donor: PropTypes.object,
 };
 
 export default DonorRow;
