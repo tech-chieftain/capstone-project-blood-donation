@@ -2,6 +2,246 @@
 
 exports[`renders correctly 1`] = `
 <div>
-  Instruction
+  <div>
+    <div
+      className="flex w-100  h-screen bg-no-repeat bg-cover"
+      style={
+        Object {
+          "backgroundImage": "linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(Man-Smiling-Donating-Blood.png)",
+        }
+      }
+    >
+      <div
+        className="self-center ml-6 mr-6 text-lg font-bold text-white  sm:w-full md:w-3/4 lg:w-2/4 xl:w-2/4 sm:text-2xl md:text-3xl"
+      >
+        Process.titlePrograph
+      </div>
+    </div>
+  </div>
+  <div
+    className="w-10/12 mx-auto my-8 lg:mb-12 sm:w-8/12"
+  >
+    <div>
+      <h1
+        className="text-primary-100  sm:text-xl md:text-2xl lg:text-3xl pt-1 font-semibold  text-center"
+      >
+        Process.titleInstructionCard
+      </h1>
+      <p
+        className=" pt-3 pb-5  sm:text-sm md:text-base lg:text-lg  text-center "
+      >
+        Process.descTitleprog
+      </p>
+    </div>
+  </div>
+  <div>
+    <div
+      className="flex flex-col items-center py-4 lg:flex-row"
+    >
+      <div
+        className="flex flex-col justify-between w-10/12 sm:w-9/12 lg:w-6/12 xl:w-4/12"
+      >
+        <div
+          className="p-4"
+        >
+          <div
+            className="flex bg-white h-auto shadow-xl rounded w-full items-center p-4 md:p-6"
+          >
+            <div
+              className="flex-none h-16 w-16 md:h-20 md:w-20 rounded-full m-auto mr-2 sm:mr-4  bg-gray-200"
+            >
+              <img
+                alt="img"
+                className="h-16 w-16 md:h-20 md:w-20 object-contain"
+                src="https://apifortress.com/doc/wp-content/uploads/2019/04/ForgeIcon_Black.svg"
+              />
+            </div>
+            <div
+              className="flex-1 mr-4 sm:mr-4"
+            >
+              <p
+                className="text-primary-100 text-lg sm:text-xl md:text-2xl font-bold"
+              >
+                Process.age
+              </p>
+              <p
+                className="text-black text-sm sm:text-base md:text-lg tracking-wide leading-normal"
+              >
+                Process.descAge
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          className="p-4"
+        >
+          <div
+            className="flex bg-white h-auto shadow-xl rounded w-full items-center p-4 md:p-6"
+          >
+            <div
+              className="flex-none h-16 w-16 md:h-20 md:w-20 rounded-full m-auto mr-2 sm:mr-4  bg-gray-200"
+            >
+              <img
+                alt="img"
+                className="h-16 w-16 md:h-20 md:w-20 object-contain"
+                src="https://apifortress.com/doc/wp-content/uploads/2019/04/ForgeIcon_Black.svg"
+              />
+            </div>
+            <div
+              className="flex-1 mr-4 sm:mr-4"
+            >
+              <p
+                className="text-primary-100 text-lg sm:text-xl md:text-2xl font-bold"
+              >
+                Process.weight
+              </p>
+              <p
+                className="text-black text-sm sm:text-base md:text-lg tracking-wide leading-normal"
+              >
+                Process.weightdesc
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          className="p-4"
+        >
+          <div
+            className="flex bg-white h-auto shadow-xl rounded w-full items-center p-4 md:p-6"
+          >
+            <div
+              className="flex-none h-16 w-16 md:h-20 md:w-20 rounded-full m-auto mr-2 sm:mr-4  bg-gray-200"
+            >
+              <img
+                alt="img"
+                className="h-16 w-16 md:h-20 md:w-20 object-contain"
+                src="https://apifortress.com/doc/wp-content/uploads/2019/04/ForgeIcon_Black.svg"
+              />
+            </div>
+            <div
+              className="flex-1 mr-4 sm:mr-4"
+            >
+              <p
+                className="text-primary-100 text-lg sm:text-xl md:text-2xl font-bold"
+              >
+                Process.generalhealth
+              </p>
+              <p
+                className="text-black text-sm sm:text-base md:text-lg tracking-wide leading-normal"
+              >
+                Process.general_health_desc
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="hidden xl:flex xl:justify-self-center xl:items-center xl:w-4/12 "
+      >
+        <img
+          alt="hel"
+          className="object-center min-w-full min-h-full "
+          src="centerImageProcess.png"
+        />
+      </div>
+      <div
+        className="flex flex-col justify-between w-10/12 sm:w-9/12 lg:w-6/12 xl:w-4/12"
+      >
+        <div
+          className="p-4"
+        >
+          <div
+            className="flex sm:flex-row-reverse bg-white h-auto shadow-xl rounded w-full items-center p-4 md:p-6"
+          >
+            <div
+              className="flex-none h-16 w-16 md:h-20 md:w-20 rounded-full m-auto mr-2 bg-gray-200"
+            >
+              <img
+                alt="img"
+                className="h-16 w-16 md:h-20 md:w-20 object-contain"
+                src="https://apifortress.com/doc/wp-content/uploads/2019/04/ForgeIcon_Black.svg"
+              />
+            </div>
+            <div
+              className="flex-1 text-left sm:text-right mr-4 sm:mr-4"
+            >
+              <p
+                className="text-primary-100 text-lg sm:text-xl md:text-2xl font-bold"
+              >
+                Process.eat
+              </p>
+              <p
+                className="text-black text-sm sm:text-base md:text-lg tracking-wide leading-normal"
+              >
+                Process.eat_desc
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          className="p-4"
+        >
+          <div
+            className="flex sm:flex-row-reverse bg-white h-auto shadow-xl rounded w-full items-center p-4 md:p-6"
+          >
+            <div
+              className="flex-none h-16 w-16 md:h-20 md:w-20 rounded-full m-auto mr-2 bg-gray-200"
+            >
+              <img
+                alt="img"
+                className="h-16 w-16 md:h-20 md:w-20 object-contain"
+                src="https://apifortress.com/doc/wp-content/uploads/2019/04/ForgeIcon_Black.svg"
+              />
+            </div>
+            <div
+              className="flex-1 text-left sm:text-right mr-4 sm:mr-4"
+            >
+              <p
+                className="text-primary-100 text-lg sm:text-xl md:text-2xl font-bold"
+              >
+                Process.drink
+              </p>
+              <p
+                className="text-black text-sm sm:text-base md:text-lg tracking-wide leading-normal"
+              >
+                Process.drinkdesc
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          className="p-4"
+        >
+          <div
+            className="flex sm:flex-row-reverse bg-white h-auto shadow-xl rounded w-full items-center p-4 md:p-6"
+          >
+            <div
+              className="flex-none h-16 w-16 md:h-20 md:w-20 rounded-full m-auto mr-2 bg-gray-200"
+            >
+              <img
+                alt="img"
+                className="h-16 w-16 md:h-20 md:w-20 object-contain"
+                src="https://apifortress.com/doc/wp-content/uploads/2019/04/ForgeIcon_Black.svg"
+              />
+            </div>
+            <div
+              className="flex-1 text-left sm:text-right mr-4 sm:mr-4"
+            >
+              <p
+                className="text-primary-100 text-lg sm:text-xl md:text-2xl font-bold"
+              >
+                Process.wait
+              </p>
+              <p
+                className="text-black text-sm sm:text-base md:text-lg tracking-wide leading-normal"
+              >
+                Process.waitdesc
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;
