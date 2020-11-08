@@ -92,19 +92,6 @@ function Process() {
           </div>
         </div>
       </div>
-
-      <div className="mx-6 my-6">
-        <h1 className="pt-1 font-semibold text-center text-primary-100 sm:text-xl md:text-2xl lg:text-3xl">
-          {t('Process.title_blood_donation')}
-        </h1>
-        <h1 className="pt-1 font-semibold text-center text-black sm:text-xl md:text-2xl lg:text-3xll">
-          {t('Process.secondtitle_blood_donation')}
-        </h1>
-        <p className="text-center sm:text-sm md:text-base lg:text-lg">
-          {' '}
-          {t('Process.blood_donation_desc')}
-        </p>
-      </div>
     </div>
   );
 }
