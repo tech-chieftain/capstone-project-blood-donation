@@ -8,7 +8,6 @@ import Instructions from './containers/Instruction';
 import Process from './containers/Process';
 import Search from './containers/Search';
 import Donate from './containers/Donate';
-import DontDonate from './containers/DontDonate';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer/Footer';
 
@@ -28,7 +27,6 @@ function App() {
         <Route path="/Process" component={Process} />
         <Route path="/Search" component={Search} />
         <Route path="/Donate" component={Donate} />
-        <Route path="/Cantdonate" component={DontDonate} />
       </Switch>
       <Footer />
     </Router>

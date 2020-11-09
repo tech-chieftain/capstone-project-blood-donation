@@ -8,7 +8,6 @@
     "search": "Search",
     "donate": "Donate"
   },
-
   "Process": {
     "titlePrograph": "Follow our tips to make your blood donation experience pleasant, safe and straightforward.",
     "titleInstructionCard": "instruction for your donation",
@@ -29,85 +28,4 @@
     "secondtitle_blood_donation": " (What to Expect at Your Donation)",
     "blood_donation_desc": "The blood donation process from the time you arrive until the time you leave takes about an hour. The donation itself is only about 8-10 minutes on average "
   }
-}
-
-  "dontDonate":{
-    "header":"We are sorry but you are unable to donate.",
-    "firstParagraph":"We really appreciate your support but unfortunately you will not be able to donate.",
-    "secondParagraph":" We realise this can be disappointing but we thank you for coming forward today.",
-    "thirdParagraph":" Ask your friends and family to join the blood donor community"
-  },
-  "donate_first_page": {
-    "title": "Register your interest in becoming a blood donor.",
-    "paragrph": "Thank you for your interest in saving lives and donating blood. You will be joining a community of blood donors who are called upon when needed by the NHS. We need 5,000 blood donations every day.",
-    "subHeader1": "A few questions before we get started",
-    "subHeader2": "All fields marked with * are required",
-    "subparagrph": "A few quick questions up front to find out if you can donate blood or not. If you can't donate, don't worry you can help the NHS in other ways.",
-    "birth_text": "1 . Date of birth*",
-    "radio_text1": "2 . Do you weigh more than 50kg (7 stone 12lbs)?*",
-    "radio_text2": "3 . Have you ever had a cancer other than basal cell carcinoma or cervical carcinoma insitu (CIN)?*",
-    "radio_option_yes": "Yes",
-    "radio_option_no": "No",
-    "button": "Next",
-    "step": "STEP"
-  },
-  "donate_second_page": {
-    "great": "Great!",
-    "title": "It looks like you can join the community to donate.",
-    "paragrph": "Being one of those who can donate blood it means that you are going to help those who need blood as a result of sickness or accidents",
-    "subHeader1": "Finding out more about you",
-    "subHeader2": "All fields marked with * are required",
-    "subparagrph": "Knowing more about you is really important and helps us to prioritise when we might ask you to donate. We only collect the right amount and types of blood to meet hospital demand as we don’t want to waste your donation if it’s not needed right now.",
-    "male_text": "1. Gender",
-    "blood_type_text": "2. Please select blood type (if known)?*",
-    "city": "3. Please select your city ?*",
-    "option_male": "Male",
-    "option_female": "Female",
-    "button_next": "Next",
-    "button_previous": "Previous"
-  },
-  "donate_third_page": {
-    "title": "We needs people like you.",
-    "paragrph": "Male donors are particularly needed because they can donate more frequently and have higher iron levels.",
-    "subHeader1": "Personal Information",
-    "subparagrph": "We just need a little more information about you, to help us finish this stage and contact you about the next steps.",
-    "name": "Name*",
-    "phone": "Phone",
-    "email": "Email",
-    "name_placeholder": "Enter your name",
-    "phone_placeholder": "Enter your phone",
-    "email_placeholder": "Enter your email",
-    "agree": "I have read and accept the terms and conditions of ",
-    "terms": " the Blood Donor  Service",
-    "button_next": "Register",
-    "button_previous": "Previous"
-  },
-  "donate_fourth_page": {
-    "title": "You have been added to the donation list",
-    "paragrph": "We would like to thank you for your supporting and becoming part of the blood donation . "
-  },
-  "cities": [
-    "Abyan",
-    "Aden",
-    "Al Mahrah",
-    "Hadramaut",
-    "Lahij",
-    "Shabwah",
-    "Dhale",
-    "Amran",
-    "Al Bayda",
-    "Al Hudaydah",
-    "Al Jawf",
-    "Al Mahwit",
-    "Dhamar",
-    "Hajjah",
-    "Ibb",
-    "Ma'rib",
-    "Raymah",
-    "Saada",
-    "Sana'a",
-    "Taiz",
-    "Socotra"
-  ],
-  "bloodTypes": ["O-", "O+", " B-", "B+", " A-", "A+", "AB-", "AB+"]
 }

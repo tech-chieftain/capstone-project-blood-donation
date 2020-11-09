@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`renders correctly 1`] = `
-<div
-  className="text-sm sm:text-base md:text-lg  mb-10 leading-relaxed w-10/12"
->
-  Donate is awsome
-</div>
-`;
