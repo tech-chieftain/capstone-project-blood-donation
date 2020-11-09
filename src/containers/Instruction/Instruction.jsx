@@ -32,7 +32,7 @@ function Instruction() {
         />
       </div>
       <div>
-        <div className="flex flex-col items-center py-4 lg:flex-row">
+        <div className="flex flex-col items-center pb-6 lg:flex-row">
           <div className="flex flex-col justify-between w-10/12 sm:w-9/12 lg:w-6/12 xl:w-4/12">
             <div className="p-4">
               <InstructionCard
