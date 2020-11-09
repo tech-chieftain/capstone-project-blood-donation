@@ -19,7 +19,7 @@ exports[`renders correctly 1`] = `
         id="name"
         name="name"
         onChange={[Function]}
-        placeholder="Name"
+        placeholder="AboutPage.ContectName"
         type="text"
         value=""
       />
@@ -36,7 +36,7 @@ exports[`renders correctly 1`] = `
         id="email"
         name="email"
         onChange={[Function]}
-        placeholder="Email"
+        placeholder="AboutPage.ContectEmail"
         type="email"
         value=""
       />
@@ -46,7 +46,7 @@ exports[`renders correctly 1`] = `
     className=" flex-1 mr-4 p-2 text-base tracking-normal font-semibold placeholder-gray-800 border-2 border-gray-300 focus:outline-none "
     name="massege"
     onChange={[Function]}
-    placeholder="massage"
+    placeholder="AboutPage.ContectMessage"
     rows="6"
     value=""
   />
@@ -58,7 +58,7 @@ exports[`renders correctly 1`] = `
       onClick={[Function]}
       type="button"
     >
-      Send
+      AboutPage.ContectSend
     </button>
   </div>
 </form>

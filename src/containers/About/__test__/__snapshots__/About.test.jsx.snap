@@ -37,13 +37,13 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    className=" flex justify-around items-stretch flex-wrap pb-8 sm:pb-12 md:pb-20"
+    className=" flex justify-center items-stretch flex-wrap pb-8 sm:pb-12 md:pb-20"
   >
     <div
       className=" sm:w-8/12 md:w-6/12 xl:w-5/12 mt-12 "
     >
       <div
-        className=" h-full w-3/4  xl:w-full shadow-lg border-1 border-gray-300  mx-auto"
+        className=" h-full w-10/12 lg:w-3/4 xl:w-1/2  shadow-lg border-1 border-gray-300  mx-auto"
       >
         <div
           className="rounded"
@@ -77,7 +77,7 @@ exports[`renders correctly 1`] = `
       className=" sm:w-8/12 md:w-6/12 xl:w-5/12 mt-12 "
     >
       <div
-        className=" h-full w-3/4  xl:w-full shadow-lg border-1 border-gray-300  mx-auto"
+        className=" h-full w-10/12  lg:w-3/4 xl:w-1/2 shadow-lg border-1 border-gray-300  mx-auto"
       >
         <div
           className="rounded"
@@ -111,7 +111,7 @@ exports[`renders correctly 1`] = `
       className=" sm:w-8/12 md:w-6/12 xl:w-5/12 mt-12 "
     >
       <div
-        className=" h-full w-3/4  xl:w-full shadow-lg border-1 border-gray-300  mx-auto"
+        className=" h-full w-10/12  lg:w-3/4 xl:w-1/2 shadow-lg border-1 border-gray-300  mx-auto"
       >
         <div
           className="rounded"
@@ -145,7 +145,7 @@ exports[`renders correctly 1`] = `
       className=" sm:w-8/12 md:w-6/12 xl:w-5/12 mt-12 "
     >
       <div
-        className=" h-full w-3/4  xl:w-full shadow-lg border-1 border-gray-300  mx-auto"
+        className=" h-full w-10/12  lg:w-3/4 xl:w-1/2 shadow-lg border-1 border-gray-300  mx-auto"
       >
         <div
           className="rounded"
@@ -191,6 +191,10 @@ exports[`renders correctly 1`] = `
         AboutPage.ContectDecs
       </p>
     </div>
+  </div>
+  <div
+    className="md:w-100 xl:w-8/12 mx-auto mb:8 lg:mb-12"
+  >
     <form
       className="shadow-xl w-10/12 lg:w-8/12 mx-auto  flex flex-col mt-6 p-6 sm:p-8 md:p-12"
     >
@@ -209,7 +213,7 @@ exports[`renders correctly 1`] = `
             id="name"
             name="name"
             onChange={[Function]}
-            placeholder="Name"
+            placeholder="AboutPage.ContectName"
             type="text"
             value=""
           />
@@ -226,7 +230,7 @@ exports[`renders correctly 1`] = `
             id="email"
             name="email"
             onChange={[Function]}
-            placeholder="Email"
+            placeholder="AboutPage.ContectEmail"
             type="email"
             value=""
           />
@@ -236,7 +240,7 @@ exports[`renders correctly 1`] = `
         className=" flex-1 mr-4 p-2 text-base tracking-normal font-semibold placeholder-gray-800 border-2 border-gray-300 focus:outline-none "
         name="massege"
         onChange={[Function]}
-        placeholder="massage"
+        placeholder="AboutPage.ContectMessage"
         rows="6"
         value=""
       />
@@ -248,7 +252,7 @@ exports[`renders correctly 1`] = `
           onClick={[Function]}
           type="button"
         >
-          Send
+          AboutPage.ContectSend
         </button>
       </div>
     </form>
