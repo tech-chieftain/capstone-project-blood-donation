@@ -1,9 +1,15 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import Paragraph from '../../components/Paragraph/Paragraph';
-import processImage from '../../components/images/centerImageProcess.png';
+import processImage from '../../components/images/instructionimage/centerImageProcess.svg';
 import Hero from '../../components/Hero/Hero';
-import heroImage from '../../components/images/Man-Smiling-Donating-Blood.png';
+import heroImage from '../../components/images/instructionimage/Man-Smiling-Donating-Blood.svg';
+import one from '../../components/images/instructionimage/numbers/one.svg';
+import tow from '../../components/images/instructionimage/numbers/tow.svg';
+import three from '../../components/images/instructionimage/numbers/three.svg';
+import four from '../../components/images/instructionimage/numbers/four.svg';
+import five from '../../components/images/instructionimage/numbers/five.svg';
+import six from '../../components/images/instructionimage/numbers/six.svg';
 import InstructionCard from '../../components/InstructionCard/InstructionCard';
 
 function Instruction() {
@@ -12,7 +18,7 @@ function Instruction() {
     <div>
       <div>
         <Hero className="flex" img={heroImage}>
-          <div className="self-center ml-6 mr-6 text-lg font-bold text-white  sm:w-full md:w-3/4 lg:w-2/4 xl:w-2/4 sm:text-2xl md:text-3xl">
+          <div className="self-center ml-6 mr-6 text-lg font-bold text-white sm:w-full md:w-3/4 lg:w-2/4 xl:w-2/4 sm:text-2xl md:text-3xl">
             {t('Process.titlePrograph')}
           </div>
         </Hero>
@@ -30,7 +36,7 @@ function Instruction() {
           <div className="flex flex-col justify-between w-10/12 sm:w-9/12 lg:w-6/12 xl:w-4/12">
             <div className="p-4">
               <InstructionCard
-                image="https://apifortress.com/doc/wp-content/uploads/2019/04/ForgeIcon_Black.svg"
+                image={one}
                 title={t('Process.age')}
                 description={t('Process.descAge')}
                 directionFlag
@@ -38,7 +44,7 @@ function Instruction() {
             </div>
             <div className="p-4">
               <InstructionCard
-                image="https://apifortress.com/doc/wp-content/uploads/2019/04/ForgeIcon_Black.svg"
+                image={tow}
                 title={t('Process.weight')}
                 description={t('Process.weightdesc')}
                 directionFlag
@@ -46,7 +52,7 @@ function Instruction() {
             </div>
             <div className="p-4">
               <InstructionCard
-                image="https://apifortress.com/doc/wp-content/uploads/2019/04/ForgeIcon_Black.svg"
+                image={three}
                 title={t('Process.generalhealth')}
                 description={t('Process.general_health_desc')}
                 directionFlag
@@ -59,7 +65,7 @@ function Instruction() {
           <div className="flex flex-col justify-between w-10/12 sm:w-9/12 lg:w-6/12 xl:w-4/12">
             <div className="p-4">
               <InstructionCard
-                image="https://apifortress.com/doc/wp-content/uploads/2019/04/ForgeIcon_Black.svg"
+                image={four}
                 title={t('Process.eat')}
                 description={t('Process.eat_desc')}
                 directionFlag={false}
@@ -67,7 +73,7 @@ function Instruction() {
             </div>
             <div className="p-4">
               <InstructionCard
-                image="https://apifortress.com/doc/wp-content/uploads/2019/04/ForgeIcon_Black.svg"
+                image={five}
                 title={t('Process.drink')}
                 description={t('Process.drinkdesc')}
                 directionFlag={false}
@@ -75,7 +81,7 @@ function Instruction() {
             </div>
             <div className="p-4">
               <InstructionCard
-                image="https://apifortress.com/doc/wp-content/uploads/2019/04/ForgeIcon_Black.svg"
+                image={six}
                 title={t('Process.wait')}
                 description={t('Process.waitdesc')}
                 directionFlag={false}
