@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="max-w-sm px-1  bg-gray-200 sm:w-full"
+  className="px-1  bg-gray-200 sm:w-full"
 >
   <div
     className="flex"
