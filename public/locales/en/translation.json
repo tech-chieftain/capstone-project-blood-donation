@@ -127,5 +127,11 @@
     "Taiz",
     "Socotra"
   ],
-  "bloodTypes": ["O-", "O+", " B-", "B+", " A-", "A+", "AB-", "AB+"]
+  "bloodTypes": ["O-", "O+", " B-", "B+", " A-", "A+", "AB-", "AB+"],
+  "search_page": {
+    "herotext": "Please select a blood type and city name in order to get Donnors",
+    "bloodtype": "Select blood type",
+    "city": "Select city",
+    "searchbutton": "Search"
+  }
 }
