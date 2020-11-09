@@ -127,11 +127,35 @@
     "Taiz",
     "Socotra"
   ],
-  "bloodTypes": ["O-", "O+", " B-", "B+", " A-", "A+", "AB-", "AB+"],
+  "bloodTypes": [
+    "O-",
+    "O+",
+    " B-",
+    "B+",
+    " A-",
+    "A+",
+    "AB-",
+    "AB+"
+  ],
   "search_page": {
     "herotext": "Please select a blood type and city name in order to get Donnors",
     "bloodtype": "Select blood type",
     "city": "Select city",
     "searchbutton": "Search"
+  },
+  "donation_process": {
+    "titleCard": "The Blood Donation Process",
+    "secondTitle": "(What to Expect at Your Donation)",
+    "Paragraph": "The blood donation process from the time you arrive until the time you leave takes about an hour. The donation itself is only about 8-10 minutes on average and here is how it works.",
+    "registerTitle": "Registration",
+    "registerDesc": "You will sign in, show an ID, and be asked to read some required information.",
+    "healthTitle": "Health History and Mini-Physical",
+    "healthDesc": "Answer some questions online or in a private interview, and receive a general health check.",
+    "donationTitle": "The Donation",
+    "donationDesc": "You'll be seated comfortably while a pint of blood is drawn. The actual donation only takes 8-10 minutes.",
+    "refreshmentTitle": "Refreshment and Recovery",
+    "refreshmentDesc": "After donating, you can enjoy a snack and a drink for 10-15 minutes before resuming your day. The entire donation process takes about an hour.",
+    "testingTitle": "Testing",
+    "testingDesc": "Your blood is tested and sent to a patient in need."
   }
 }
