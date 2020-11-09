@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="px-1  bg-gray-200 sm:w-full"
+  >
+    <div
+      className="flex"
+    >
+      <img
+        alt="icon"
+        className="w-6 h-6 px-1 my-3 mr-2"
+        src="name.svg"
+      />
+      <span
+        className="pt-3 text-lg sm:text-2xl md:text-2xl font-bold"
+      >
+         
+        Emad Alhattami
+         
+      </span>
+    </div>
+  </div>
+  <div
+    className="px-1  bg-gray-200 sm:w-full"
+  >
+    <div
+      className="flex"
+    >
+      <img
+        alt="icon"
+        className="w-6 h-6 px-1 my-3 mr-2"
+        src="blood_type.svg"
+      />
+      <span
+        className="pt-3 text-lg sm:text-2xl md:text-2xl font-bold"
+      >
+         
+        A-
+         
+      </span>
+    </div>
+  </div>
+  <div
+    className="px-1  bg-gray-200 sm:w-full"
+  >
+    <div
+      className="flex"
+    >
+      <img
+        alt="icon"
+        className="w-6 h-6 px-1 my-3 mr-2"
+        src="phone.svg"
+      />
+      <span
+        className="pt-3 text-lg sm:text-2xl md:text-2xl font-bold"
+      >
+         
+        774373827
+         
+      </span>
+    </div>
+  </div>
+  <div
+    className="px-1  bg-gray-200 sm:w-full"
+  >
+    <div
+      className="flex"
+    >
+      <img
+        alt="icon"
+        className="w-6 h-6 px-1 my-3 mr-2"
+        src="location.svg"
+      />
+      <span
+        className="pt-3 text-lg sm:text-2xl md:text-2xl font-bold"
+      >
+         
+        Sana'a
+         
+      </span>
+    </div>
+  </div>
+  <div
+    className="px-1  bg-gray-200 sm:w-full"
+  >
+    <div
+      className="flex"
+    >
+      <img
+        alt="icon"
+        className="w-6 h-6 px-1 my-3 mr-2"
+        src="email.svg"
+      />
+      <span
+        className="pt-3 text-lg sm:text-2xl md:text-2xl font-bold"
+      >
+         
+        emad@gmail.com
+         
+      </span>
+    </div>
+  </div>
+</div>
+`;
