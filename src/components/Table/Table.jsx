@@ -14,8 +14,6 @@ function Table({ donors }) {
       'border px-4 py-2 text-white text-center leading-4 text-sm tracking-wider text-left',
   };
 
-  const renderDonors = donors.map((donor) => <DonorRow donor={donor} />);
-
   return (
     <div>
       <table className="border table-auto  min-w-full">
@@ -28,12 +26,12 @@ function Table({ donors }) {
             <th className={StylesClass.headerStyle}>{t('table.email')}</th>
           </tr>
         </thead>
-        <tbody>{renderDonors}</tbody>
+        <tbody> {donors ? donors.map((donor) => <DonorRow donor={donor} />) : null};</tbody>
       </table>
     </div>
   );
 }
 Table.propTypes = {
-  donors: PropTypes.array,
+  donors: PropTypes,
 };
 export default Table;
