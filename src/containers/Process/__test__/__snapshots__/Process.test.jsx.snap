@@ -2,6 +2,169 @@
 
 exports[`renders correctly 1`] = `
 <div>
-  Process
+  <div
+    className="mx-6 my-6"
+  >
+    <h1
+      className="pt-1 font-semibold text-center text-primary-100 sm:text-xl md:text-2xl lg:text-3xl"
+    >
+      donation_process.titleCard
+    </h1>
+    <h1
+      className="pt-1 font-semibold text-center text-black sm:text-xl md:text-2xl lg:text-3xll"
+    >
+      donation_process.secondTitle
+    </h1>
+    <p
+      className="pt-3 text-center sm:text-sm md:text-base lg:text-lg"
+    >
+       
+      donation_process.Paragraph
+    </p>
+  </div>
+  <div
+    className="flex flex-col"
+  >
+    <div
+      className="flex bg-gray-200 rounded p-6 m-6"
+    >
+      <div
+        className="flex-none h-16 w-16  md:h-24 md:w-24 rounded-full mx-auto mr-2 sm:mr-4 border-4 sm:border-6 border-gray-500"
+      >
+        <img
+          alt="icon"
+          src="register.svg"
+        />
+      </div>
+      <div
+        className="flex-1 my-6 mr-4 sm:mr-4"
+      >
+        <span
+          className="text-primary-100 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold"
+        >
+          donation_process.registerTitle
+           -
+           
+        </span>
+        <span
+          className="text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl"
+        >
+          donation_process.registerDesc
+        </span>
+      </div>
+    </div>
+    <div
+      className="flex bg-gray-200 rounded p-6 m-6"
+    >
+      <div
+        className="flex-none h-16 w-16  md:h-24 md:w-24 rounded-full mx-auto mr-2 sm:mr-4 border-4 sm:border-6 border-gray-500"
+      >
+        <img
+          alt="icon"
+          src="health.svg"
+        />
+      </div>
+      <div
+        className="flex-1 my-6 mr-4 sm:mr-4"
+      >
+        <span
+          className="text-primary-100 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold"
+        >
+          donation_process.healthTitle
+           -
+           
+        </span>
+        <span
+          className="text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl"
+        >
+          donation_process.healthDesc
+        </span>
+      </div>
+    </div>
+    <div
+      className="flex bg-gray-200 rounded p-6 m-6"
+    >
+      <div
+        className="flex-none h-16 w-16  md:h-24 md:w-24 rounded-full mx-auto mr-2 sm:mr-4 border-4 sm:border-6 border-gray-500"
+      >
+        <img
+          alt="icon"
+          src="donation.svg"
+        />
+      </div>
+      <div
+        className="flex-1 my-6 mr-4 sm:mr-4"
+      >
+        <span
+          className="text-primary-100 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold"
+        >
+          donation_process.donationTitle
+           -
+           
+        </span>
+        <span
+          className="text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl"
+        >
+          donation_process.donationDesc
+        </span>
+      </div>
+    </div>
+    <div
+      className="flex bg-gray-200 rounded p-6 m-6"
+    >
+      <div
+        className="flex-none h-16 w-16  md:h-24 md:w-24 rounded-full mx-auto mr-2 sm:mr-4 border-4 sm:border-6 border-gray-500"
+      >
+        <img
+          alt="icon"
+          src="cookie.svg"
+        />
+      </div>
+      <div
+        className="flex-1 my-6 mr-4 sm:mr-4"
+      >
+        <span
+          className="text-primary-100 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold"
+        >
+          donation_process.refreshmentTitle
+           -
+           
+        </span>
+        <span
+          className="text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl"
+        >
+          donation_process.refreshmentDesc
+        </span>
+      </div>
+    </div>
+    <div
+      className="flex bg-gray-200 rounded p-6 m-6"
+    >
+      <div
+        className="flex-none h-16 w-16  md:h-24 md:w-24 rounded-full mx-auto mr-2 sm:mr-4 border-4 sm:border-6 border-gray-500"
+      >
+        <img
+          alt="icon"
+          src="blood.svg"
+        />
+      </div>
+      <div
+        className="flex-1 my-6 mr-4 sm:mr-4"
+      >
+        <span
+          className="text-primary-100 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold"
+        >
+          donation_process.testingTitle
+           -
+           
+        </span>
+        <span
+          className="text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl"
+        >
+          donation_process.testingDesc
+        </span>
+      </div>
+    </div>
+  </div>
 </div>
 `;
