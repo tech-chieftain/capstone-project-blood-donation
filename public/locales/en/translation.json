@@ -133,5 +133,8 @@
     "bloodtype": "Select blood type",
     "city": "Select city",
     "searchbutton": "Search"
+  },
+  "footer": {
+    "text": "Solving the problem of blood emergencies by connecting blood donors directly with people in blood need."
   }
 }
