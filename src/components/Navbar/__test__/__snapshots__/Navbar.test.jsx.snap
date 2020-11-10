@@ -16,21 +16,47 @@ exports[`renders correctly 1`] = `
       fill="#fff"
     />
   </svg>
-  <label
-    className="mr-2 md:mr-4 md:hidden text-white text-2xl sm:text-3xl cursor-pointer"
-    htmlFor="menu-toggle"
+  <div
+    className="flex-1  flex items-center  justify-between md:justify-end"
   >
-    <span>
-       ☰
-    </span>
-    <input
-      checked={false}
-      className="hidden"
-      id="menu-toggle"
-      onChange={[Function]}
-      type="checkbox"
-    />
-  </label>
+    <div
+      className="mx-6 md:mx-2 "
+    >
+      <div>
+        <button
+          className="flex items-center"
+          onClick={[Function]}
+          type="button"
+        >
+          <img
+            alt="Enlish"
+            className="w-6 h-6 rounded-full object-cover object-center"
+            src="english.svg"
+          />
+          <p
+            className="mx-2 text-white"
+          >
+            En
+          </p>
+        </button>
+      </div>
+    </div>
+    <label
+      className="mr-2 md:mr-4 md:hidden text-white text-2xl sm:text-3xl cursor-pointer"
+      htmlFor="menu-toggle"
+    >
+      <span>
+         ☰
+      </span>
+      <input
+        checked={false}
+        className="hidden"
+        id="menu-toggle"
+        onChange={[Function]}
+        type="checkbox"
+      />
+    </label>
+  </div>
   <ul
     className="md:flex  hidden   md:w-auto w-full text-start mt-4 md:mt-0"
   >

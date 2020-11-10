@@ -17,21 +17,47 @@ Array [
         fill="#fff"
       />
     </svg>
-    <label
-      className="mr-2 md:mr-4 md:hidden text-white text-2xl sm:text-3xl cursor-pointer"
-      htmlFor="menu-toggle"
+    <div
+      className="flex-1  flex items-center  justify-between md:justify-end"
     >
-      <span>
-         ☰
-      </span>
-      <input
-        checked={false}
-        className="hidden"
-        id="menu-toggle"
-        onChange={[Function]}
-        type="checkbox"
-      />
-    </label>
+      <div
+        className="mx-6 md:mx-2 "
+      >
+        <div>
+          <button
+            className="flex items-center"
+            onClick={[Function]}
+            type="button"
+          >
+            <img
+              alt="Enlish"
+              className="w-6 h-6 rounded-full object-cover object-center"
+              src="english.svg"
+            />
+            <p
+              className="mx-2 text-white"
+            >
+              En
+            </p>
+          </button>
+        </div>
+      </div>
+      <label
+        className="mr-2 md:mr-4 md:hidden text-white text-2xl sm:text-3xl cursor-pointer"
+        htmlFor="menu-toggle"
+      >
+        <span>
+           ☰
+        </span>
+        <input
+          checked={false}
+          className="hidden"
+          id="menu-toggle"
+          onChange={[Function]}
+          type="checkbox"
+        />
+      </label>
+    </div>
     <ul
       className="md:flex  hidden   md:w-auto w-full text-start mt-4 md:mt-0"
     >
@@ -92,28 +118,8 @@ Array [
     </ul>
   </div>,
   <div>
-    app_name
-     
     <div
-      className="select"
-    >
-      <select
-        onChange={[Function]}
-      >
-        <option
-          value="en"
-        >
-          English
-        </option>
-        <option
-          value="ar"
-        >
-          عربي
-        </option>
-      </select>
-    </div>
-    <div
-      className="flex w-100  h-screen bg-no-repeat bg-cover"
+      className="flex w-100 py-12  md:py-16 lg:py-20 xl:py-0 xl:h-screen bg-no-repeat  bg-cover"
       style={
         Object {
           "backgroundImage": "linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(HeroImage.png)",

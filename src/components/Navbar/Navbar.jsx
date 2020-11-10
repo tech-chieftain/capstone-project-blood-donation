@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import NavLink from '../Navlinks/Navlinks';
 import Logo from '../images/Logo';
+import LanguageSelector from '../LanguageSelctor';
 
 function Navbar() {
   // this  state to control the shown menu icon
@@ -17,23 +18,29 @@ function Navbar() {
   return (
     <div className="bg-primary py-4 px-4 md:px-8 flex justify-between flex-wrap items-center">
       <Logo />
-      <label
-        htmlFor="menu-toggle"
-        className="mr-2 md:mr-4 md:hidden text-white text-2xl sm:text-3xl cursor-pointer"
-      >
-        {show ? <span>&#10005;</span> : <span> &#9776;</span>}
-        <input
-          type="checkbox"
-          className="hidden"
-          id="menu-toggle"
-          checked={show}
-          onChange={(e) => {
-            const name = show ? 'hidden' : '';
-            setclassna(name);
-            setShow(e.target.checked);
-          }}
-        />
-      </label>
+
+      <div className="flex-1  flex items-center  justify-between md:justify-end">
+        <div className="mx-6 md:mx-2 ">
+          <LanguageSelector />
+        </div>
+        <label
+          htmlFor="menu-toggle"
+          className="mr-2 md:mr-4 md:hidden text-white text-2xl sm:text-3xl cursor-pointer"
+        >
+          {show ? <span>&#10005;</span> : <span> &#9776;</span>}
+          <input
+            type="checkbox"
+            className="hidden"
+            id="menu-toggle"
+            checked={show}
+            onChange={(e) => {
+              const name = show ? 'hidden' : '';
+              setclassna(name);
+              setShow(e.target.checked);
+            }}
+          />
+        </label>
+      </div>
       <NavLink classname={classname} menuClose={closeMenu} classFlag={false} />
     </div>
   );
