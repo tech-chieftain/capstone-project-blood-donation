@@ -146,5 +146,11 @@
     "CardThreeDecs": "Save Us Connect's ultimate goal is to provide an easy-to-use, easy-to-access, fast, efficient, and reliable way to get life-saving blood, totally Free of cost",
     "CardFourTitle": "Save Us",
     "CardFourDecs": "We are a non profit foundation and our main objective is to make sure that everything is done to protect vulnerable persons."
+},
+  "search_page": {
+    "herotext": "Please select a blood type and city name in order to get Donnors",
+    "bloodtype": "Select blood type",
+    "city": "Select city",
+    "searchbutton": "Search"
   }
 }

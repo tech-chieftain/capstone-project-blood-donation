@@ -22,7 +22,7 @@
   "scripts": {
     "start": "concurrently \"yarn watch:css\" \"react-scripts start\"",
     "start:nocss": "react-scripts start",
-    "build": "concurrently \"yarn build:css\" \"react-scripts build\"",
+    "build": "yarn build:css && yarn react-scripts build",
     "test": "react-scripts test ",
     "test:coverage": "yarn test -- --coverage --watchAll=false ",
     "eject": "react-scripts eject",

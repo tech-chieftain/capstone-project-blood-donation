@@ -206,7 +206,7 @@ exports[`renders correctly 1`] = `
           htmlFor="nowhere"
         >
           <div
-            className="text-sm sm:text-base md:text-lg font-medium inline-block mb-4 sm:mb-6"
+            className="font-medium text-sm sm:text-base md:text-lg  inline-block mb-4 sm:mb-6"
           >
             donate_second_page.city
           </div>
