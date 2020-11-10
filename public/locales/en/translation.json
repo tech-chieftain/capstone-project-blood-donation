@@ -127,7 +127,6 @@
     "Taiz",
     "Socotra"
   ],
-  "bloodTypes": ["O-", "O+", " B-", "B+", " A-", "A+", "AB-", "AB+"],
   "Terms": {
     "TermsAndServices":"Terms and Services",
     "TermsText":" By visiting this website and accessing the information, resources, services, products and tools we provide, you understand and agree to accept and comply with the following terms and conditions ",
@@ -145,5 +144,12 @@
     "thirdService":"3.register for blood donation .",
     "forthService":" 4.find potential donors.",
     "fifthService":"5.have answers to some of your concerns."
+  },
+  "bloodTypes": ["O-", "O+", " B-", "B+", " A-", "A+", "AB-", "AB+"],
+  "search_page": {
+    "herotext": "Please select a blood type and city name in order to get Donnors",
+    "bloodtype": "Select blood type",
+    "city": "Select city",
+    "searchbutton": "Search"
   }
 }
