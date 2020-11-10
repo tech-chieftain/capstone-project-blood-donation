@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div>
+    <h1
+      className="text-primary-100  sm:text-xl md:text-2xl lg:text-3xl pt-1 font-semibold  text-center"
+    >
+      Terms.TermsAndServices
+    </h1>
+    <p
+      className=" pt-3 pb-5  sm:text-sm md:text-base lg:text-lg  text-center "
+    >
+      Terms.TermsText
+    </p>
+  </div>
+  <h1
+    className="text-primary pl-10  md:text-lg lg:text-xl font-medium pl-10 pr-10 pb-5 pt-5"
+  >
+    Terms.TermsOfUse
+  </h1>
+  <ol>
+    <li
+      className="sm:text-sm md:text-base lg:text-lg pl-10 pr-10"
+    >
+      Terms.firstTerm
+    </li>
+    <li
+      className="sm:text-sm md:text-base lg:text-lg pl-10 pr-10"
+    >
+      Terms.secondTerm
+    </li>
+    <li
+      className="sm:text-sm md:text-base lg:text-lg pl-10 pr-10"
+    >
+      Terms.thirdTerm
+    </li>
+    <li
+      className="sm:text-sm md:text-base lg:text-lg pl-10 pr-10"
+    >
+      Terms.forthTerm
+    </li>
+    <li
+      className="sm:text-sm md:text-base lg:text-lg pl-10 pr-10"
+    >
+      Terms.fifthTerm
+    </li>
+    <li
+      className="sm:text-sm md:text-base lg:text-lg pl-10 pr-10"
+    >
+      Terms.sixthTerm
+    </li>
+    <li
+      className="sm:text-sm md:text-base lg:text-lg pl-10 pr-10"
+    >
+      Terms.seventhTerm
+    </li>
+  </ol>
+  <h1
+    className="text-primary pl-10  md:text-lg lg:text-xl font-medium pl-10 pr-10 pb-5 pt-5"
+  >
+     
+    Terms.Services
+  </h1>
+  <ol>
+    <li
+      className="sm:text-sm md:text-base lg:text-lg pl-10 pr-10"
+    >
+      Terms.firstService
+    </li>
+    <li
+      className="sm:text-sm md:text-base lg:text-lg pl-10 pr-10"
+    >
+      Terms.secondService
+    </li>
+    <li
+      className="sm:text-sm md:text-base lg:text-lg pl-10 pr-10"
+    >
+      Terms.thirdService
+    </li>
+    <li
+      className="sm:text-sm md:text-base lg:text-lg pl-10 pr-10"
+    >
+      Terms.forthService
+    </li>
+    <li
+      className="sm:text-sm md:text-base lg:text-lg pl-10 pr-10"
+    >
+      Terms.fifthService
+    </li>
+  </ol>
+</div>
+`;
