@@ -1,17 +1,23 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { PropTypes } from 'prop-types';
 
 function InstructionCard({ image, title, description, directionFlag }) {
+  const { i18n } = useTranslation();
   // if directionFlag set to true the left direction of Instruction Card will retune
   if (directionFlag) {
     return (
-      <div className="flex bg-white h-auto shadow-xl rounded w-full items-center p-4 md:p-6">
-        <div className="flex-none h-16 w-16 md:h-20 md:w-20 rounded-full m-auto mr-2 sm:mr-4  bg-gray-200">
-          <img className="h-16 w-16 md:h-20 md:w-20 object-contain" src={image} alt="img" />
+      <div className="flex flex-col items-center w-full h-auto p-4 bg-white rounded shadow-xl sm:flex-row sm:h-48 md:h-56 xl:h-48 md:p-6">
+        <div className="flex-none w-12 h-12 mx-px mb-4 mr-2 bg-gray-200 rounded-full sm:self-center sm:w-16 sm:h-16 sm:mb-0 md:h-20 md:w-20 sm:mr-4">
+          <img
+            className="object-contain w-12 h-12 sm:w-16 sm:h-16 md:h-20 md:w-20"
+            src={image}
+            alt="img"
+          />
         </div>
-        <div className="flex-1 mr-4 sm:mr-4">
-          <p className="text-primary-100 text-lg sm:text-xl md:text-2xl font-bold">{title}</p>
-          <p className="text-black text-sm sm:text-base md:text-lg tracking-wide leading-normal">
+        <div className="flex-1 mx-4 ">
+          <p className="mb-2 font-semibold sm:text-xl text-primary-100">{title}</p>
+          <p className="text-sm leading-normal tracking-wide text-black sm:text-base md:text-lg">
             {description}
           </p>
         </div>
@@ -21,13 +27,21 @@ function InstructionCard({ image, title, description, directionFlag }) {
   // if directionFlag set to false the right  direction of Instruction Card will retune
   return (
     // if show on mobile  the Instruction Card will go from right to left
-    <div className="flex sm:flex-row-reverse bg-white h-auto shadow-xl rounded w-full items-center p-4 md:p-6">
-      <div className="flex-none h-16 w-16 md:h-20 md:w-20 rounded-full m-auto mr-2 bg-gray-200">
-        <img className="h-16 w-16 md:h-20 md:w-20 object-contain" src={image} alt="img" />
+    <div className="flex flex-col items-center w-full h-auto p-4 bg-white rounded shadow-xl sm:flex-row lg:flex-row-reverse sm:h-48 md:h-56 xl:h-48 md:p-6">
+      <div className="flex-none w-12 h-12 mx-px mb-4 mr-2 bg-gray-200 rounded-full sm:self-center sm:w-16 sm:h-16 sm:mb-0 md:h-20 md:w-20">
+        <img
+          className="object-contain w-12 h-12 sm:w-16 sm:h-16 md:h-20 md:w-20"
+          src={image}
+          alt="img"
+        />
       </div>
-      <div className="flex-1 text-left sm:text-right mr-4 sm:mr-4">
-        <p className="text-primary-100 text-lg sm:text-xl md:text-2xl font-bold">{title}</p>
-        <p className="text-black text-sm sm:text-base md:text-lg tracking-wide leading-normal">
+      <div
+        className={`flex-1 ${
+          i18n.language === 'ar' ? 'text-right lg:text-left' : 'text-left lg:text-right'
+        } mx-4 `}
+      >
+        <p className="mb-2 font-semibold sm:text-xl text-primary-100">{title}</p>
+        <p className="text-sm leading-normal tracking-wide text-black sm:text-base md:text-lg">
           {description}
         </p>
       </div>

@@ -14,5 +14,6 @@ i18next
     interpolation: {
       escapeValue: false,
     },
+    preload: ['en'],
   });
 export default i18next;
