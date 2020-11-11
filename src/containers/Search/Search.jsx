@@ -7,6 +7,7 @@ import Hero from '../../components/Hero';
 import Button from '../../components/Button';
 import InputSelect from '../../components/InputSelect';
 import Paragraph from '../../components/Paragraph/Paragraph';
+import DonorComponent from '../../components/DonorComponent';
 
 function Search() {
   const { t, i18n } = useTranslation();
@@ -62,11 +63,7 @@ function Search() {
             classflag
           />
           <div className="flex justify-end">
-            <Button
-              text={t('search_page.searchbutton')}
-              classFlag={false}
-              onclick={onclick}
-            />
+            <Button text={t('search_page.searchbutton')} classFlag={false} onclick={onclick} />
           </div>
         </div>
       </Hero>
@@ -76,8 +73,15 @@ function Search() {
         headerFlag
         paragraphFlag
       />
+      {/* //this is to render donors in mobile and hides the table */}
 
-      <Table donors={donors} />
+      <div className="display sm:hidden">
+        <DonorComponent donors={donors} />
+      </div>
+      {/* //this is to render a table in tables and latops and hides it in mobile */}
+      <div className="invisible sm:visible ">
+        <Table donors={donors} />
+      </div>
     </div>
   );
 }
