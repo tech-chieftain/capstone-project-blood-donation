@@ -6,6 +6,7 @@ import BackgroundImage from './images/search.png';
 import Hero from '../../components/Hero';
 import Button from '../../components/Button';
 import InputSelect from '../../components/InputSelect';
+import Paragraph from '../../components/Paragraph/Paragraph';
 
 function Search() {
   const { t, i18n } = useTranslation();
@@ -61,13 +62,23 @@ function Search() {
             classflag
           />
           <div className="flex justify-end">
-            <Button text={t('search_page.searchbutton')} classFlag={false} onclick={onclick} />
+            <Button
+              text={t('search_page.searchbutton')}
+              classFlag={false}
+              onclick={onclick}
+            />
           </div>
         </div>
       </Hero>
+      <Paragraph
+        headerText={t('search_page.tableHeader')}
+        paragraphText={t('search_page.tableText')}
+        headerFlag
+        paragraphFlag
+      />
+
       <Table donors={donors} />
     </div>
   );
 }
-
 export default Search;

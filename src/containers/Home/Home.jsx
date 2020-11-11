@@ -25,7 +25,11 @@ function Home() {
           <p className="text-white subpixel-antialiased tracking-wide text-3xl sm:text-4x md:text-6xl ">
             {t('HomePage.HeroTitle2')}
           </p>
-          <Button text={t('HomePage.donate')} onclick={() => history.push('./Donate')} classFlag />
+          <Button
+            text={t('HomePage.donate')}
+            onclick={() => history.push('./Donate')}
+            classFlag
+          />
         </div>
       </Hero>
       <div className=" bg-gray-100 py-8 sm:py-12 px-6 sm:px-0  ">
@@ -96,13 +100,25 @@ function Home() {
       </div>
       <div className=" flex justify-center flex-wrap ">
         <div className="flex-auto w-full md:w-2/6 lg:w-1/4 p-2 m-2">
-          <Card cardImage={Image} cardDesc={t('HomePage.PartnerOne')} orientationText="center" />
+          <Card
+            cardImage={Image}
+            cardDesc={t('HomePage.PartnerOne')}
+            orientationText="center"
+          />
         </div>
         <div className="flex-auto w-full md:w-2/6 lg:w-1/4 p-2 m-2">
-          <Card cardImage={Image} cardDesc={t('HomePage.PartnerTwo')} orientationText="center" />
+          <Card
+            cardImage={Image}
+            cardDesc={t('HomePage.PartnerTwo')}
+            orientationText="center"
+          />
         </div>
         <div className="flex-auto w-full md:w-2/6 lg:w-1/4 p-2 m-2">
-          <Card cardImage={Image} cardDesc={t('HomePage.PartnerThree')} orientationText="center" />
+          <Card
+            cardImage={Image}
+            cardDesc={t('HomePage.PartnerThree')}
+            orientationText="center"
+          />
         </div>
       </div>
     </div>

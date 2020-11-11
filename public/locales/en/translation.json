@@ -144,7 +144,9 @@
     "herotext": "Please select a blood type and city name in order to get Donnors",
     "bloodtype": "Select blood type",
     "city": "Select city",
-    "searchbutton": "Search"
+    "searchbutton": "Search",
+    "tableHeader": "Availabe Donors",
+    "tableText": "These  are sensitive information of volunteer people welling to help and save others life. Please keep in mind that these information should not be be used negatively."
   },
   "footer": {
     "text": "Solving the problem of blood emergencies by connecting blood donors directly with people in blood need."
