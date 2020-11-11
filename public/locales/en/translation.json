@@ -8,6 +8,18 @@
     "search": "Search",
     "donate": "Donate"
   },
+  "ready_donate": {
+    "header": "Ready to Donate?",
+    "text": "It does not make much time and every donation has the power to save up to three lives",
+    "button": "Donate"
+  },
+  "table": {
+    "name": "Donor Name",
+    "bloodType": "Blood Type",
+    "city": "City",
+    "phone": "Phone Number",
+    "email": "Email Address"
+  },
   "Process": {
     "titlePrograph": "Follow our tips to make your blood donation experience pleasant, safe and straightforward.",
     "titleInstructionCard": "instruction for your donation",
@@ -133,8 +145,10 @@
     "bloodtype": "Select blood type",
     "city": "Select city",
     "searchbutton": "Search",
-    "tableHeader":"Availabe Donors",
-    "tableText":"These  are sensitive inforamationn  of volunteer people welling to help and save others life .Please keep in mind that these information should not be be used negatively."
+    "tableHeader": "Availabe Donors",
+    "tableText": "These  are sensitive inforamationn  of volunteer people welling to help and save others life .Please keep in mind that these information should not be be used negatively."
+  },
+  "footer": {
+    "text": "Solving the problem of blood emergencies by connecting blood donors directly with people in blood need."
   }
 }
-
