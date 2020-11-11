@@ -11,7 +11,7 @@ exports[`renders correctly 1`] = `
     }
   >
     <div
-      className=" bg-white bg-opacity-25 w-8/12 sm:w-6/12  lg:w-4/12 mx-auto self-center  px-8 py-12"
+      className=" bg-white bg-opacity-25 w-8/12 sm:w-6/12  lg:w-4/12 mx-auto self-center px-8 py-12"
     >
       <p
         className="text-white text-base md:text-lg mb-6 text-center"
@@ -122,6 +122,47 @@ exports[`renders correctly 1`] = `
         </button>
       </div>
     </div>
+  </div>
+  <div>
+    <table
+      className="border table-auto  min-w-full"
+    >
+      <thead>
+        <tr
+          className="bg-primary"
+        >
+          <th
+            className="border px-4 py-2 text-white text-center leading-4 text-sm tracking-wider text-left"
+          >
+            table.name
+          </th>
+          <th
+            className="border px-4 py-2 text-white text-center leading-4 text-sm tracking-wider text-left"
+          >
+            table.bloodType
+          </th>
+          <th
+            className="border px-4 py-2 text-white text-center leading-4 text-sm tracking-wider text-left"
+          >
+            table.city
+          </th>
+          <th
+            className="border px-4 py-2 text-white text-center leading-4 text-sm tracking-wider text-left"
+          >
+            table.phone
+          </th>
+          <th
+            className="border px-4 py-2 text-white text-center leading-4 text-sm tracking-wider text-left"
+          >
+            table.email
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+         
+        ;
+      </tbody>
+    </table>
   </div>
 </div>
 `;

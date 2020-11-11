@@ -8,6 +8,13 @@
     "search": "Search",
     "donate": "Donate"
   },
+  "table":{
+    "name":"Donor Name",
+    "bloodType":"Blood Type",
+    "city":"City",
+    "phone":"Phone Number",
+    "email":"Email Address"
+  },
   "Process": {
     "titlePrograph": "Follow our tips to make your blood donation experience pleasant, safe and straightforward.",
     "titleInstructionCard": "instruction for your donation",
