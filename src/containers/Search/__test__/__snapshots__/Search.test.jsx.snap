@@ -124,6 +124,18 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div>
+    <h1
+      className="text-primary-100  sm:text-xl md:text-2xl lg:text-3xl pt-1 font-semibold  text-center"
+    >
+      search_page.tableHeader
+    </h1>
+    <p
+      className=" pt-3 pb-5  sm:text-sm md:text-base lg:text-lg  text-center "
+    >
+      search_page.tableText
+    </p>
+  </div>
+  <div>
     <table
       className="border table-auto  min-w-full"
     >
