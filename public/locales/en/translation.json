@@ -8,6 +8,18 @@
     "search": "Search",
     "donate": "Donate"
   },
+  "ready_donate": {
+    "header": "Ready to Donate?",
+    "text": "It does not make much time and every donation has the power to save up to three lives",
+    "button": "Donate"
+  },
+  "table": {
+    "name": "Donor Name",
+    "bloodType": "Blood Type",
+    "city": "City",
+    "phone": "Phone Number",
+    "email": "Email Address"
+  },
   "Process": {
     "titlePrograph": "Follow our tips to make your blood donation experience pleasant, safe and straightforward.",
     "titleInstructionCard": "instruction for your donation",
@@ -128,28 +140,33 @@
     "Socotra"
   ],
   "Terms": {
-    "TermsAndServices":"Terms and Services",
-    "TermsText":" By visiting this website and accessing the information, resources, services, products and tools we provide, you understand and agree to accept and comply with the following terms and conditions ",
-    "TermsOfUse":"Terms of use:",
-    "firstTerm":" 1.People  must understand that the information provided by them is available to a person seeking for a particular blood group.",
-    "secondTerm":"2.We do not sell contact details of potential donors to any third party or use it in anyfor commercial gains.",
-    "thirdTerm":"3. We does not arrange for blood. We only provide relevant information about potential donors to those in need of blood.",
-    "forthTerm":"4.We do not guarantee that a potential donor will agree to donate blood whenever called upon to do so.",
-    "fifthTerm":"5.We does not claim that potential donors are free from any disease, ailment, or bodily conditions preventing them from donating blood .",
-    "sixthTerm":"6.We urge you not to registrations if you do not seriously wish to donate blood. It is a matter of life and death for those in need of blood.",
-    "seventhTerm":"7.We reserves right to inactivate member at any given time in case found wrong information given or misuse of service .",
-    "Services":" The Services:",
-    "firstService":" 1.Find out where you can donate.",
-    "secondService":"2.Check your eligibility to donate.",
-    "thirdService":"3.register for blood donation .",
-    "forthService":" 4.find potential donors.",
-    "fifthService":"5.have answers to some of your concerns."
+    "TermsAndServices": "Terms and Services",
+    "TermsText": " By visiting this website and accessing the information, resources, services, products and tools we provide, you understand and agree to accept and comply with the following terms and conditions ",
+    "TermsOfUse": "Terms of use:",
+    "firstTerm": "People  must understand that the information provided by them is available to a person seeking for a particular blood group.",
+    "secondTerm": "We do not sell contact details of potential donors to any third party or use it in anyfor commercial gains.",
+    "thirdTerm": "We does not arrange for blood. We only provide relevant information about potential donors to those in need of blood.",
+    "forthTerm": "We do not guarantee that a potential donor will agree to donate blood whenever called upon to do so.",
+    "fifthTerm": "We does not claim that potential donors are free from any disease, ailment, or bodily conditions preventing them from donating blood .",
+    "sixthTerm": "We urge you not to registrations if you do not seriously wish to donate blood. It is a matter of life and death for those in need of blood.",
+    "seventhTerm": "We reserves right to inactivate member at any given time in case found wrong information given or misuse of service .",
+    "Services": " The Services:",
+    "firstService": "Find out where you can donate.",
+    "secondService": "Check your eligibility to donate.",
+    "thirdService": "register for blood donation .",
+    "forthService": "find potential donors.",
+    "fifthService": "have answers to some of your concerns."
   },
   "bloodTypes": ["O-", "O+", " B-", "B+", " A-", "A+", "AB-", "AB+"],
   "search_page": {
     "herotext": "Please select a blood type and city name in order to get Donnors",
     "bloodtype": "Select blood type",
     "city": "Select city",
-    "searchbutton": "Search"
+    "searchbutton": "Search",
+    "tableHeader": "Availabe Donors",
+    "tableText": "These  are sensitive information of volunteer people welling to help and save others life. Please keep in mind that these information should not be be used negatively."
+  },
+  "footer": {
+    "text": "Solving the problem of blood emergencies by connecting blood donors directly with people in blood need."
   }
 }

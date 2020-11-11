@@ -18,7 +18,7 @@ function Terms() {
         paragraphFlag
       />
       <h1 className={styleClass.HeaderStyle}>{t('Terms.TermsOfUse')}</h1>
-      <ol>
+      <ol className="list-decimal">
         <li className={styleClass.TextStyle}>{t('Terms.firstTerm')}</li>
         <li className={styleClass.TextStyle}>{t('Terms.secondTerm')}</li>
         <li className={styleClass.TextStyle}>{t('Terms.thirdTerm')}</li>
@@ -28,7 +28,7 @@ function Terms() {
         <li className={styleClass.TextStyle}>{t('Terms.seventhTerm')}</li>
       </ol>
       <h1 className={styleClass.HeaderStyle}> {t('Terms.Services')}</h1>
-      <ol>
+      <ol className="list-decimal">
         <li className={styleClass.TextStyle}>{t('Terms.firstService')}</li>
         <li className={styleClass.TextStyle}>{t('Terms.secondService')}</li>
         <li className={styleClass.TextStyle}>{t('Terms.thirdService')}</li>
