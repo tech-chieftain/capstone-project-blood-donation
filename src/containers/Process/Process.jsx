@@ -19,7 +19,6 @@ function Process() {
           {t('donation_process.secondTitle')}
         </h1>
         <p className="pt-3 text-center sm:text-sm md:text-base lg:text-lg">
-          {' '}
           {t('donation_process.Paragraph')}
         </p>
       </div>
