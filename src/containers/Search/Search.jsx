@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import Table from '../../components/Table';
 import { getDonaor } from '../../Utilities/FirebaseUtilities';
 import BackgroundImage from './images/search.png';
 import Hero from '../../components/Hero';
 import Button from '../../components/Button';
 import InputSelect from '../../components/InputSelect';
+import Paragraph from '../../components/Paragraph/Paragraph';
 
 function Search() {
   const { t, i18n } = useTranslation();
@@ -35,10 +37,11 @@ function Search() {
   const onclick = () => {
     getDonaor(search.bloodType, search.city).then((data) => setDonors(data));
   };
+
   return (
     <div>
       <Hero img={BackgroundImage}>
-        <div className=" bg-white bg-opacity-25 w-8/12 sm:w-6/12  lg:w-4/12 mx-auto self-center  px-8 py-12">
+        <div className=" bg-white bg-opacity-25 w-8/12 sm:w-6/12  lg:w-4/12 mx-auto self-center px-8 py-12">
           <p className="text-white text-base md:text-lg mb-6 text-center">
             {t('search_page.herotext')}
           </p>
@@ -59,12 +62,23 @@ function Search() {
             classflag
           />
           <div className="flex justify-end">
-            <Button text={t('search_page.searchbutton')} classFlag={false} onclick={onclick} />
+            <Button
+              text={t('search_page.searchbutton')}
+              classFlag={false}
+              onclick={onclick}
+            />
           </div>
         </div>
       </Hero>
+      <Paragraph
+        headerText={t('search_page.tableHeader')}
+        paragraphText={t('search_page.tableText')}
+        headerFlag
+        paragraphFlag
+      />
+
+      <Table donors={donors} />
     </div>
   );
 }
-
 export default Search;
