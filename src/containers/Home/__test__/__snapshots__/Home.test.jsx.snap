@@ -200,12 +200,12 @@ exports[`renders correctly 1`] = `
         <div
           className="text-black text-lg sm:text-xl md:text-2xl font-semibold"
         >
-          Ready to Donate?
+          ready_donate.header
         </div>
         <div
-          className="text-black w-6/12 text-sm sm:text-base md:text-lg tracking-wide leading-wide"
+          className="text-black  text-sm sm:text-base md:text-lg "
         >
-          It does not make much time and every donation has the power to save up to three lives
+          ready_donate.text
         </div>
         <div>
           <button
@@ -213,7 +213,7 @@ exports[`renders correctly 1`] = `
             onClick={[Function]}
             type="button"
           >
-            Donate
+            ready_donate.button
           </button>
         </div>
       </div>
