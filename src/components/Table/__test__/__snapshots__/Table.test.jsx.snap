@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <table
+    className="border table-auto  min-w-full"
+  >
+    <thead>
+      <tr
+        className="bg-primary"
+      >
+        <th
+          className="border px-4 py-2 text-white text-center leading-4 text-sm tracking-wider text-left"
+        >
+          table.name
+        </th>
+        <th
+          className="border px-4 py-2 text-white text-center leading-4 text-sm tracking-wider text-left"
+        >
+          table.bloodType
+        </th>
+        <th
+          className="border px-4 py-2 text-white text-center leading-4 text-sm tracking-wider text-left"
+        >
+          table.city
+        </th>
+        <th
+          className="border px-4 py-2 text-white text-center leading-4 text-sm tracking-wider text-left"
+        >
+          table.phone
+        </th>
+        <th
+          className="border px-4 py-2 text-white text-center leading-4 text-sm tracking-wider text-left"
+        >
+          table.email
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+       
+      ;
+    </tbody>
+  </table>
+</div>
+`;
