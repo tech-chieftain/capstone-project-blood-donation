@@ -8,14 +8,14 @@ exports[`renders correctly 1`] = `
     type="button"
   >
     <img
-      alt="Enlish"
-      className="w-6 h-6 rounded-full object-cover object-center"
-      src="english.svg"
+      alt="Arabic"
+      className="w-8 h-8 rounded-full object-cover object-center"
+      src="arabic.svg"
     />
     <p
       className="mx-2 text-white"
     >
-      En
+      عربي
     </p>
   </button>
 </div>

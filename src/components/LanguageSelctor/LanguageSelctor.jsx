@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { PropTypes } from 'prop-types';
 import Enlish from './images/english.svg';
 import Arabic from './images/arabic.svg';
 
-function LanguageSelctor({ languageflag, setlanguageflag, menuClose }) {
+function LanguageSelctor({ menuClose }) {
+  const [languageflag, setlanguageflag] = useState(false);
   const { i18n } = useTranslation();
   const onclick = () => {
     setlanguageflag(!languageflag);
@@ -26,7 +27,7 @@ function LanguageSelctor({ languageflag, setlanguageflag, menuClose }) {
       ) : (
         <button type="button" className="flex items-center" onClick={onclick}>
           <img
-            className="w-6 h-6 rounded-full object-cover object-center"
+            className="w-6 h-6 rounded-full object-cover object-center mt-2"
             src={Enlish}
             alt="Enlish"
           />
@@ -37,8 +38,6 @@ function LanguageSelctor({ languageflag, setlanguageflag, menuClose }) {
   );
 }
 LanguageSelctor.propTypes = {
-  languageflag: PropTypes.bool.isRequired,
-  setlanguageflag: PropTypes.func,
   menuClose: PropTypes.func,
 };
 

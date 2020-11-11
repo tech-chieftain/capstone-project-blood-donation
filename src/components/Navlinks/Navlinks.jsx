@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Navlink from '../Navlink';
 import LanguageSelector from '../LanguageSelctor';
 
-function NavLinks({ classname, menuClose, classFlag, languageflag, setlanguageflag }) {
+function NavLinks({ classname, menuClose, classFlag }) {
   const { t } = useTranslation();
   const classesObject = {
     //  nav link with border at button and white text
@@ -53,12 +53,12 @@ function NavLinks({ classname, menuClose, classFlag, languageflag, setlanguagefl
         text={t('nav.donate')}
         menuClose={menuClose}
       />
-      <li className={` ${classFlag ? 'hidden' : 'block'} md:hidden my-4 `}>
-        <LanguageSelector
-          languageflag={languageflag}
-          setlanguageflag={setlanguageflag}
-          menuClose={menuClose}
-        />
+      <li
+        className={` ${
+          classFlag ? 'hidden' : 'block'
+        }  mt-4 md:mt-0 sm:mr-0 md:mr-2 order-first sm:order-first  `}
+      >
+        <LanguageSelector menuClose={menuClose} />
       </li>
     </ul>
   );
@@ -67,7 +67,5 @@ NavLinks.propTypes = {
   classname: PropTypes.string.isRequired,
   menuClose: PropTypes.func,
   classFlag: PropTypes.bool.isRequired,
-  languageflag: PropTypes.bool.isRequired,
-  setlanguageflag: PropTypes.func,
 };
 export default NavLinks;
