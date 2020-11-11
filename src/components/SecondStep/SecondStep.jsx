@@ -20,7 +20,7 @@ function SecondStep({ donor, onChange, setStep, chooseBlood, city }) {
     setStep(1);
   };
   const bloodTypes = Array.from(t('bloodTypes', { returnObjects: true }));
-  const cities =Array.from(t('cities', { returnObjects: true }));
+  const cities = Array.from(t('cities', { returnObjects: true }));
   return (
     <div>
       <div className="text-primary-100  sm:text-xl md:text-2xl lg:text-3xl pt-1 font-semibold mb-6 ">
@@ -73,6 +73,7 @@ function SecondStep({ donor, onChange, setStep, chooseBlood, city }) {
             name="city"
             text={t('donate_second_page.city')}
             options={cities}
+            classflag={false}
           />
         </div>
         <div className="flex  mb-8">

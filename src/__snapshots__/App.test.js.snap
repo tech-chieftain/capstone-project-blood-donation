@@ -113,7 +113,7 @@ Array [
       </select>
     </div>
     <div
-      className="flex w-100  h-screen bg-no-repeat bg-cover"
+      className="flex w-100 py-12  md:py-16 lg:py-20 xl:py-0 xl:h-screen bg-no-repeat  bg-cover"
       style={
         Object {
           "backgroundImage": "linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(HeroImage.png)",
@@ -453,12 +453,12 @@ Array [
         </svg>
       </div>
       <div
-        className="w-8/12 lg:w-6/12"
+        className="w-10/12 sm:w-7/12 lg:w-6/12 xl:w-2/5 "
       >
         <p
-          className="text-white text-center mb-2"
+          className="text-white text-center mb-2 text-sm sm:text-base md:text-lg"
         >
-          Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit
+          footer.text
         </p>
       </div>
       <div>

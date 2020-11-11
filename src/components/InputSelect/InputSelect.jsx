@@ -1,11 +1,15 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 
-function InputSelect({ city, text, onChange, name, options }) {
+function InputSelect({ city, text, onChange, name, options, classflag }) {
   return (
     <div className="mb-4 sm:mb-6">
       <label htmlFor="nowhere" className="block">
-        <div className="text-sm sm:text-base md:text-lg font-medium inline-block mb-4 sm:mb-6">
+        <div
+          className={`${
+            classflag ? 'text-white' : 'font-medium'
+          } text-sm sm:text-base md:text-lg  inline-block mb-4 sm:mb-6`}
+        >
           {text}
         </div>
         <select
@@ -26,6 +30,7 @@ function InputSelect({ city, text, onChange, name, options }) {
 
 InputSelect.propTypes = {
   city: PropTypes.string.isRequired,
+  classflag: PropTypes.bool.isRequired,
   text: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   options: PropTypes.array.isRequired,
