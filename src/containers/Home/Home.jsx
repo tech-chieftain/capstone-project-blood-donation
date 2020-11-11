@@ -1,7 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useHistory } from 'react-router-dom';
-import LanguageSwitcher from './LanguageSwitcher';
 import Hero from '../../components/Hero';
 import Paragraph from '../../components/Paragraph';
 import Button from '../../components/Button';
@@ -18,7 +17,6 @@ function Home() {
   const history = useHistory();
   return (
     <div>
-      {t('app_name')} <LanguageSwitcher />
       <Hero img={HeroImage}>
         <div className=" items-center mx-8 flex-wrap my-auto">
           <p className="text-white subpixel-antialiased tracking-wide text-3xl sm:text-4x md:text-6xl ">

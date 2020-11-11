@@ -8,7 +8,13 @@ it('renders correctly', () => {
   const tree = renderer
     .create(
       <Router>
-        <NavLinks classname="hidden" menuClose={() => console.log('Donate')} classFlag={false} />
+        <NavLinks
+          languageflag
+          setlanguageflag={() => console.log('Donate')}
+          classname="hidden"
+          menuClose={() => console.log('Donate')}
+          classFlag={false}
+        />
       </Router>
     )
     .toJSON();
