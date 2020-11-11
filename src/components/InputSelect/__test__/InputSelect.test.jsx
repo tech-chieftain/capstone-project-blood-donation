@@ -35,6 +35,7 @@ it('renders correctly', () => {
           'Taiz',
           'Socotra',
         ]}
+        classflag={false}
       />
     )
     .toJSON();
