@@ -6,6 +6,7 @@ import LanguageSelector from '../LanguageSelctor';
 function Navbar() {
   // this  state to control the shown menu icon
   const [show, setShow] = useState(false);
+  const [languageflag, setlanguageflag] = useState(false);
   // this  state to control the class of unordered list in navelinks
   const [classname, setclassna] = useState('hidden');
   const closeMenu = () => {
@@ -19,9 +20,9 @@ function Navbar() {
     <div className="bg-primary py-4 px-4 md:px-8 flex justify-between flex-wrap items-center">
       <Logo />
 
-      <div className="flex-1  flex items-center  justify-between md:justify-end">
-        <div className="mx-6 md:mx-2 ">
-          <LanguageSelector />
+      <div className="flex-1  flex items-center  justify-end md:justify-end">
+        <div className="hidden md:block mx-6 md:mx-2 ">
+          <LanguageSelector languageflag={languageflag} setlanguageflag={setlanguageflag} />
         </div>
         <label
           htmlFor="menu-toggle"
@@ -41,7 +42,13 @@ function Navbar() {
           />
         </label>
       </div>
-      <NavLink classname={classname} menuClose={closeMenu} classFlag={false} />
+      <NavLink
+        classname={classname}
+        menuClose={closeMenu}
+        classFlag={false}
+        languageflag={languageflag}
+        setlanguageflag={setlanguageflag}
+      />
     </div>
   );
 }

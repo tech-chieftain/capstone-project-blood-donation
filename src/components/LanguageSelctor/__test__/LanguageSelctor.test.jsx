@@ -5,6 +5,14 @@ import LanguageSelctor from '../LanguageSelctor';
 // This is an example of a Snapshot. It will create a new snapshot which all future
 // tests will use to compare to.
 it('renders correctly', () => {
-  const tree = renderer.create(<LanguageSelctor />).toJSON();
+  const tree = renderer
+    .create(
+      <LanguageSelctor
+        languageflag
+        setlanguageflag={() => console.log('Donate')}
+        menuClose={() => console.log('Donate')}
+      />
+    )
+    .toJSON();
   expect(tree).toMatchSnapshot();
 });
