@@ -5,12 +5,12 @@ import Paragraph from '../../components/Paragraph';
 function Terms() {
   const { t } = useTranslation();
   const styleClass = {
-    HeaderStyle: `text-primary pl-10  md:text-lg lg:text-xl font-medium pl-10 pr-10 pb-5 pt-5`,
-    TextStyle: `sm:text-sm md:text-base lg:text-lg pl-10 pr-10`,
+    HeaderStyle: `text-primary  md:text-lg lg:text-xl font-medium  pb-5 pt-5`,
+    TextStyle: `sm:text-sm md:text-base lg:text-lg leading-8 `,
   };
 
   return (
-    <div>
+    <div className="p-10 ">
       <Paragraph
         headerText={t('Terms.TermsAndServices')}
         paragraphText={t('Terms.TermsText')}
