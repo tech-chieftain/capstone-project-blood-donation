@@ -19,10 +19,10 @@ function Home() {
     <div>
       <Hero img={HeroImage}>
         <div className=" items-center mx-8 flex-wrap my-auto">
-          <p className="text-white subpixel-antialiased tracking-wide text-3xl sm:text-4x md:text-6xl ">
+          <p className="text-white subpixel-antialiased tracking-wide text-2xl sm:text-4x md:text-6xl ">
             {t('HomePage.HeroTitle1')}
           </p>
-          <p className="text-white subpixel-antialiased tracking-wide text-3xl sm:text-4x md:text-6xl ">
+          <p className="text-white subpixel-antialiased tracking-wide text-2xl sm:text-4x md:text-6xl ">
             {t('HomePage.HeroTitle2')}
           </p>
           <Button
