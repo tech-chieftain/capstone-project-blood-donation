@@ -99,15 +99,15 @@ function ThirdStep({ donor, onChange, setStep, onRegister }) {
           </div>
         </div>
 
-        <div className="flex  mb-8">
-          <div className="mx-4 sm:mx-8 text-center">
+        <div className="flex flex-col-reverse  sm:flex-row  mb-8">
+          <div className="mx-0 sm:mx-8 mt-2 sm:mt-0 text-center">
             <Button
               text={t('donate_third_page.button_previous')}
               onclick={onClickPrevious}
               classFlag
             />
           </div>
-          <div>
+          <div className="text-center mt-2 sm:mt-0">
             <Button
               text={t('donate_third_page.button_next')}
               onclick={onClickNext}
