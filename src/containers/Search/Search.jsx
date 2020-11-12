@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import Table from '../../components/Table';
+
 import { getDonaor } from '../../Utilities/FirebaseUtilities';
 import BackgroundImage from './images/search.png';
 import Hero from '../../components/Hero';
@@ -17,6 +18,7 @@ function Search() {
   const [donors, setDonors] = useState([]);
   const [load, setLoad] = useState(true);
   const [nodonor, setNodonor] = useState(false);
+  const scrollRef = useRef(null);
   const bloodTypes = Array.from(t('bloodTypes', { returnObjects: true }));
   const cities = Array.from(t('cities', { returnObjects: true }));
 
@@ -41,6 +43,9 @@ function Search() {
   const onclick = () => {
     setLoad(false);
     setNodonor(false);
+    if (scrollRef.current) {
+      scrollRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
     getDonaor(search.bloodType, search.city).then((data) => {
       setDonors(data);
       setLoad(true);
@@ -89,37 +94,39 @@ function Search() {
         />
       </div>
 
-      {donors.length > 0 && load ? (
-        <div className="hidden md:block">
-          <Table donors={donors} />
-        </div>
-      ) : null}
-      {donors.length > 0 && load ? (
-        <div className="block md:hidden">
-          {donors.map((donor) => (
-            <div className="w-10/12 sm:w-8/12 mx-auto mb-6">
-              <DonorCard
-                key={donor.id}
-                phoneNumber={donor.phone}
-                email={donor.email}
-                donorName={donor.name}
-                bloodType={donor.bloodType}
-                address={donor.city}
-              />
-            </div>
-          ))}
-        </div>
-      ) : null}
-      {!load ? (
-        <div className="w-4/12 mx-auto flex  justify-center">
-          <img className="object-cover" src={Loading} alt="loading" />
-        </div>
-      ) : null}
-      {nodonor ? (
-        <div className=" text-primary-100 text-lg sm:text-xl sm:my-8 w-11/12 sm:w-9/12 md:w-8/12 mx-auto text-center mb-6">
-          {t('search_page.nodonors')}
-        </div>
-      ) : null}
+      <div ref={scrollRef}>
+        {donors.length > 0 && load ? (
+          <div className="hidden md:block">
+            <Table donors={donors} />
+          </div>
+        ) : null}
+        {donors.length > 0 && load ? (
+          <div className="block md:hidden">
+            {donors.map((donor) => (
+              <div className="w-10/12 sm:w-8/12 mx-auto mb-6">
+                <DonorCard
+                  key={donor.id}
+                  phoneNumber={donor.phone}
+                  email={donor.email}
+                  donorName={donor.name}
+                  bloodType={donor.bloodType}
+                  address={donor.city}
+                />
+              </div>
+            ))}
+          </div>
+        ) : null}
+        {!load ? (
+          <div className="w-4/12 mx-auto flex  justify-center">
+            <img className="object-cover" src={Loading} alt="loading" />
+          </div>
+        ) : null}
+        {nodonor ? (
+          <div className=" text-primary-100 text-lg sm:text-xl sm:my-8 w-11/12 sm:w-9/12 md:w-8/12 mx-auto text-center mb-6">
+            {t('search_page.nodonors')}
+          </div>
+        ) : null}
+      </div>
     </div>
   );
 }

@@ -100,7 +100,7 @@ Array [
           >
             <img
               alt="Arabic"
-              className="w-8 h-8 rounded-full object-cover object-center"
+              className="w-8 h-8 rounded-full object-cover "
               src="arabic.svg"
             />
             <p
@@ -532,7 +532,7 @@ Array [
               >
                 <img
                   alt="Arabic"
-                  className="w-8 h-8 rounded-full object-cover object-center"
+                  className="w-8 h-8 rounded-full object-cover "
                   src="arabic.svg"
                 />
                 <p
