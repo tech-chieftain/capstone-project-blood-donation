@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <button
+    className="flex items-center"
+    onClick={[Function]}
+    type="button"
+  >
+    <img
+      alt="Arabic"
+      className="w-8 h-8 rounded-full object-cover "
+      src="arabic.svg"
+    />
+    <p
+      className="mx-2 text-white"
+    >
+      عربي
+    </p>
+  </button>
+</div>
+`;

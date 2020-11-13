@@ -3,18 +3,18 @@
 exports[`renders correctly 1`] = `
 <div>
   <div
-    className="px-1  bg-gray-200 sm:w-full"
+    className="px-2 sm:px-4 py-2 bg-gray-200 "
   >
     <div
-      className="flex"
+      className="flex items-center"
     >
       <img
         alt="icon"
-        className="w-6 h-6 px-1 my-3 mr-2"
+        className="w-6 h-6 mx-2 my-1 object-cover "
         src="name.svg"
       />
       <span
-        className="pt-3 text-lg sm:text-2xl md:text-2xl font-bold"
+        className=" text-sm sm:text-base "
       >
          
         Emad Alhattami
@@ -23,18 +23,18 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="px-1  bg-gray-200 sm:w-full"
+    className="px-2 sm:px-4 py-2 bg-gray-200 "
   >
     <div
-      className="flex"
+      className="flex items-center"
     >
       <img
         alt="icon"
-        className="w-6 h-6 px-1 my-3 mr-2"
+        className="w-6 h-6 mx-2 my-1 object-cover "
         src="blood_type.svg"
       />
       <span
-        className="pt-3 text-lg sm:text-2xl md:text-2xl font-bold"
+        className=" text-sm sm:text-base "
       >
          
         A-
@@ -43,18 +43,18 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="px-1  bg-gray-200 sm:w-full"
+    className="px-2 sm:px-4 py-2 bg-gray-200 "
   >
     <div
-      className="flex"
+      className="flex items-center"
     >
       <img
         alt="icon"
-        className="w-6 h-6 px-1 my-3 mr-2"
+        className="w-6 h-6 mx-2 my-1 object-cover "
         src="phone.svg"
       />
       <span
-        className="pt-3 text-lg sm:text-2xl md:text-2xl font-bold"
+        className=" text-sm sm:text-base "
       >
          
         774373827
@@ -63,18 +63,18 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="px-1  bg-gray-200 sm:w-full"
+    className="px-2 sm:px-4 py-2 bg-gray-200 "
   >
     <div
-      className="flex"
+      className="flex items-center"
     >
       <img
         alt="icon"
-        className="w-6 h-6 px-1 my-3 mr-2"
+        className="w-6 h-6 mx-2 my-1 object-cover "
         src="location.svg"
       />
       <span
-        className="pt-3 text-lg sm:text-2xl md:text-2xl font-bold"
+        className=" text-sm sm:text-base "
       >
          
         Sana'a
@@ -83,18 +83,18 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <div
-    className="px-1  bg-gray-200 sm:w-full"
+    className="px-2 sm:px-4 py-2 bg-gray-200 "
   >
     <div
-      className="flex"
+      className="flex items-center"
     >
       <img
         alt="icon"
-        className="w-6 h-6 px-1 my-3 mr-2"
+        className="w-6 h-6 mx-2 my-1 object-cover "
         src="email.svg"
       />
       <span
-        className="pt-3 text-lg sm:text-2xl md:text-2xl font-bold"
+        className=" text-sm sm:text-base "
       >
          
         emad@gmail.com
