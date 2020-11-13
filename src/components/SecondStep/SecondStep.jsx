@@ -10,22 +10,22 @@ import Progress from '../Progress';
 import InputSelect from '../InputSelect';
 
 function SecondStep({ donor, onChange, setStep, chooseBlood, city }) {
-  const [errorcity, setErrorcity] = useState('');
-  const [errorblood, seterrorblood] = useState('');
+  const [errorcity, setErrorcity] = useState(false);
+  const [errorblood, seterrorblood] = useState(false);
   const { t } = useTranslation();
   const onClickNext = () => {
     if (donor.city !== '' && donor.bloodType !== '') {
       setStep(3);
     }
     if (donor.city === '') {
-      setErrorcity(t('donate_second_page.errorCity'));
+      setErrorcity(true);
     } else {
-      setErrorcity('');
+      setErrorcity(false);
     }
     if (donor.bloodType === '') {
-      seterrorblood(t('donate_second_page.errorBlood'));
+      seterrorblood(true);
     } else {
-      seterrorblood('');
+      seterrorblood(false);
     }
   };
   const onClickPrevious = () => {
@@ -78,7 +78,9 @@ function SecondStep({ donor, onChange, setStep, chooseBlood, city }) {
             </button>
           ))}
         </div>
-        <div className="mb-8 text:sm text-red-600">{errorblood}</div>
+        <div className="mb-8 text:sm text-red-600">
+          {errorblood ? t('donate_second_page.errorBlood') : ''}
+        </div>
         <div className="w-8/12 sm:w-6/12 lg:w-4/12">
           <InputSelect
             city={city}
@@ -89,7 +91,9 @@ function SecondStep({ donor, onChange, setStep, chooseBlood, city }) {
             classflag={false}
           />
         </div>
-        <div className="mb-8 text:sm text-red-600">{errorcity}</div>
+        <div className="mb-8 text:sm text-red-600">
+          {errorcity ? t('donate_second_page.errorCity') : ''}
+        </div>
         <div className="flex  mb-8">
           <div className="mx-4 sm:mx-8 text-center">
             <Button

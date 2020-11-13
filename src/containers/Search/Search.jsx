@@ -38,7 +38,9 @@ function Search() {
         [name]: value,
       });
     }
-    setcity(value);
+    if ((i18n.language === 'ar' || i18n.language === 'en') && name === 'city') {
+      setcity(value);
+    }
   };
   const onclick = () => {
     setLoad(false);

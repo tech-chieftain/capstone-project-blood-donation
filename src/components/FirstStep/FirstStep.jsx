@@ -11,9 +11,9 @@ import Donateparagraph from '../Donateparagraph';
 import Progress from '../Progress';
 
 function FirstStep({ donor, onChange, setStep }) {
-  const [errordate, setErrordate] = useState('');
-  const [errorwight, seterrorwight] = useState('');
-  const [errorsick, setErrorsick] = useState('');
+  const [errordate, setErrordate] = useState(false);
+  const [errorwight, seterrorwight] = useState(false);
+  const [errorsick, setErrorsick] = useState(false);
   const { t } = useTranslation();
   const history = useHistory();
   const dateDiff = (date2) => {
@@ -37,19 +37,19 @@ function FirstStep({ donor, onChange, setStep }) {
       setStep(2);
     }
     if (Number.isNaN(Age)) {
-      setErrordate(t('donate_first_page.dateError'));
+      setErrordate(true);
     } else {
-      setErrordate('');
+      setErrordate(false);
     }
     if (donor.weight === '') {
-      seterrorwight(t('donate_first_page.wightError'));
+      seterrorwight(true);
     } else {
-      seterrorwight('');
+      seterrorwight(false);
     }
     if (donor.sickness === '') {
-      setErrorsick(t('donate_first_page.sickError'));
+      setErrorsick(true);
     } else {
-      setErrorsick('');
+      setErrorsick(false);
     }
   };
   return (
@@ -80,7 +80,9 @@ function FirstStep({ donor, onChange, setStep }) {
             onChange={onChange}
           />
         </div>
-        <div className="mb-8 text:sm text-red-600">{errordate}</div>
+        <div className="mb-8 text:sm text-red-600">
+          {errordate ? t('donate_first_page.dateError') : ''}
+        </div>
         <RadioButton
           donor={donor}
           onChange={onChange}
@@ -91,7 +93,9 @@ function FirstStep({ donor, onChange, setStep }) {
           ]}
           name="weight"
         />
-        <div className="mb-8 text:sm text-red-600">{errorwight}</div>
+        <div className="mb-8 text:sm text-red-600">
+          {errorwight ? t('donate_first_page.wightError') : ''}
+        </div>
         <RadioButton
           donor={donor}
           onChange={onChange}
@@ -102,7 +106,9 @@ function FirstStep({ donor, onChange, setStep }) {
           ]}
           name="sickness"
         />
-        <div className="mb-8 text:sm text-red-600">{errorsick}</div>
+        <div className="mb-8 text:sm text-red-600">
+          {errorsick ? t('donate_first_page.sickError') : ''}
+        </div>
         <Button text={t('donate_first_page.button')} onclick={onClickHandling} classFlag={false} />
       </div>
     </div>

@@ -85,7 +85,7 @@ exports[`renders correctly 1`] = `
           </div>
         </div>
         <div
-          className="mb-8 md:mb-16 text-primary"
+          className="mb-8 md:mb-16 text-red-600"
         >
           
         </div>
@@ -159,7 +159,7 @@ exports[`renders correctly 1`] = `
               donate_third_page.agree
                
               <a
-                className="border-b-2  border-primary text-sm sm:text-base  text:sm text-red-600"
+                className="border-b-2  border-primary text-sm sm:text-base  text:sm text-primary"
                 href="/Terms"
                 target="_blank"
               >

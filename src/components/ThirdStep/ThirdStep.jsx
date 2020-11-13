@@ -10,9 +10,9 @@ import InputField from '../InputField';
 import donate from './images/donate.svg';
 
 function ThirdStep({ donor, onChange, setStep, onRegister }) {
-  const [errorname, setErrorname] = useState('');
-  const [erroremail, seterroremail] = useState('');
-  const [errorphone, setErrorphone] = useState('');
+  const [errorname, setErrorname] = useState(false);
+  const [erroremail, seterroremail] = useState(false);
+  const [errorphone, setErrorphone] = useState(false);
   const { t } = useTranslation();
   const [agree, setAgree] = useState(false);
   const onClickNext = () => {
@@ -21,19 +21,19 @@ function ThirdStep({ donor, onChange, setStep, onRegister }) {
       onRegister();
     }
     if (donor.name === '') {
-      setErrorname(t('donate_third_page.errorName'));
+      setErrorname(true);
     } else {
-      setErrorname('');
+      setErrorname(false);
     }
     if (!mailformat.test(donor.email)) {
-      seterroremail(t('donate_third_page.errorEmail'));
+      seterroremail(true);
     } else {
-      seterroremail('');
+      seterroremail(false);
     }
     if (donor.phone === '') {
-      setErrorphone(t('donate_third_page.errorPhone'));
+      setErrorphone(true);
     } else {
-      setErrorphone('');
+      setErrorphone(false);
     }
   };
   const onClickPrevious = () => {
@@ -66,7 +66,9 @@ function ThirdStep({ donor, onChange, setStep, onRegister }) {
                 Inputtype="text"
               />
             </div>
-            <div className="mb-8 md:mb-16 text-primary">{errorname}</div>
+            <div className="mb-8 md:mb-16 text-red-600">
+              {errorname ? t('donate_third_page.errorName') : ''}
+            </div>
             <div>
               <InputField
                 labelText={t('donate_third_page.phone')}
@@ -77,7 +79,9 @@ function ThirdStep({ donor, onChange, setStep, onRegister }) {
                 Inputtype="number"
               />
             </div>
-            <div className="mb-8 md:mb-16 text:sm text-red-600">{errorphone}</div>
+            <div className="mb-8 md:mb-16 text:sm text-red-600">
+              {errorphone ? t('donate_third_page.errorPhone') : ''}
+            </div>
             <div>
               <InputField
                 labelText={t('donate_third_page.email')}
@@ -88,7 +92,9 @@ function ThirdStep({ donor, onChange, setStep, onRegister }) {
                 Inputtype="email"
               />
             </div>
-            <div className="mb-8 md:mb-16 text:sm text-red-600">{erroremail}</div>
+            <div className="mb-8 md:mb-16 text:sm text-red-600">
+              {erroremail ? t('donate_third_page.errorEmail') : ''}
+            </div>
             <div>
               <label htmlFor="check" className="inline-flex items-start">
                 <input
@@ -103,7 +109,7 @@ function ThirdStep({ donor, onChange, setStep, onRegister }) {
                   <a
                     href="/Terms"
                     target="_blank"
-                    className="border-b-2  border-primary text-sm sm:text-base  text:sm text-red-600"
+                    className="border-b-2  border-primary text-sm sm:text-base  text:sm text-primary"
                   >
                     {t('donate_third_page.terms')}
                   </a>
