@@ -80,7 +80,7 @@ function FirstStep({ donor, onChange, setStep }) {
             onChange={onChange}
           />
         </div>
-        <div className="mb-8 text-primary">{errordate}</div>
+        <div className="mb-8 text:sm text-red-600">{errordate}</div>
         <RadioButton
           donor={donor}
           onChange={onChange}
@@ -91,7 +91,7 @@ function FirstStep({ donor, onChange, setStep }) {
           ]}
           name="weight"
         />
-        <div className="mb-8 text-primary">{errorwight}</div>
+        <div className="mb-8 text:sm text-red-600">{errorwight}</div>
         <RadioButton
           donor={donor}
           onChange={onChange}
@@ -102,7 +102,7 @@ function FirstStep({ donor, onChange, setStep }) {
           ]}
           name="sickness"
         />
-        <div className="mb-8 text-primary">{errorsick}</div>
+        <div className="mb-8 text:sm text-red-600">{errorsick}</div>
         <Button text={t('donate_first_page.button')} onclick={onClickHandling} classFlag={false} />
       </div>
     </div>

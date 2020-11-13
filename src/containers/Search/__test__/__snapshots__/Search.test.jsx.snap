@@ -19,96 +19,104 @@ exports[`renders correctly 1`] = `
         search_page.herotext
       </p>
       <div
-        className="mb-4 sm:mb-6"
+        className="mb-4"
       >
-        <label
-          className="block"
-          htmlFor="nowhere"
+        <div
+          className=""
         >
-          <div
-            className="text-white text-sm sm:text-base md:text-lg  inline-block mb-4 sm:mb-6"
+          <label
+            className="block"
+            htmlFor="nowhere"
           >
-            search_page.bloodtype
-          </div>
-          <select
-            className="form-select block w-full border-gray-300 border-2 py-2 px-4 text-sm sm:text-base md:text-lg "
-            name="bloodType"
-            onBlur={[Function]}
-            onChange={[Function]}
-            value=""
-          >
-            <option>
-              b
-            </option>
-            <option>
-              l
-            </option>
-            <option>
-              o
-            </option>
-            <option>
-              o
-            </option>
-            <option>
-              d
-            </option>
-            <option>
-              T
-            </option>
-            <option>
-              y
-            </option>
-            <option>
-              p
-            </option>
-            <option>
-              e
-            </option>
-            <option>
-              s
-            </option>
-          </select>
-        </label>
+            <div
+              className="text-white text-sm sm:text-base md:text-lg  inline-block mb-4 sm:mb-6"
+            >
+              search_page.bloodtype
+            </div>
+            <select
+              className="form-select block w-full border-gray-300 border-2 py-2 px-4 text-sm sm:text-base md:text-lg "
+              name="bloodType"
+              onBlur={[Function]}
+              onChange={[Function]}
+              value=""
+            >
+              <option>
+                b
+              </option>
+              <option>
+                l
+              </option>
+              <option>
+                o
+              </option>
+              <option>
+                o
+              </option>
+              <option>
+                d
+              </option>
+              <option>
+                T
+              </option>
+              <option>
+                y
+              </option>
+              <option>
+                p
+              </option>
+              <option>
+                e
+              </option>
+              <option>
+                s
+              </option>
+            </select>
+          </label>
+        </div>
       </div>
       <div
-        className="mb-4 sm:mb-6"
+        className="mb-4"
       >
-        <label
-          className="block"
-          htmlFor="nowhere"
+        <div
+          className=""
         >
-          <div
-            className="text-white text-sm sm:text-base md:text-lg  inline-block mb-4 sm:mb-6"
+          <label
+            className="block"
+            htmlFor="nowhere"
           >
-            search_page.city
-          </div>
-          <select
-            className="form-select block w-full border-gray-300 border-2 py-2 px-4 text-sm sm:text-base md:text-lg "
-            name="city"
-            onBlur={[Function]}
-            onChange={[Function]}
-            value=""
-          >
-            <option>
-              c
-            </option>
-            <option>
-              i
-            </option>
-            <option>
-              t
-            </option>
-            <option>
-              i
-            </option>
-            <option>
-              e
-            </option>
-            <option>
-              s
-            </option>
-          </select>
-        </label>
+            <div
+              className="text-white text-sm sm:text-base md:text-lg  inline-block mb-4 sm:mb-6"
+            >
+              search_page.city
+            </div>
+            <select
+              className="form-select block w-full border-gray-300 border-2 py-2 px-4 text-sm sm:text-base md:text-lg "
+              name="city"
+              onBlur={[Function]}
+              onChange={[Function]}
+              value=""
+            >
+              <option>
+                c
+              </option>
+              <option>
+                i
+              </option>
+              <option>
+                t
+              </option>
+              <option>
+                i
+              </option>
+              <option>
+                e
+              </option>
+              <option>
+                s
+              </option>
+            </select>
+          </label>
+        </div>
       </div>
       <div
         className="flex justify-end"

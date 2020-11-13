@@ -81,8 +81,8 @@
     "button": "التالي",
     "step": "خطوة ",
     "dateError": "ادخل تاريخ ميلادك بشكل صحيح",
-    "wightError": "اجب عن السؤال",
-    "sickError": "اجب عن السؤال"
+    "wightError": "اجب عن السؤال السابق",
+    "sickError": "اجب عن السؤال السابق"
   },
   "donate_second_page": {
     "great": "عظيم !",
@@ -116,9 +116,9 @@
     "terms": " شروط التبرع بالدم",
     "button_next": "سجل",
     "button_previous": "الصفحة السابقة",
-    "errorName": "الرجاء ادخل اسمك",
+    "errorName": " ادخل اسمك",
     "errorPhone": "ادخل رقم التلفون ",
-    "errorEmail": "ادخل الايميل بشكل صحيح"
+    "errorEmail": "ادخل عنوان البريد بشكل صحيح"
   },
   "donate_fourth_page": {
     "title": "تم إضافة بياناتك الى قائمة المتبرعين",

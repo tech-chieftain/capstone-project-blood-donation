@@ -78,7 +78,7 @@ function SecondStep({ donor, onChange, setStep, chooseBlood, city }) {
             </button>
           ))}
         </div>
-        <div className="mb-8 text-primary-100">{errorblood}</div>
+        <div className="mb-8 text:sm text-red-600">{errorblood}</div>
         <div className="w-8/12 sm:w-6/12 lg:w-4/12">
           <InputSelect
             city={city}
@@ -89,7 +89,7 @@ function SecondStep({ donor, onChange, setStep, chooseBlood, city }) {
             classflag={false}
           />
         </div>
-        <div className="mb-8 text-primary-100">{errorcity}</div>
+        <div className="mb-8 text:sm text-red-600">{errorcity}</div>
         <div className="flex  mb-8">
           <div className="mx-4 sm:mx-8 text-center">
             <Button

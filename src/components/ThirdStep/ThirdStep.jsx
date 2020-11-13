@@ -77,7 +77,7 @@ function ThirdStep({ donor, onChange, setStep, onRegister }) {
                 Inputtype="number"
               />
             </div>
-            <div className="mb-8 md:mb-16 text-primary">{errorphone}</div>
+            <div className="mb-8 md:mb-16 text:sm text-red-600">{errorphone}</div>
             <div>
               <InputField
                 labelText={t('donate_third_page.email')}
@@ -88,7 +88,7 @@ function ThirdStep({ donor, onChange, setStep, onRegister }) {
                 Inputtype="email"
               />
             </div>
-            <div className="mb-8 md:mb-16 text-primary">{erroremail}</div>
+            <div className="mb-8 md:mb-16 text:sm text-red-600">{erroremail}</div>
             <div>
               <label htmlFor="check" className="inline-flex items-start">
                 <input
@@ -101,9 +101,9 @@ function ThirdStep({ donor, onChange, setStep, onRegister }) {
                 <span className="mx-2 text-sm sm:text-base ">
                   {t('donate_third_page.agree')}{' '}
                   <a
-                    href="www.facebook.com"
+                    href="/Terms"
                     target="_blank"
-                    className="border-b-2  border-primary text-sm sm:text-base  text-primary"
+                    className="border-b-2  border-primary text-sm sm:text-base  text:sm text-red-600"
                   >
                     {t('donate_third_page.terms')}
                   </a>

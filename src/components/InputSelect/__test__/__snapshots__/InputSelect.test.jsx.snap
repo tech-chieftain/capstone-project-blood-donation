@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="mb-4 sm:mb-6"
+  className=""
 >
   <label
     className="block"
