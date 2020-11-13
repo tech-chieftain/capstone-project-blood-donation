@@ -2,18 +2,18 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="px-1  bg-gray-200 sm:w-full"
+  className="px-2 sm:px-4 py-2 bg-gray-200 "
 >
   <div
-    className="flex"
+    className="flex items-center"
   >
     <img
       alt="icon"
-      className="w-6 h-6 px-1 my-3 mr-2"
+      className="w-6 h-6 mx-2 my-1 object-cover "
       src="https://apifortress.com/doc/wp-content/uploads/2019/04/ForgeIcon_Black.svg"
     />
     <span
-      className="pt-3 text-lg sm:text-2xl md:text-2xl font-bold"
+      className=" text-sm sm:text-base "
     >
        
       title

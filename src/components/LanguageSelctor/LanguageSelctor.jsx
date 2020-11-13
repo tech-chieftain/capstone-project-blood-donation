@@ -17,20 +17,12 @@ function LanguageSelctor({ menuClose }) {
     <div>
       {languageflag === false ? (
         <button type="button" className="flex items-center" onClick={onclick}>
-          <img
-            className="w-8 h-8 rounded-full object-cover object-center"
-            src={Arabic}
-            alt="Arabic"
-          />
+          <img className="w-8 h-8 rounded-full object-cover " src={Arabic} alt="Arabic" />
           <p className="mx-2 text-white">عربي</p>
         </button>
       ) : (
         <button type="button" className="flex items-center" onClick={onclick}>
-          <img
-            className="w-6 h-6 rounded-full object-cover object-center mt-2"
-            src={Enlish}
-            alt="Enlish"
-          />
+          <img className="w-6 h-6 rounded-full object-cover mx-1  my-1" src={Enlish} alt="Enlish" />
           <p className="mx-2 text-white">En</p>
         </button>
       )}

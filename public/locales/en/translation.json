@@ -172,7 +172,8 @@
     "city": "Select city",
     "searchbutton": "Search",
     "tableHeader": "Availabe Donors",
-    "tableText": "These  are sensitive information of volunteer people welling to help and save others life. Please keep in mind that these information should not be be used negatively."
+    "tableText": "These  are sensitive information of volunteer people welling to help and save others life. Please keep in mind that these information should not be be used negatively.",
+    "nodonors": "Sorry there are no donors with same blood type in this city "
   },
   "footer": {
     "text": "Solving the problem of blood emergencies by connecting blood donors directly with people in blood need."
