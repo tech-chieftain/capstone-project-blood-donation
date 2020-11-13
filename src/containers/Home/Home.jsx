@@ -28,7 +28,7 @@ function Home() {
           <Button
             text={t('HomePage.donate')}
             onclick={() => history.push('./Donate')}
-            classFlag
+            classFlag={false}
           />
         </div>
       </Hero>
