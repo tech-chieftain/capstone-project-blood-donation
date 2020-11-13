@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { PropTypes } from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import Button from '../Button';
@@ -10,10 +10,22 @@ import Progress from '../Progress';
 import InputSelect from '../InputSelect';
 
 function SecondStep({ donor, onChange, setStep, chooseBlood, city }) {
+  const [errorcity, setErrorcity] = useState('');
+  const [errorblood, seterrorblood] = useState('');
   const { t } = useTranslation();
   const onClickNext = () => {
     if (donor.city !== '' && donor.bloodType !== '') {
       setStep(3);
+    }
+    if (donor.city === '') {
+      setErrorcity(t('donate_second_page.errorCity'));
+    } else {
+      setErrorcity('');
+    }
+    if (donor.bloodType === '') {
+      seterrorblood(t('donate_second_page.errorBlood'));
+    } else {
+      seterrorblood('');
     }
   };
   const onClickPrevious = () => {
@@ -52,7 +64,7 @@ function SecondStep({ donor, onChange, setStep, chooseBlood, city }) {
         <div className="text-sm sm:text-base md:text-lg font-medium inline-block mb-4 sm:mb-6">
           {t('donate_second_page.blood_type_text')}
         </div>
-        <div className="flex ml-4 flex-wrap mb-8">
+        <div className="flex ml-4 flex-wrap">
           {bloodTypes.map((blood) => (
             <button
               type="button"
@@ -66,6 +78,7 @@ function SecondStep({ donor, onChange, setStep, chooseBlood, city }) {
             </button>
           ))}
         </div>
+        <div className="mb-8 text-primary-100">{errorblood}</div>
         <div className="w-8/12 sm:w-6/12 lg:w-4/12">
           <InputSelect
             city={city}
@@ -76,6 +89,7 @@ function SecondStep({ donor, onChange, setStep, chooseBlood, city }) {
             classflag={false}
           />
         </div>
+        <div className="mb-8 text-primary-100">{errorcity}</div>
         <div className="flex  mb-8">
           <div className="mx-4 sm:mx-8 text-center">
             <Button

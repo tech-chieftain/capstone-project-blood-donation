@@ -45,28 +45,29 @@ function Search() {
           <p className="text-white text-base md:text-lg mb-6 text-center">
             {t('search_page.herotext')}
           </p>
-          <InputSelect
-            city={search.bloodType}
-            onChange={onChange}
-            name="bloodType"
-            text={t('search_page.bloodtype')}
-            options={bloodTypes}
-            classflag
-          />
-          <InputSelect
-            city={city}
-            onChange={onChange}
-            name="city"
-            text={t('search_page.city')}
-            options={cities}
-            classflag
-          />
-          <div className="flex justify-end">
-            <Button
-              text={t('search_page.searchbutton')}
-              classFlag={false}
-              onclick={onclick}
+          <div className="mb-4">
+            <InputSelect
+              city={search.bloodType}
+              onChange={onChange}
+              name="bloodType"
+              text={t('search_page.bloodtype')}
+              options={bloodTypes}
+              classflag
             />
+          </div>
+          <div className="mb-4">
+            <InputSelect
+              city={city}
+              onChange={onChange}
+              name="city"
+              text={t('search_page.city')}
+              options={cities}
+              classflag
+            />
+          </div>
+
+          <div className="flex justify-end">
+            <Button text={t('search_page.searchbutton')} classFlag={false} onclick={onclick} />
           </div>
         </div>
       </Hero>
