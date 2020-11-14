@@ -101,6 +101,7 @@ exports[`renders correctly 1`] = `
           >
             <img
               alt="icon"
+              className="w-16 sm:w-20"
               src="syringe-needle.svg"
             />
           </div>
@@ -135,6 +136,7 @@ exports[`renders correctly 1`] = `
           >
             <img
               alt="icon"
+              className="w-16 sm:w-20"
               src="face-mask.svg"
             />
           </div>
@@ -169,6 +171,7 @@ exports[`renders correctly 1`] = `
           >
             <img
               alt="icon"
+              className="w-16 sm:w-20"
               src="dizziness.svg"
             />
           </div>
@@ -247,6 +250,7 @@ exports[`renders correctly 1`] = `
         >
           <img
             alt="icon"
+            className="w-16 sm:w-20"
             src="Bg.svg"
           />
         </div>
@@ -275,6 +279,7 @@ exports[`renders correctly 1`] = `
         >
           <img
             alt="icon"
+            className="w-16 sm:w-20"
             src="Bg.svg"
           />
         </div>
@@ -303,6 +308,7 @@ exports[`renders correctly 1`] = `
         >
           <img
             alt="icon"
+            className="w-16 sm:w-20"
             src="Bg.svg"
           />
         </div>
