@@ -94,7 +94,7 @@ function SecondStep({ donor, onChange, setStep, chooseBlood, city }) {
         <div className="mb-8 text:sm text-red-600">
           {errorcity ? t('donate_second_page.errorCity') : ''}
         </div>
-        <div className="flex  mb-8">
+        <div className="flex button_flex items-center mb-8">
           <div className="mx-4 sm:mx-8 text-center">
             <Button
               text={t('donate_second_page.button_previous')}

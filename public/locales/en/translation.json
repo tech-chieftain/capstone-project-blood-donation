@@ -165,16 +165,7 @@
     "forthService": "find potential donors.",
     "fifthService": "have answers to some of your concerns."
   },
-  "bloodTypes": [
-    "O-",
-    "O+",
-    " B-",
-    "B+",
-    " A-",
-    "A+",
-    "AB-",
-    "AB+"
-  ],
+  "bloodTypes": ["O-", "O+", "B-", "B+", "A-", "A+", "AB-", "AB+"],
   "search_page": {
     "herotext": "Please select a blood type and city name in order to get Donnors",
     "bloodtype": "Select blood type",
