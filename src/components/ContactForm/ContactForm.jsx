@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import InputFiled from '../InputField';
 import Button from '../Button';
 
 const ContactForm = () => {
+  const { t } = useTranslation();
   const data = {
     name: '',
     email: '',
@@ -22,17 +24,17 @@ const ContactForm = () => {
     event.preventDefault();
   };
   return (
-    <form className="shadow-xl w-10/12 lg:w-8/12 mx-auto  flex flex-col mt-6 p-6 sm:p-8 md:p-12">
+    <form className="md:shadow-xl w-10/12 lg:w-8/12 mx-auto  flex flex-col  p-2 sm:p-4 md:p-8">
       <div className="flex flex-col md:flex-row mb-8">
         <InputFiled
-          placeholder="Name"
+          placeholder={t('AboutPage.ContectName')}
           onChange={onChangeHandling}
           inputValue={form.name}
           inputName="name"
           Inputtype="text"
         />
         <InputFiled
-          placeholder="Email"
+          placeholder={t('AboutPage.ContectEmail')}
           onChange={onChangeHandling}
           inputValue={form.email}
           inputName="email"
@@ -42,13 +44,13 @@ const ContactForm = () => {
       <textarea
         className=" flex-1 mr-4 p-2 text-base tracking-normal font-semibold placeholder-gray-800 border-2 border-gray-300 focus:outline-none "
         rows="6"
-        placeholder="massage"
+        placeholder={t('AboutPage.ContectMessage')}
         value={form.massege}
         name="massege"
         onChange={onChangeHandling}
       />
       <div className="self-center">
-        <Button text="Send" onclick={onClickHandling} classFlag={false} />
+        <Button text={t('AboutPage.ContectSend')} onclick={onClickHandling} classFlag={false} />
       </div>
     </form>
   );
