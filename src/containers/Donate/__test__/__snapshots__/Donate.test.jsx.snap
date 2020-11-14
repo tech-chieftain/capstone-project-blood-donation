@@ -61,7 +61,7 @@ exports[`renders correctly 1`] = `
         donate_first_page.subHeader2
       </div>
       <div
-        className=" flex flex-col items-start mb-8"
+        className=" flex flex-col items-start "
       >
         <label
           className="mb-2 tracking-normal font-medium"
@@ -78,7 +78,12 @@ exports[`renders correctly 1`] = `
         />
       </div>
       <div
-        className="block mb-8"
+        className="mb-8 text:sm text-red-600"
+      >
+        
+      </div>
+      <div
+        className="block"
         name="weight"
         onChange={[Function]}
         value=""
@@ -132,7 +137,12 @@ exports[`renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="block mb-8"
+        className="mb-8 text:sm text-red-600"
+      >
+        
+      </div>
+      <div
+        className="block"
         name="sickness"
         onChange={[Function]}
         value=""
@@ -184,6 +194,11 @@ exports[`renders correctly 1`] = `
             </span>
           </label>
         </div>
+      </div>
+      <div
+        className="mb-8 text:sm text-red-600"
+      >
+        
       </div>
       <button
         className="inline-block text-white text-base md:text-lg  text-center md:font-medium bg-primary  md:mt-8 mt-4 px-8 md:px-12 lg:px-16 py-1 lg:py-2  shadow-md transition duration-500 ease-in-out transform hover:scale-95"

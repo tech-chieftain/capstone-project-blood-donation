@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React from 'react';
+import React, { useState } from 'react';
 import { PropTypes } from 'prop-types';
 import { useHistory } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -11,6 +11,9 @@ import Donateparagraph from '../Donateparagraph';
 import Progress from '../Progress';
 
 function FirstStep({ donor, onChange, setStep }) {
+  const [errordate, setErrordate] = useState(false);
+  const [errorwight, seterrorwight] = useState(false);
+  const [errorsick, setErrorsick] = useState(false);
   const { t } = useTranslation();
   const history = useHistory();
   const dateDiff = (date2) => {
@@ -33,6 +36,21 @@ function FirstStep({ donor, onChange, setStep }) {
     } else if (donor.weight !== '' && donor.sickness !== '' && !Number.isNaN(Age)) {
       setStep(2);
     }
+    if (Number.isNaN(Age)) {
+      setErrordate(true);
+    } else {
+      setErrordate(false);
+    }
+    if (donor.weight === '') {
+      seterrorwight(true);
+    } else {
+      seterrorwight(false);
+    }
+    if (donor.sickness === '') {
+      setErrorsick(true);
+    } else {
+      setErrorsick(false);
+    }
   };
   return (
     <div>
@@ -49,7 +67,7 @@ function FirstStep({ donor, onChange, setStep }) {
         <SubHeader text={t('donate_first_page.subHeader1')} />
         <Donateparagraph text={t('donate_first_page.subparagrph')} />
         <SubHeader text={t('donate_first_page.subHeader2')} />
-        <div className=" flex flex-col items-start mb-8">
+        <div className=" flex flex-col items-start ">
           <label className="mb-2 tracking-normal font-medium">
             {t('donate_first_page.birth_text')}
           </label>
@@ -62,6 +80,9 @@ function FirstStep({ donor, onChange, setStep }) {
             onChange={onChange}
           />
         </div>
+        <div className="mb-8 text:sm text-red-600">
+          {errordate ? t('donate_first_page.dateError') : ''}
+        </div>
         <RadioButton
           donor={donor}
           onChange={onChange}
@@ -72,6 +93,9 @@ function FirstStep({ donor, onChange, setStep }) {
           ]}
           name="weight"
         />
+        <div className="mb-8 text:sm text-red-600">
+          {errorwight ? t('donate_first_page.wightError') : ''}
+        </div>
         <RadioButton
           donor={donor}
           onChange={onChange}
@@ -82,6 +106,9 @@ function FirstStep({ donor, onChange, setStep }) {
           ]}
           name="sickness"
         />
+        <div className="mb-8 text:sm text-red-600">
+          {errorsick ? t('donate_first_page.sickError') : ''}
+        </div>
         <Button text={t('donate_first_page.button')} onclick={onClickHandling} classFlag={false} />
       </div>
     </div>

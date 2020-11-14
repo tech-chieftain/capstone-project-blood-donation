@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="block mb-8"
+  className="block"
   name="sickness"
   onChange={[Function]}
   value=""

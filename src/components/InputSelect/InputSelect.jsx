@@ -3,7 +3,7 @@ import { PropTypes } from 'prop-types';
 
 function InputSelect({ city, text, onChange, name, options, classflag }) {
   return (
-    <div className="mb-4 sm:mb-6">
+    <div className="">
       <label htmlFor="nowhere" className="block">
         <div
           className={`${
