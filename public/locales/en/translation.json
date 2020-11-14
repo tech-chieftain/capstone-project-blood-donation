@@ -1,5 +1,5 @@
 {
-  "app_name": "Blood Donation",
+  "app_name": "LifeVessels",
   "nav": {
     "home": "Home",
     "about": "About",
@@ -171,10 +171,10 @@
     "CardOneTitle": "What we do ?",
     "CardOneDecs": "We connect blood donors with recipient, for an efficient and seamless process.",
     "CardTwoTitle": "Innovative",
-    "CardTwoDecs": "Save Us Connect is an innovative approach to address global health. We provide immediate access to blood donors.",
+    "CardTwoDecs": "LifeVessels is an innovative approach to address global health. We provide immediate access to blood donors.",
     "CardThreeTitle": "Totally Free",
-    "CardThreeDecs": "Save Us Connect's ultimate goal is to provide an easy-to-use, easy-to-access, fast, efficient, and reliable way to get life-saving blood, totally Free of cost",
-    "CardFourTitle": "Save Us",
+    "CardThreeDecs": "LifeVessels  Connect's ultimate goal is to provide an easy-to-use, easy-to-access, fast, efficient, and reliable way to get life-saving blood, totally Free of cost",
+    "CardFourTitle": "LifeVessels ",
     "CardFourDecs": "We are a non profit foundation and our main objective is to make sure that everything is done to protect vulnerable persons."
 },
   "search_page": {
