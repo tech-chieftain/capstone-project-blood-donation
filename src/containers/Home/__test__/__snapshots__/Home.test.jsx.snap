@@ -24,7 +24,7 @@ exports[`renders correctly 1`] = `
         HomePage.HeroTitle2
       </p>
       <button
-        className="inline-block text-white text-base md:text-lg  text-center md:font-medium bg-primary  md:mt-8 mt-4 px-8 md:px-12 lg:px-16 py-1 lg:py-2  shadow-md transition duration-500 ease-in-out transform hover:scale-95"
+        className="inline-block text-white text-base md:text-lg  text-center md:font-medium bg-primary  md:mt-8 mt-4 px-8 md:px-12 lg:px-16 py-1 lg:py-2 focus:outline-none   shadow-md transition duration-500 ease-in-out transform hover:scale-95"
         onClick={[Function]}
         type="button"
       >
@@ -101,6 +101,7 @@ exports[`renders correctly 1`] = `
           >
             <img
               alt="icon"
+              className="w-16 sm:w-20"
               src="syringe-needle.svg"
             />
           </div>
@@ -135,6 +136,7 @@ exports[`renders correctly 1`] = `
           >
             <img
               alt="icon"
+              className="w-16 sm:w-20"
               src="face-mask.svg"
             />
           </div>
@@ -169,6 +171,7 @@ exports[`renders correctly 1`] = `
           >
             <img
               alt="icon"
+              className="w-16 sm:w-20"
               src="dizziness.svg"
             />
           </div>
@@ -209,7 +212,7 @@ exports[`renders correctly 1`] = `
         </div>
         <div>
           <button
-            className="inline-block text-white text-base md:text-lg  text-center md:font-medium bg-primary  md:mt-8 mt-4 px-8 md:px-12 lg:px-16 py-1 lg:py-2  shadow-md transition duration-500 ease-in-out transform hover:scale-95"
+            className="inline-block text-white text-base md:text-lg  text-center md:font-medium bg-primary  md:mt-8 mt-4 px-8 md:px-12 lg:px-16 py-1 lg:py-2 focus:outline-none   shadow-md transition duration-500 ease-in-out transform hover:scale-95"
             onClick={[Function]}
             type="button"
           >
@@ -247,6 +250,7 @@ exports[`renders correctly 1`] = `
         >
           <img
             alt="icon"
+            className="w-16 sm:w-20"
             src="Bg.svg"
           />
         </div>
@@ -275,6 +279,7 @@ exports[`renders correctly 1`] = `
         >
           <img
             alt="icon"
+            className="w-16 sm:w-20"
             src="Bg.svg"
           />
         </div>
@@ -303,6 +308,7 @@ exports[`renders correctly 1`] = `
         >
           <img
             alt="icon"
+            className="w-16 sm:w-20"
             src="Bg.svg"
           />
         </div>

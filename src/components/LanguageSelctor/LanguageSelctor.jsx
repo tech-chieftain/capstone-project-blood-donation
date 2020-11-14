@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { PropTypes } from 'prop-types';
-import Enlish from './images/english.svg';
-import Arabic from './images/arabic.svg';
+import Language from './images/languageicon.svg';
 
 function LanguageSelctor({ menuClose }) {
   const [languageflag, setlanguageflag] = useState(false);
@@ -14,16 +13,16 @@ function LanguageSelctor({ menuClose }) {
   };
 
   return (
-    <div>
+    <div className=" py-2 sm:py-0 lg:px-2  mt-2 md:mt-0  text-sm flex items-center">
       {languageflag === false ? (
-        <button type="button" className="flex items-center" onClick={onclick}>
-          <img className="w-8 h-8 rounded-full object-cover " src={Arabic} alt="Arabic" />
-          <p className="mx-2 text-white">عربي</p>
+        <button type="button" className="flex   focus:outline-none " onClick={onclick}>
+          <p className="mr-1 text-white ">عربي</p>
+          <img className="w-6 h-6 rounded-full object-cover  " src={Language} alt="Arabic" />
         </button>
       ) : (
-        <button type="button" className="flex items-center" onClick={onclick}>
-          <img className="w-6 h-6 rounded-full object-cover mx-1  my-1" src={Enlish} alt="Enlish" />
-          <p className="mx-2 text-white">En</p>
+        <button type="button" className="flex  focus:outline-none" onClick={onclick}>
+          <p className="ml-1 text-white ">Eng</p>
+          <img className="w-6 h-6 rounded-full object-cover" src={Language} alt="Enlish" />
         </button>
       )}
     </div>
