@@ -63,9 +63,7 @@ exports[`renders correctly 1`] = `
         >
           donate_first_page.subHeader2
         </div>
-        <div
-          className="mb-8 md:mb-16"
-        >
+        <div>
           <div
             className="flex-1 flex flex-col  mb-4 "
           >
@@ -76,7 +74,7 @@ exports[`renders correctly 1`] = `
               donate_third_page.name
             </label>
             <input
-              className="flex-1  mr-4 p-2 text-sm sm:text-base tracking-normal font-semibold  border-2 border-gray-300 focus:outline-none  bg-white placeholder-gray-800"
+              className="flex-1  mr-4 p-2 text-sm sm:text-base tracking-normal  border-2 border-gray-300 focus:outline-none  bg-white placeholder-gray-500"
               id="name"
               name="name"
               onChange={[Function]}
@@ -87,8 +85,11 @@ exports[`renders correctly 1`] = `
           </div>
         </div>
         <div
-          className="mb-8 md:mb-16"
+          className="mb-8 md:mb-16 text-red-600"
         >
+          
+        </div>
+        <div>
           <div
             className="flex-1 flex flex-col  mb-4 "
           >
@@ -99,7 +100,7 @@ exports[`renders correctly 1`] = `
               donate_third_page.phone
             </label>
             <input
-              className="flex-1  mr-4 p-2 text-sm sm:text-base tracking-normal font-semibold  border-2 border-gray-300 focus:outline-none  bg-white placeholder-gray-800"
+              className="flex-1  mr-4 p-2 text-sm sm:text-base tracking-normal  border-2 border-gray-300 focus:outline-none  bg-white placeholder-gray-500"
               id="phone"
               name="phone"
               onChange={[Function]}
@@ -110,8 +111,11 @@ exports[`renders correctly 1`] = `
           </div>
         </div>
         <div
-          className="mb-8  md:mb-16"
+          className="mb-8 md:mb-16 text:sm text-red-600"
         >
+          
+        </div>
+        <div>
           <div
             className="flex-1 flex flex-col  mb-4 "
           >
@@ -122,7 +126,7 @@ exports[`renders correctly 1`] = `
               donate_third_page.email
             </label>
             <input
-              className="flex-1  mr-4 p-2 text-sm sm:text-base tracking-normal font-semibold  border-2 border-gray-300 focus:outline-none  bg-white placeholder-gray-800"
+              className="flex-1  mr-4 p-2 text-sm sm:text-base tracking-normal  border-2 border-gray-300 focus:outline-none  bg-white placeholder-gray-500"
               id="email"
               name="email"
               onChange={[Function]}
@@ -131,6 +135,11 @@ exports[`renders correctly 1`] = `
               value=""
             />
           </div>
+        </div>
+        <div
+          className="mb-8 md:mb-16 text:sm text-red-600"
+        >
+          
         </div>
         <div>
           <label
@@ -150,8 +159,8 @@ exports[`renders correctly 1`] = `
               donate_third_page.agree
                
               <a
-                className="border-b-2  border-primary text-sm sm:text-base  text-primary"
-                href="www.facebook.com"
+                className="border-b-2  border-primary text-sm sm:text-base  text:sm text-primary"
+                href="/Terms"
                 target="_blank"
               >
                 donate_third_page.terms

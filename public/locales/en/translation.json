@@ -79,7 +79,10 @@
     "radio_option_yes": "Yes",
     "radio_option_no": "No",
     "button": "Next",
-    "step": "STEP"
+    "step": "STEP",
+    "dateError": "Insert a valid date",
+    "wightError": "please answer this question",
+    "sickError": "please answer this question"
   },
   "donate_second_page": {
     "great": "Great!",
@@ -94,7 +97,9 @@
     "option_male": "Male",
     "option_female": "Female",
     "button_next": "Next",
-    "button_previous": "Previous"
+    "button_previous": "Previous",
+    "errorCity": "Choose your the city",
+    "errorBlood": "Choose your blood type"
   },
   "donate_third_page": {
     "title": "We needs people like you.",
@@ -110,7 +115,10 @@
     "agree": "I have read and accept the terms and conditions of ",
     "terms": " the Blood Donor  Service",
     "button_next": "Register",
-    "button_previous": "Previous"
+    "button_previous": "Previous",
+    "errorName": "Enter your name please",
+    "errorPhone": "Enter your phone number",
+    "errorEmail": "Enter a valid email"
   },
   "donate_fourth_page": {
     "title": "You have been added to the donation list",

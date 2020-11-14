@@ -8,7 +8,7 @@ function InputForm({ labelText, placeholder, onChange, inputValue, Inputtype, in
         {labelText}
       </label>
       <input
-        className="flex-1  mr-4 p-2 text-sm sm:text-base tracking-normal font-semibold  border-2 border-gray-300 focus:outline-none  bg-white placeholder-gray-800"
+        className="flex-1  mr-4 p-2 text-sm sm:text-base tracking-normal  border-2 border-gray-300 focus:outline-none  bg-white placeholder-gray-500"
         placeholder={placeholder}
         type={Inputtype}
         name={inputName}

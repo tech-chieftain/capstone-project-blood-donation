@@ -79,7 +79,10 @@
     "radio_option_yes": "نعم",
     "radio_option_no": "لا",
     "button": "التالي",
-    "step": "خطوة "
+    "step": "خطوة ",
+    "dateError": "ادخل تاريخ ميلادك بشكل صحيح",
+    "wightError": "اجب عن السؤال السابق",
+    "sickError": "اجب عن السؤال السابق"
   },
   "donate_second_page": {
     "great": "عظيم !",
@@ -94,7 +97,9 @@
     "option_male": "ذكر",
     "option_female": "أنثى",
     "button_next": "التالي",
-    "button_previous": "الصفحة السابقة"
+    "button_previous": "الصفحة السابقة",
+    "errorCity": "اختر مدينتك",
+    "errorBlood": "اختر فصية دمك"
   },
   "donate_third_page": {
     "title": "نحن نحتاج متبرعين مثلك",
@@ -110,7 +115,10 @@
     "agree": "أنا أوافق على كل الشروط الموجود للتبرع بالدم .",
     "terms": " شروط التبرع بالدم",
     "button_next": "سجل",
-    "button_previous": "الصفحة السابقة"
+    "button_previous": "الصفحة السابقة",
+    "errorName": " ادخل اسمك",
+    "errorPhone": "ادخل رقم التلفون ",
+    "errorEmail": "ادخل عنوان البريد بشكل صحيح"
   },
   "donate_fourth_page": {
     "title": "تم إضافة بياناتك الى قائمة المتبرعين",

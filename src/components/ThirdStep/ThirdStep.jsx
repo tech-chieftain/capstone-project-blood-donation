@@ -10,11 +10,30 @@ import InputField from '../InputField';
 import donate from './images/donate.svg';
 
 function ThirdStep({ donor, onChange, setStep, onRegister }) {
+  const [errorname, setErrorname] = useState(false);
+  const [erroremail, seterroremail] = useState(false);
+  const [errorphone, setErrorphone] = useState(false);
   const { t } = useTranslation();
   const [agree, setAgree] = useState(false);
   const onClickNext = () => {
-    if (donor.name !== '' && donor.email !== '' && donor.phone !== '' && agree) {
+    const mailformat = new RegExp(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/);
+    if (donor.name !== '' && mailformat.test(donor.email) && donor.phone !== '' && agree) {
       onRegister();
+    }
+    if (donor.name === '') {
+      setErrorname(true);
+    } else {
+      setErrorname(false);
+    }
+    if (!mailformat.test(donor.email)) {
+      seterroremail(true);
+    } else {
+      seterroremail(false);
+    }
+    if (donor.phone === '') {
+      setErrorphone(true);
+    } else {
+      setErrorphone(false);
     }
   };
   const onClickPrevious = () => {
@@ -37,7 +56,7 @@ function ThirdStep({ donor, onChange, setStep, onRegister }) {
         <div className="flex items-start ">
           <div className="w-9/12 md:flex-1 ">
             <SubHeader text={t('donate_first_page.subHeader2')} />
-            <div className="mb-8 md:mb-16">
+            <div>
               <InputField
                 labelText={t('donate_third_page.name')}
                 placeholder={t('donate_third_page.name_placeholder')}
@@ -47,7 +66,10 @@ function ThirdStep({ donor, onChange, setStep, onRegister }) {
                 Inputtype="text"
               />
             </div>
-            <div className="mb-8 md:mb-16">
+            <div className="mb-8 md:mb-16 text-red-600">
+              {errorname ? t('donate_third_page.errorName') : ''}
+            </div>
+            <div>
               <InputField
                 labelText={t('donate_third_page.phone')}
                 placeholder={t('donate_third_page.phone_placeholder')}
@@ -57,7 +79,10 @@ function ThirdStep({ donor, onChange, setStep, onRegister }) {
                 Inputtype="number"
               />
             </div>
-            <div className="mb-8  md:mb-16">
+            <div className="mb-8 md:mb-16 text:sm text-red-600">
+              {errorphone ? t('donate_third_page.errorPhone') : ''}
+            </div>
+            <div>
               <InputField
                 labelText={t('donate_third_page.email')}
                 placeholder={t('donate_third_page.email_placeholder')}
@@ -66,6 +91,9 @@ function ThirdStep({ donor, onChange, setStep, onRegister }) {
                 inputName="email"
                 Inputtype="email"
               />
+            </div>
+            <div className="mb-8 md:mb-16 text:sm text-red-600">
+              {erroremail ? t('donate_third_page.errorEmail') : ''}
             </div>
             <div>
               <label htmlFor="check" className="inline-flex items-start">
@@ -79,9 +107,9 @@ function ThirdStep({ donor, onChange, setStep, onRegister }) {
                 <span className="mx-2 text-sm sm:text-base ">
                   {t('donate_third_page.agree')}{' '}
                   <a
-                    href="www.facebook.com"
+                    href="/Terms"
                     target="_blank"
-                    className="border-b-2  border-primary text-sm sm:text-base  text-primary"
+                    className="border-b-2  border-primary text-sm sm:text-base  text:sm text-primary"
                   >
                     {t('donate_third_page.terms')}
                   </a>
