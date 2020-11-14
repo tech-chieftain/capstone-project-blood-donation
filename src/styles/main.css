@@ -19434,6 +19434,16 @@ video {
   animation: bounce 1s infinite;
 }
 
+.button_flex {
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 350px) {
+  .button_flex {
+    flex-direction: column-reverse;
+  }
+}
+
 @media (min-width: 640px){
   .sm\:container{
     width: 100%;

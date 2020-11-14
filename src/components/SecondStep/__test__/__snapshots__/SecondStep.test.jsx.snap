@@ -250,7 +250,7 @@ exports[`renders correctly 1`] = `
       
     </div>
     <div
-      className="flex  mb-8"
+      className="flex button_flex items-center mb-8"
     >
       <div
         className="mx-4 sm:mx-8 text-center"
