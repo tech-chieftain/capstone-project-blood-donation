@@ -55,8 +55,8 @@ function NavLinks({ classname, menuClose, classFlag }) {
       />
       <li
         className={` ${
-          classFlag ? 'hidden' : 'block'
-        }  mt-4 md:mt-0 sm:mr-0 md:mr-2 order-first sm:order-first  `}
+          classFlag ? 'hidden' : 'flex sm:justify-center'
+        }   order-first sm:order-first  `}
       >
         <LanguageSelector menuClose={menuClose} />
       </li>
