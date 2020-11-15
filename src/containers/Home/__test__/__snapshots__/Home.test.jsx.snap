@@ -45,7 +45,7 @@ exports[`renders correctly 1`] = `
           HomePage.DonateOverviewTitle
         </h1>
         <p
-          className=" pt-3 pb-5  sm:text-sm md:text-base lg:text-lg   "
+          className=" pt-3 pb-5  text-sm md:text-base lg:text-lg   "
         >
           HomePage.DonateOverviewDecs
         </p>
@@ -61,7 +61,7 @@ exports[`renders correctly 1`] = `
           HomePage.DonateProcessTitle
         </h1>
         <p
-          className=" pt-3 pb-5  sm:text-sm md:text-base lg:text-lg   "
+          className=" pt-3 pb-5  text-sm md:text-base lg:text-lg   "
         >
           HomePage.DonateProcessDecs
         </p>
@@ -78,7 +78,7 @@ exports[`renders correctly 1`] = `
         HomePage.CommonConcernTitle
       </h1>
       <p
-        className=" pt-3 pb-5  sm:text-sm md:text-base lg:text-lg  text-center "
+        className=" pt-3 pb-5  text-sm md:text-base lg:text-lg  text-center "
       >
         HomePage.CommonConcernDecs
       </p>
@@ -232,7 +232,7 @@ exports[`renders correctly 1`] = `
         HomePage.Partners
       </h1>
       <p
-        className=" pt-3 pb-5  sm:text-sm md:text-base lg:text-lg   "
+        className=" pt-3 pb-5  text-sm md:text-base lg:text-lg   "
       />
     </div>
   </div>
