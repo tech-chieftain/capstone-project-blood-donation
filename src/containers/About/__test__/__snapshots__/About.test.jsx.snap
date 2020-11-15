@@ -48,7 +48,7 @@ exports[`renders correctly 1`] = `
               AboutPage.CardOneTitle
             </div>
             <p
-              className="text-black text-sm sm:text-base md:text-lg lg:text-xl text-center"
+              className="text-sm sm:text-base md:text-lg  text-center"
             >
               AboutPage.CardOneDecs
             </p>
@@ -83,7 +83,7 @@ exports[`renders correctly 1`] = `
               AboutPage.CardTwoTitle
             </div>
             <p
-              className="text-black text-sm sm:text-base md:text-lg lg:text-xl text-center"
+              className="text-sm sm:text-base md:text-lg  text-center"
             >
               AboutPage.CardTwoDecs
             </p>
@@ -118,7 +118,7 @@ exports[`renders correctly 1`] = `
               AboutPage.CardThreeTitle
             </div>
             <p
-              className="text-black text-sm sm:text-base md:text-lg lg:text-xl text-center"
+              className="text-sm sm:text-base md:text-lg  text-center"
             >
               AboutPage.CardThreeDecs
             </p>
@@ -153,7 +153,7 @@ exports[`renders correctly 1`] = `
               AboutPage.CardFourTitle
             </div>
             <p
-              className="text-black text-sm sm:text-base md:text-lg lg:text-xl text-center"
+              className="text-sm sm:text-base md:text-lg  text-center"
             >
               AboutPage.CardFourDecs
             </p>

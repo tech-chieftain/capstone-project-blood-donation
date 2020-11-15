@@ -223,12 +223,12 @@ Array [
               className="px-6 py-0 pb-6 my-5"
             >
               <div
-                className="text-primary-100 text-lg sm:text-xl md:text-2xl font-bold my-3 text-center"
+                className="text-primary-100 text-lg sm:text-xl md:text-2xl font-bold my-3 text-start"
               >
                 HomePage.CardOneTitle
               </div>
               <p
-                className="text-black text-sm sm:text-base md:text-lg lg:text-xl text-center"
+                className="text-sm sm:text-base md:text-lg  text-start"
               >
                 HomePage.CardOneDecs
               </p>
@@ -258,12 +258,12 @@ Array [
               className="px-6 py-0 pb-6 my-5"
             >
               <div
-                className="text-primary-100 text-lg sm:text-xl md:text-2xl font-bold my-3 text-center"
+                className="text-primary-100 text-lg sm:text-xl md:text-2xl font-bold my-3 text-start"
               >
                 HomePage.CardTwoTitle
               </div>
               <p
-                className="text-black text-sm sm:text-base md:text-lg lg:text-xl text-center"
+                className="text-sm sm:text-base md:text-lg  text-start"
               >
                 HomePage.CardTwoDecs
               </p>
@@ -293,12 +293,12 @@ Array [
               className="px-6 py-0 pb-6 my-5"
             >
               <div
-                className="text-primary-100 text-lg sm:text-xl md:text-2xl font-bold my-3 text-center"
+                className="text-primary-100 text-lg sm:text-xl md:text-2xl font-bold my-3 text-start"
               >
                 HomePage.CardThreeTitle
               </div>
               <p
-                className="text-black text-sm sm:text-base md:text-lg lg:text-xl text-center"
+                className="text-sm sm:text-base md:text-lg  text-start"
               >
                 HomePage.CardThreeDecs
               </p>
@@ -375,7 +375,7 @@ Array [
               className="text-primary-100 text-lg sm:text-xl md:text-2xl font-bold my-3 text-center"
             />
             <p
-              className="text-black text-sm sm:text-base md:text-lg lg:text-xl text-center"
+              className="text-sm sm:text-base md:text-lg  text-center"
             >
               HomePage.PartnerOne
             </p>
@@ -404,7 +404,7 @@ Array [
               className="text-primary-100 text-lg sm:text-xl md:text-2xl font-bold my-3 text-center"
             />
             <p
-              className="text-black text-sm sm:text-base md:text-lg lg:text-xl text-center"
+              className="text-sm sm:text-base md:text-lg  text-center"
             >
               HomePage.PartnerTwo
             </p>
@@ -433,7 +433,7 @@ Array [
               className="text-primary-100 text-lg sm:text-xl md:text-2xl font-bold my-3 text-center"
             />
             <p
-              className="text-black text-sm sm:text-base md:text-lg lg:text-xl text-center"
+              className="text-sm sm:text-base md:text-lg  text-center"
             >
               HomePage.PartnerThree
             </p>

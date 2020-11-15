@@ -4,7 +4,7 @@ import { PropTypes } from 'prop-types';
 function Card({ cardImage, cardTitle, cardDesc, orientationText }) {
   const classesObjectStyles = {
     cardTitle: `text-primary-100 text-lg sm:text-xl md:text-2xl font-bold my-3 text-${orientationText}`,
-    cardParagraph: `text-black text-sm sm:text-base md:text-lg lg:text-xl text-${orientationText}`,
+    cardParagraph: `text-sm sm:text-base md:text-lg  text-${orientationText}`,
   };
   return (
     <div className="rounded">
