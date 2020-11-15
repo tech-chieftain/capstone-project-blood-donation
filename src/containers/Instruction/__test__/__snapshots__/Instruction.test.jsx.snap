@@ -28,7 +28,7 @@ exports[`renders correctly 1`] = `
         Process.titleInstructionCard
       </h1>
       <p
-        className=" pt-3 pb-5  text-sm md:text-base lg:text-lg  text-center "
+        className=" pt-3 pb-5  text-sm sm:text-base md:text-lg   text-center "
       >
         Process.descTitleprog
       </p>

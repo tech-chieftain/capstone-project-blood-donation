@@ -159,7 +159,7 @@ Array [
             HomePage.DonateOverviewTitle
           </h1>
           <p
-            className=" pt-3 pb-5  text-sm md:text-base lg:text-lg   "
+            className=" pt-3 pb-5  text-sm sm:text-base md:text-lg    "
           >
             HomePage.DonateOverviewDecs
           </p>
@@ -175,7 +175,7 @@ Array [
             HomePage.DonateProcessTitle
           </h1>
           <p
-            className=" pt-3 pb-5  text-sm md:text-base lg:text-lg   "
+            className=" pt-3 pb-5  text-sm sm:text-base md:text-lg    "
           >
             HomePage.DonateProcessDecs
           </p>
@@ -192,7 +192,7 @@ Array [
           HomePage.CommonConcernTitle
         </h1>
         <p
-          className=" pt-3 pb-5  text-sm md:text-base lg:text-lg  text-center "
+          className=" pt-3 pb-5  text-sm sm:text-base md:text-lg   text-center "
         >
           HomePage.CommonConcernDecs
         </p>
@@ -346,7 +346,7 @@ Array [
           HomePage.Partners
         </h1>
         <p
-          className=" pt-3 pb-5  text-sm md:text-base lg:text-lg   "
+          className=" pt-3 pb-5  text-sm sm:text-base md:text-lg    "
         />
       </div>
     </div>

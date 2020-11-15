@@ -6,7 +6,7 @@ function Paragraph({ headerText, paragraphText, headerFlag, paragraphFlag }) {
     headerStyle: `text-primary-100  sm:text-xl md:text-2xl lg:text-3xl pt-1 font-semibold  ${
       headerFlag ? 'text-center' : ''
     }`,
-    paragrphStyle: ` pt-3 pb-5  text-sm md:text-base lg:text-lg  ${
+    paragrphStyle: ` pt-3 pb-5  text-sm sm:text-base md:text-lg   ${
       paragraphFlag ? 'text-center' : ''
     } `,
   };
