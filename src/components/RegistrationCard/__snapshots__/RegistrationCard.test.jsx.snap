@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="flex flex-col p-6 m-6 bg-gray-200 rounded md:flex-row"
+  className="flex flex-col p-6 m-6 bg-gray-100 rounded md:flex-row"
 >
    
   <div

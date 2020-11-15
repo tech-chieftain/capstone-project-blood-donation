@@ -62,16 +62,18 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="px-6 sm:px-0 w-100 sm:w-8/12 mx-auto ">
-        <Paragraph
-          headerText={t('AboutPage.ContectTitle')}
-          paragraphText={t('AboutPage.ContectDecs')}
-          headerFlag
-          paragraphFlag
-        />
-      </div>
-      <div className="md:w-100 xl:w-8/12 mx-auto mb-8 lg:mb-12">
-        <ContactForm />
+      <div className="bg-secondary p-8">
+        <div className="px-6 sm:px-0 w-100 sm:w-8/12 mx-auto ">
+          <Paragraph
+            headerText={t('AboutPage.ContectTitle')}
+            paragraphText={t('AboutPage.ContectDecs')}
+            headerFlag
+            paragraphFlag
+          />
+        </div>
+        <div className="md:w-100 xl:w-8/12 mx-auto ">
+          <ContactForm />
+        </div>
       </div>
     </div>
   );
