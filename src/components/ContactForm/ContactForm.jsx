@@ -42,7 +42,7 @@ const ContactForm = () => {
         />
       </div>
       <textarea
-        className=" flex-1 mr-4 p-2 text-base tracking-normal font-semibold placeholder-gray-500 border-2 border-gray-300 focus:outline-none "
+        className=" flex-1 mr-4 p-2 text-base tracking-normal  placeholder-gray-500 border-2 border-gray-300 focus:outline-none "
         rows="6"
         placeholder={t('AboutPage.ContectMessage')}
         value={form.massege}
