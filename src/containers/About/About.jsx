@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
 import Paragraph from '../../components/Paragraph';
 import Card from '../../components/Card';
 import ContactForm from '../../components/ContactForm';
@@ -12,6 +13,9 @@ function About() {
   const { t } = useTranslation();
   return (
     <div>
+      <Helmet>
+        <title>LifeVessel - About</title>
+      </Helmet>
       <div className="px-6 sm:px-0 py-8 sm-py-12  w-100 sm:w-8/12 mx-auto ">
         <Paragraph
           headerText={t('AboutPage.AboutTitle')}

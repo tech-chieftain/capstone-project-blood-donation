@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
 import image from './images/doctor-office-and-blood-donation-design-vector-22887400.jpg';
 
 function DontDonate() {
@@ -11,6 +12,9 @@ function DontDonate() {
 
   return (
     <div className="flex">
+      <Helmet>
+        <title>LifeVessel - DontDonate</title>
+      </Helmet>
       <div className="  sm:w-full  md:w-full lg:w-6/12 p-10  ">
         <h1 className={styleClass.headerStyle}>{t('dontDonate.header')} </h1>
         <p className={styleClass.paragrphStyle}>

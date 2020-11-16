@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
 import RegistrationCard from '../../components/RegistrationCard/RegistrationCard';
 import register from '../../components/images/process_image/register.svg';
 import health from '../../components/images/process_image/health.svg';
@@ -11,6 +12,9 @@ function Process() {
   const { t } = useTranslation();
   return (
     <div>
+      <Helmet>
+        <title>LifeVessel - Process</title>
+      </Helmet>
       <div className="mx-6 my-6">
         <h1 className="pt-1 font-semibold text-center text-primary-100 sm:text-xl md:text-2xl lg:text-3xl">
           {t('donation_process.titleCard')}
