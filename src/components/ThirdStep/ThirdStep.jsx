@@ -16,7 +16,7 @@ function ThirdStep({ donor, onChange, setStep, onRegister }) {
   const { t } = useTranslation();
   const [agree, setAgree] = useState(false);
   const onClickNext = () => {
-    const mailformat = new RegExp(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/);
+    const mailformat = new RegExp(/^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/);
     if (donor.name !== '' && mailformat.test(donor.email) && donor.phone !== '' && agree) {
       onRegister();
     }
