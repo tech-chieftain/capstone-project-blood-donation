@@ -38,7 +38,7 @@ exports[`renders correctly 1`] = `
               name="bloodType"
               onBlur={[Function]}
               onChange={[Function]}
-              value=""
+              value="O-"
             >
               <option>
                 b

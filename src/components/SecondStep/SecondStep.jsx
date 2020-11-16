@@ -14,10 +14,10 @@ function SecondStep({ donor, onChange, setStep, chooseBlood, city }) {
   const [errorblood, seterrorblood] = useState(false);
   const { t } = useTranslation();
   const onClickNext = () => {
-    if (donor.city !== '' && donor.bloodType !== '') {
+    if (donor.city !== '' && donor.bloodType !== '' && city !== 'City' && city !== 'المدينة') {
       setStep(3);
     }
-    if (donor.city === '') {
+    if (city === '' || city === 'City' || city === 'المدينة') {
       setErrorcity(true);
     } else {
       setErrorcity(false);

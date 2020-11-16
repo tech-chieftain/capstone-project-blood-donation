@@ -13,7 +13,7 @@ import Loading from './images/loading.gif';
 
 function Search() {
   const { t, i18n } = useTranslation();
-  const [search, setsearch] = useState({ bloodType: '', city: '' });
+  const [search, setsearch] = useState({ bloodType: 'O-', city: '' });
   const [city, setcity] = useState('');
   const [donors, setDonors] = useState([]);
   const [load, setLoad] = useState(true);
