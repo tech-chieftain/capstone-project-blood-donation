@@ -29,7 +29,7 @@ exports[`renders correctly 1`] = `
     >
        
       <div
-        className="flex-none w-16 h-16 mx-auto border-4 border-gray-500 rounded-full md:h-24 md:w-24 sm:m-0 md:mr-4 sm:border-6 "
+        className="flex-none w-16 h-16 mx-auto border-4 border-gray-500 rounded-full md:h-24 md:w-24  md:mr-4 sm:border-6 "
       >
         <img
           alt="icon"
@@ -40,14 +40,14 @@ exports[`renders correctly 1`] = `
         className="flex-1 my-6 mr-4 sm:mr-4"
       >
         <span
-          className="text-base font-bold text-primary-100 sm:text-sm md:text-lg"
+          className="text-base font-semibold text-primary-100 sm:text-lg lg:text-xl"
         >
           donation_process.registerTitle
            -
            
         </span>
         <span
-          className="text-base text-black sm:text-sm md:text-lg"
+          className="text-sm  sm:text-base lg:text-lg"
         >
           donation_process.registerDesc
         </span>
@@ -59,7 +59,7 @@ exports[`renders correctly 1`] = `
     >
        
       <div
-        className="flex-none w-16 h-16 mx-auto border-4 border-gray-500 rounded-full md:h-24 md:w-24 sm:m-0 md:mr-4 sm:border-6 "
+        className="flex-none w-16 h-16 mx-auto border-4 border-gray-500 rounded-full md:h-24 md:w-24  md:mr-4 sm:border-6 "
       >
         <img
           alt="icon"
@@ -70,14 +70,14 @@ exports[`renders correctly 1`] = `
         className="flex-1 my-6 mr-4 sm:mr-4"
       >
         <span
-          className="text-base font-bold text-primary-100 sm:text-sm md:text-lg"
+          className="text-base font-semibold text-primary-100 sm:text-lg lg:text-xl"
         >
           donation_process.healthTitle
            -
            
         </span>
         <span
-          className="text-base text-black sm:text-sm md:text-lg"
+          className="text-sm  sm:text-base lg:text-lg"
         >
           donation_process.healthDesc
         </span>
@@ -89,7 +89,7 @@ exports[`renders correctly 1`] = `
     >
        
       <div
-        className="flex-none w-16 h-16 mx-auto border-4 border-gray-500 rounded-full md:h-24 md:w-24 sm:m-0 md:mr-4 sm:border-6 "
+        className="flex-none w-16 h-16 mx-auto border-4 border-gray-500 rounded-full md:h-24 md:w-24  md:mr-4 sm:border-6 "
       >
         <img
           alt="icon"
@@ -100,14 +100,14 @@ exports[`renders correctly 1`] = `
         className="flex-1 my-6 mr-4 sm:mr-4"
       >
         <span
-          className="text-base font-bold text-primary-100 sm:text-sm md:text-lg"
+          className="text-base font-semibold text-primary-100 sm:text-lg lg:text-xl"
         >
           donation_process.donationTitle
            -
            
         </span>
         <span
-          className="text-base text-black sm:text-sm md:text-lg"
+          className="text-sm  sm:text-base lg:text-lg"
         >
           donation_process.donationDesc
         </span>
@@ -119,7 +119,7 @@ exports[`renders correctly 1`] = `
     >
        
       <div
-        className="flex-none w-16 h-16 mx-auto border-4 border-gray-500 rounded-full md:h-24 md:w-24 sm:m-0 md:mr-4 sm:border-6 "
+        className="flex-none w-16 h-16 mx-auto border-4 border-gray-500 rounded-full md:h-24 md:w-24  md:mr-4 sm:border-6 "
       >
         <img
           alt="icon"
@@ -130,14 +130,14 @@ exports[`renders correctly 1`] = `
         className="flex-1 my-6 mr-4 sm:mr-4"
       >
         <span
-          className="text-base font-bold text-primary-100 sm:text-sm md:text-lg"
+          className="text-base font-semibold text-primary-100 sm:text-lg lg:text-xl"
         >
           donation_process.refreshmentTitle
            -
            
         </span>
         <span
-          className="text-base text-black sm:text-sm md:text-lg"
+          className="text-sm  sm:text-base lg:text-lg"
         >
           donation_process.refreshmentDesc
         </span>
@@ -149,7 +149,7 @@ exports[`renders correctly 1`] = `
     >
        
       <div
-        className="flex-none w-16 h-16 mx-auto border-4 border-gray-500 rounded-full md:h-24 md:w-24 sm:m-0 md:mr-4 sm:border-6 "
+        className="flex-none w-16 h-16 mx-auto border-4 border-gray-500 rounded-full md:h-24 md:w-24  md:mr-4 sm:border-6 "
       >
         <img
           alt="icon"
@@ -160,14 +160,14 @@ exports[`renders correctly 1`] = `
         className="flex-1 my-6 mr-4 sm:mr-4"
       >
         <span
-          className="text-base font-bold text-primary-100 sm:text-sm md:text-lg"
+          className="text-base font-semibold text-primary-100 sm:text-lg lg:text-xl"
         >
           donation_process.testingTitle
            -
            
         </span>
         <span
-          className="text-base text-black sm:text-sm md:text-lg"
+          className="text-sm  sm:text-base lg:text-lg"
         >
           donation_process.testingDesc
         </span>

@@ -66,7 +66,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="bg-secondary p-8">
+      <div className=" p-8">
         <div className="px-6 sm:px-0 w-100 sm:w-8/12 mx-auto ">
           <Paragraph
             headerText={t('AboutPage.ContectTitle')}
@@ -75,7 +75,7 @@ function About() {
             paragraphFlag
           />
         </div>
-        <div className="md:w-100 xl:w-8/12 mx-auto ">
+        <div className="md:w-100 xl:w-10/12 mx-auto ">
           <ContactForm />
         </div>
       </div>

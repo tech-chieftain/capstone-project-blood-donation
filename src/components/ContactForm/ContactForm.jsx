@@ -25,7 +25,7 @@ const ContactForm = () => {
   };
   return (
     <form className="md:shadow-xl w-10/12 lg:w-8/12 mx-auto  flex flex-col  p-2 sm:p-4 md:p-8 bg-white">
-      <div className="flex flex-col md:flex-row mb-8">
+      <div className="flex flex-col md:flex-row mb-4">
         <InputFiled
           placeholder={t('AboutPage.ContectName')}
           onChange={onChangeHandling}
