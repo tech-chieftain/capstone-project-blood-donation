@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
 import { addDonor } from '../../Utilities/FirebaseUtilities';
 import FirstStep from '../../components/FirstStep';
 import SecondStep from '../../components/SecondStep';
@@ -39,7 +40,9 @@ function Donate() {
         [name]: value,
       });
     }
-    setcity(value);
+    if (name === 'city') {
+      setcity(value);
+    }
   };
   const onClickHandling = () => {
     addDonor(donor);
@@ -53,6 +56,9 @@ function Donate() {
   };
   return (
     <div className=" py-16 sm:py-20 md:py-24 w-11/12 sm:w-10/12 mx-auto">
+      <Helmet>
+        <title>LifeVessel - Donate</title>
+      </Helmet>
       {step === 1 ? (
         <FirstStep donor={donor} onChange={onChangeHandling} setStep={setstep} />
       ) : null}

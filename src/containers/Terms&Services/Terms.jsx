@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
 import Paragraph from '../../components/Paragraph';
 
 function Terms() {
@@ -11,6 +12,9 @@ function Terms() {
 
   return (
     <div className="p-10 ">
+      <Helmet>
+        <title>LifeVessel - Terms</title>
+      </Helmet>
       <Paragraph
         headerText={t('Terms.TermsAndServices')}
         paragraphText={t('Terms.TermsText')}

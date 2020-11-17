@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
 import Table from '../../components/Table';
 
 import { getDonaor } from '../../Utilities/FirebaseUtilities';
@@ -13,7 +14,7 @@ import Loading from './images/loading.gif';
 
 function Search() {
   const { t, i18n } = useTranslation();
-  const [search, setsearch] = useState({ bloodType: '', city: '' });
+  const [search, setsearch] = useState({ bloodType: 'O-', city: '' });
   const [city, setcity] = useState('');
   const [donors, setDonors] = useState([]);
   const [load, setLoad] = useState(true);
@@ -38,7 +39,7 @@ function Search() {
         [name]: value,
       });
     }
-    if ((i18n.language === 'ar' || i18n.language === 'en') && name === 'city') {
+    if (name === 'city') {
       setcity(value);
     }
   };
@@ -61,6 +62,9 @@ function Search() {
 
   return (
     <div>
+      <Helmet>
+        <title>LifeVessel - Search</title>
+      </Helmet>
       <Hero img={BackgroundImage}>
         <div className=" bg-white bg-opacity-25 w-8/12 sm:w-6/12  lg:w-4/12 mx-auto self-center px-8 py-12">
           <p className="text-white text-base md:text-lg mb-6 text-center">
