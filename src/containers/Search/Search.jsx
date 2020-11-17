@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
 import Table from '../../components/Table';
 
 import { getDonaor } from '../../Utilities/FirebaseUtilities';
@@ -61,6 +62,9 @@ function Search() {
 
   return (
     <div>
+      <Helmet>
+        <title>LifeVessel - Search</title>
+      </Helmet>
       <Hero img={BackgroundImage}>
         <div className=" bg-white bg-opacity-25 w-8/12 sm:w-6/12  lg:w-4/12 mx-auto self-center px-8 py-12">
           <p className="text-white text-base md:text-lg mb-6 text-center">

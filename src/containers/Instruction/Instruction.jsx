@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
 import Paragraph from '../../components/Paragraph/Paragraph';
 import processImage from '../../components/images/instructionimage/centerImageProcess.svg';
 import Hero from '../../components/Hero/Hero';
@@ -16,6 +17,9 @@ function Instruction() {
   const { t } = useTranslation();
   return (
     <div>
+      <Helmet>
+        <title>LifeVessel - Instructions</title>
+      </Helmet>
       <div>
         <Hero className="flex" img={heroImage}>
           <div className="self-center ml-6 mr-6 text-white subpixel-antialiased tracking-wide text-2xl sm:text-3x md:text-4xl sm:w-full md:w-3/4 lg:w-2/4 xl:w-2/4 sm:text-2xl ">
