@@ -185,7 +185,7 @@
     "CardFourTitle": "LifeVessels ",
     "CardFourDecs": "We are a non profit foundation and our main objective is to make sure that everything is done to protect vulnerable persons."
   },
-  "bloodTypes": ["O-", "O+", " B-", "B+", " A-", "A+", "AB-", "AB+"],
+  "bloodTypes": ["O-", "O+", "B-", "B+", "A-", "A+", "AB-", "AB+"],
   "search_page": {
     "herotext": "Please select a blood type and city name in order to get Donnors",
     "bloodtype": "Select blood type",
