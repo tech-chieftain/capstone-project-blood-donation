@@ -69,7 +69,7 @@ function Home() {
               cardImage={Icon1}
               cardTitle={t('HomePage.CardOneTitle')}
               cardDesc={t('HomePage.CardOneDecs')}
-              orientationText="center"
+              orientationText="start"
             />
           </div>
         </div>
@@ -79,7 +79,7 @@ function Home() {
               cardImage={Icon2}
               cardTitle={t('HomePage.CardTwoTitle')}
               cardDesc={t('HomePage.CardTwoDecs')}
-              orientationText="center"
+              orientationText="start"
             />
           </div>
         </div>
@@ -89,7 +89,7 @@ function Home() {
               cardImage={Icon3}
               cardTitle={t('HomePage.CardThreeTitle')}
               cardDesc={t('HomePage.CardThreeDecs')}
-              orientationText="center"
+              orientationText="start"
             />
           </div>
         </div>

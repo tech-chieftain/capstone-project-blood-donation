@@ -22,7 +22,7 @@ exports[`renders correctly 1`] = `
        Title 
     </div>
     <p
-      className="text-black text-sm sm:text-base md:text-lg lg:text-xl text-left"
+      className="text-sm sm:text-base md:text-lg  text-left"
     >
        Description 
     </p>

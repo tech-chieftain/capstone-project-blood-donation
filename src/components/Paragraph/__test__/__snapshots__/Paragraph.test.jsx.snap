@@ -8,7 +8,7 @@ exports[`renders correctly 1`] = `
     donate
   </h1>
   <p
-    className=" pt-3 pb-5  sm:text-sm md:text-base lg:text-lg  text-center "
+    className=" pt-3 pb-5  text-sm sm:text-base md:text-lg   text-center "
   >
     header text
   </p>

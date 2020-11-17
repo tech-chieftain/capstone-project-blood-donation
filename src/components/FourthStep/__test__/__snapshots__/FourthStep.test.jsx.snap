@@ -11,7 +11,7 @@ exports[`renders correctly 1`] = `
       donate_fourth_page.title
     </h1>
     <p
-      className=" pt-3 pb-5  sm:text-sm md:text-base lg:text-lg   "
+      className=" pt-3 pb-5  text-sm sm:text-base md:text-lg    "
     >
       donate_fourth_page.paragrph
     </p>
