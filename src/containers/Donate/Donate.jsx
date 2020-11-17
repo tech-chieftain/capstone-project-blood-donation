@@ -40,7 +40,9 @@ function Donate() {
         [name]: value,
       });
     }
-    setcity(value);
+    if (name === 'city') {
+      setcity(value);
+    }
   };
   const onClickHandling = () => {
     addDonor(donor);

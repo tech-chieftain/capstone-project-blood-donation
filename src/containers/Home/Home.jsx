@@ -36,7 +36,7 @@ function Home() {
           />
         </div>
       </Hero>
-      <div className=" bg-gray-100 py-8 sm:py-12 px-6 sm:px-0  ">
+      <div className="bg-secondary py-8 sm:py-12 px-6 sm:px-0  ">
         <div className="mb-8 sm:mb-12 md:mb-16 w-100 sm:w-10/12 mx-auto ">
           <Paragraph
             headerText={t('HomePage.DonateOverviewTitle')}
@@ -94,7 +94,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className=" bg-gray-100 py-8 sm:py-12">
+      <div className=" bg-secondary py-8 sm:py-12">
         <div className=" w-10/12 sm:w-9/12 md:w-6/12 mx-auto">
           <ReadytoDonate />
         </div>
