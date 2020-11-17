@@ -11,7 +11,9 @@ import HeroImage from './images/HeroImage.png';
 import Icon1 from './images/syringe-needle.svg';
 import Icon2 from './images/face-mask.svg';
 import Icon3 from './images/dizziness.svg';
-import Image from './images/Bg.svg';
+import Image1 from './images/sgh.png';
+import Image2 from './images/azal.png';
+import Image3 from './images/bb.jpg';
 
 function Home() {
   const { t } = useTranslation();
@@ -104,25 +106,13 @@ function Home() {
       </div>
       <div className=" flex justify-center flex-wrap ">
         <div className="flex-auto w-full md:w-2/6 lg:w-1/4 p-2 m-2">
-          <Card
-            cardImage={Image}
-            cardDesc={t('HomePage.PartnerOne')}
-            orientationText="center"
-          />
+          <Card cardImage={Image1} cardDesc={t('HomePage.PartnerOne')} orientationText="center" />
         </div>
         <div className="flex-auto w-full md:w-2/6 lg:w-1/4 p-2 m-2">
-          <Card
-            cardImage={Image}
-            cardDesc={t('HomePage.PartnerTwo')}
-            orientationText="center"
-          />
+          <Card cardImage={Image2} cardDesc={t('HomePage.PartnerTwo')} orientationText="center" />
         </div>
         <div className="flex-auto w-full md:w-2/6 lg:w-1/4 p-2 m-2">
-          <Card
-            cardImage={Image}
-            cardDesc={t('HomePage.PartnerThree')}
-            orientationText="center"
-          />
+          <Card cardImage={Image3} cardDesc={t('HomePage.PartnerThree')} orientationText="center" />
         </div>
       </div>
     </div>
