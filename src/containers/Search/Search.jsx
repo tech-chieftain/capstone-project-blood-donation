@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet';
 import Table from '../../components/Table';
@@ -13,7 +13,9 @@ import DonorCard from '../../components/DonorComponent';
 import Loading from './images/loading.gif';
 
 function Search() {
-  window.scrollTo(0, 0);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const { t, i18n } = useTranslation();
   const [search, setsearch] = useState({ bloodType: 'O-', city: '' });
   const [city, setcity] = useState('');

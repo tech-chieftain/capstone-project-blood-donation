@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="bg-primary py-4 px-4 md:px-8 flex justify-between flex-wrap items-center fixed w-full"
+  className="bg-primary py-4 px-4 md:px-8 flex justify-between flex-wrap items-center fixed w-full z-50"
 >
   <svg
     className="h-10 w-10 md:h-12 md:w-12"
