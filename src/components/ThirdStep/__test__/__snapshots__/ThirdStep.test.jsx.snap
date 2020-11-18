@@ -105,7 +105,7 @@ exports[`renders correctly 1`] = `
               name="phone"
               onChange={[Function]}
               placeholder="donate_third_page.phone_placeholder"
-              type="number"
+              type="text"
               value=""
             />
           </div>

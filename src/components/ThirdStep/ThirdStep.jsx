@@ -79,7 +79,7 @@ function ThirdStep({ donor, onChange, setStep, onRegister }) {
                 onChange={onChange}
                 inputValue={donor.phone}
                 inputName="phone"
-                Inputtype="number"
+                Inputtype="text"
               />
             </div>
             <div className="mb-8 md:mb-16 text:sm text-red-600">
