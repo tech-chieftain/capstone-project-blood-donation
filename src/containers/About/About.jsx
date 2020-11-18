@@ -10,6 +10,7 @@ import free from './images/free.svg';
 import save from './images/save.svg';
 
 function About() {
+  window.scrollTo(0, 0);
   const { t } = useTranslation();
   return (
     <div>

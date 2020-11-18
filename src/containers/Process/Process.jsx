@@ -9,6 +9,7 @@ import cookie from '../../components/images/process_image/cookie.svg';
 import blood from '../../components/images/process_image/blood.svg';
 
 function Process() {
+  window.scrollTo(0, 0);
   const { t } = useTranslation();
   return (
     <div>

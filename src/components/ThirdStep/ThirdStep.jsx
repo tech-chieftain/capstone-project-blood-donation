@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { PropTypes } from 'prop-types';
 import { useTranslation } from 'react-i18next';
 import Button from '../Button';
@@ -10,6 +10,9 @@ import InputField from '../InputField';
 import donate from './images/donate.svg';
 
 function ThirdStep({ donor, onChange, setStep, onRegister }) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [errorname, setErrorname] = useState(false);
   const [erroremail, seterroremail] = useState(false);
   const [errorphone, setErrorphone] = useState(false);

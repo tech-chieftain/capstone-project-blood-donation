@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import Paragraph from '../../components/Paragraph';
 
 function Terms() {
+  window.scrollTo(0, 0);
   const { t } = useTranslation();
   const styleClass = {
     HeaderStyle: `text-primary  md:text-lg lg:text-xl font-medium  pb-5 pt-5`,
