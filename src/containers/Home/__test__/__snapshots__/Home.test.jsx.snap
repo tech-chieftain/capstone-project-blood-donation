@@ -251,7 +251,7 @@ exports[`renders correctly 1`] = `
           <img
             alt="icon"
             className="w-16 h-12 sm:w-20 sm:h-16"
-            src="sgh.png"
+            src="hospital1.svg"
           />
         </div>
         <div
@@ -280,7 +280,7 @@ exports[`renders correctly 1`] = `
           <img
             alt="icon"
             className="w-16 h-12 sm:w-20 sm:h-16"
-            src="azal.png"
+            src="hospital2.svg"
           />
         </div>
         <div
@@ -309,7 +309,7 @@ exports[`renders correctly 1`] = `
           <img
             alt="icon"
             className="w-16 h-12 sm:w-20 sm:h-16"
-            src="bb.jpg"
+            src="bloodbank.svg"
           />
         </div>
         <div

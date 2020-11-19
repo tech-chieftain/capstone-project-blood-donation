@@ -11,9 +11,9 @@ import HeroImage from './images/HeroImage.png';
 import Icon1 from './images/syringe-needle.svg';
 import Icon2 from './images/face-mask.svg';
 import Icon3 from './images/dizziness.svg';
-import Image1 from './images/sgh.png';
-import Image2 from './images/azal.png';
-import Image3 from './images/bb.jpg';
+import Image1 from './images/hospital1.svg';
+import Image2 from './images/hospital2.svg';
+import Image3 from './images/bloodbank.svg';
 
 function Home() {
   const { t } = useTranslation();
