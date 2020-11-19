@@ -218,7 +218,7 @@ Array [
             >
               <img
                 alt="icon"
-                className="w-16 sm:w-20"
+                className="w-16 h-12 sm:w-20 sm:h-16"
                 src="syringe-needle.svg"
               />
             </div>
@@ -253,7 +253,7 @@ Array [
             >
               <img
                 alt="icon"
-                className="w-16 sm:w-20"
+                className="w-16 h-12 sm:w-20 sm:h-16"
                 src="face-mask.svg"
               />
             </div>
@@ -288,7 +288,7 @@ Array [
             >
               <img
                 alt="icon"
-                className="w-16 sm:w-20"
+                className="w-16 h-12 sm:w-20 sm:h-16"
                 src="dizziness.svg"
               />
             </div>
@@ -367,8 +367,8 @@ Array [
           >
             <img
               alt="icon"
-              className="w-16 sm:w-20"
-              src="Bg.svg"
+              className="w-16 h-12 sm:w-20 sm:h-16"
+              src="hospital1.svg"
             />
           </div>
           <div
@@ -396,8 +396,8 @@ Array [
           >
             <img
               alt="icon"
-              className="w-16 sm:w-20"
-              src="Bg.svg"
+              className="w-16 h-12 sm:w-20 sm:h-16"
+              src="hospital2.svg"
             />
           </div>
           <div
@@ -425,8 +425,8 @@ Array [
           >
             <img
               alt="icon"
-              className="w-16 sm:w-20"
-              src="Bg.svg"
+              className="w-16 h-12 sm:w-20 sm:h-16"
+              src="bloodbank.svg"
             />
           </div>
           <div

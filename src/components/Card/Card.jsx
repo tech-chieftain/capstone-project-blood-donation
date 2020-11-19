@@ -9,7 +9,7 @@ function Card({ cardImage, cardTitle, cardDesc, orientationText }) {
   return (
     <div className="rounded">
       <div className="flex justify-center">
-        <img className="w-16 sm:w-20" src={cardImage} alt="icon" />
+        <img className="w-16 h-12 sm:w-20 sm:h-16" src={cardImage} alt="icon" />
       </div>
 
       <div className="px-6 py-0 pb-6 my-5">
