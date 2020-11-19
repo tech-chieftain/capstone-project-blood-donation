@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { PropTypes } from 'prop-types';
 import { useHistory } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -11,6 +11,9 @@ import Donateparagraph from '../Donateparagraph';
 import Progress from '../Progress';
 
 function FirstStep({ donor, onChange, setStep }) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [errordate, setErrordate] = useState(false);
   const [errorwight, seterrorwight] = useState(false);
   const [errorsick, setErrorsick] = useState(false);

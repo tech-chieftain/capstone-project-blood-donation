@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import image from './images/doctor-office-and-blood-donation-design-vector-22887400.jpg';
 
 function DontDonate() {
+  window.scrollTo(0, 0);
   const { t } = useTranslation();
   const styleClass = {
     headerStyle: `text-primary-100  sm:text-xl md:text-2xl lg:text-3xl text-center font-semibold `,

@@ -17,7 +17,7 @@ function Navbar() {
   // when meue icon clicked the label changes depending on the value of show
   // stytleflage is used to decide the way of stayling the donate links inside navlinks where it is at the navbar shwon like button where at the footer it is shown as link
   return (
-    <div className="bg-primary py-4 px-4 md:px-8 flex justify-between flex-wrap items-center">
+    <div className="bg-primary py-4 px-4 md:px-8 flex justify-between flex-wrap items-center fixed w-full z-50">
       <Logo />
       <label
         htmlFor="menu-toggle"

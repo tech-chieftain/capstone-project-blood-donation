@@ -14,6 +14,7 @@ import Icon3 from './images/dizziness.svg';
 import Image from './images/Bg.svg';
 
 function Home() {
+  window.scrollTo(0, 0);
   const { t } = useTranslation();
   const history = useHistory();
   return (

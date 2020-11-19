@@ -22,6 +22,7 @@ function App() {
   return (
     <Router>
       <Navbar />
+      <div className="p-8 min-w-full" />
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/About" component={About} />

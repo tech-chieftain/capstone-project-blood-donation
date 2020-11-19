@@ -3,7 +3,7 @@
 exports[`renders correctly 1`] = `
 Array [
   <div
-    className="bg-primary py-4 px-4 md:px-8 flex justify-between flex-wrap items-center"
+    className="bg-primary py-4 px-4 md:px-8 flex justify-between flex-wrap items-center fixed w-full z-50"
   >
     <svg
       className="h-10 w-10 md:h-12 md:w-12"
@@ -115,6 +115,9 @@ Array [
       </li>
     </ul>
   </div>,
+  <div
+    className="p-8 min-w-full"
+  />,
   <div>
     <div
       className="flex w-100 py-12  md:py-16 lg:py-20 xl:py-0 xl:h-screen bg-no-repeat  bg-cover"

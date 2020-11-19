@@ -14,6 +14,7 @@ import six from '../../components/images/instructionimage/numbers/six.svg';
 import InstructionCard from '../../components/InstructionCard/InstructionCard';
 
 function Instruction() {
+  window.scrollTo(0, 0);
   const { t } = useTranslation();
   return (
     <div>
