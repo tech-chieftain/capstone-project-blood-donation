@@ -13,7 +13,7 @@ function InputSelect({ city, text, onChange, name, options, classflag }) {
           {text}
         </div>
         <select
-          className="form-select block w-full border-gray-300 border-2 py-2 px-4 text-sm sm:text-base md:text-lg "
+          className="form-select block w-full border-gray-300 border-2 py-2 px-4 text-sm sm:text-base md:text-lg focus:outline-none "
           value={city}
           name={name}
           onChange={onChange}

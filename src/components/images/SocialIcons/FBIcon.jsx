@@ -8,7 +8,7 @@ function FBIcon() {
       height="32.74"
       fill="none"
       viewBox="0 0 18 22"
-      className="mr-4 "
+      className="mr-4 h-6 w-6 transform hover:scale-125 transition duration-500 ease-out"
     >
       <path
         fill="#fff"

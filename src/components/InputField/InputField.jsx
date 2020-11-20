@@ -8,13 +8,14 @@ function InputForm({ labelText, placeholder, onChange, inputValue, Inputtype, in
         {labelText}
       </label>
       <input
-        className="flex-1  mr-4 p-2 text-sm sm:text-base tracking-normal  border-2 border-gray-300 focus:outline-none  bg-white placeholder-gray-500"
+        className="flex-1  mr-4 p-2 text-sm sm:text-base tracking-normal  border-2 border-gray-300 focus:outline-none hover:border-primary-100 transition duration-500 focus:placeholder-transparent  bg-white placeholder-gray-500"
         placeholder={placeholder}
         type={Inputtype}
         name={inputName}
         value={inputValue}
         onChange={onChange}
         id={inputName}
+        autoComplete="off"
       />
     </div>
   );

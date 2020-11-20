@@ -3,7 +3,7 @@
 exports[`renders correctly 1`] = `
 <div>
   <div
-    className="px-6 sm:px-0 py-8 sm-py-12  w-100 sm:w-8/12 mx-auto "
+    className="px-6 sm:px-0 py-12  w-100 sm:w-8/12 mx-auto "
   >
     <div>
       <h1
@@ -22,7 +22,7 @@ exports[`renders correctly 1`] = `
     className=" flex justify-center items-stretch flex-wrap pb-8 sm:pb-12 md:pb-20"
   >
     <div
-      className=" sm:w-8/12 md:w-6/12 xl:w-5/12 mt-12 "
+      className=" sm:w-8/12 md:w-6/12 xl:w-5/12 mt-4 "
     >
       <div
         className=" h-full w-10/12 lg:w-3/4 xl:w-1/2 shadow-lg border-1 border-gray-300  mx-auto"
@@ -57,7 +57,7 @@ exports[`renders correctly 1`] = `
       </div>
     </div>
     <div
-      className=" sm:w-8/12 md:w-6/12 xl:w-5/12 mt-12 "
+      className=" sm:w-8/12 md:w-6/12 xl:w-5/12 mt-4 "
     >
       <div
         className=" h-full w-10/12  lg:w-3/4 xl:w-1/2 shadow-lg border-1 border-gray-300  mx-auto"
@@ -198,7 +198,8 @@ exports[`renders correctly 1`] = `
               htmlFor="name"
             />
             <input
-              className="flex-1  mr-4 p-2 text-sm sm:text-base tracking-normal  border-2 border-gray-300 focus:outline-none  bg-white placeholder-gray-500"
+              autoComplete="off"
+              className="flex-1  mr-4 p-2 text-sm sm:text-base tracking-normal  border-2 border-gray-300 focus:outline-none hover:border-primary-100 transition duration-500 focus:placeholder-transparent  bg-white placeholder-gray-500"
               id="name"
               name="name"
               onChange={[Function]}
@@ -215,7 +216,8 @@ exports[`renders correctly 1`] = `
               htmlFor="email"
             />
             <input
-              className="flex-1  mr-4 p-2 text-sm sm:text-base tracking-normal  border-2 border-gray-300 focus:outline-none  bg-white placeholder-gray-500"
+              autoComplete="off"
+              className="flex-1  mr-4 p-2 text-sm sm:text-base tracking-normal  border-2 border-gray-300 focus:outline-none hover:border-primary-100 transition duration-500 focus:placeholder-transparent  bg-white placeholder-gray-500"
               id="email"
               name="email"
               onChange={[Function]}
@@ -226,7 +228,7 @@ exports[`renders correctly 1`] = `
           </div>
         </div>
         <textarea
-          className=" flex-1 mr-4 p-2 text-base tracking-normal  placeholder-gray-500 border-2 border-gray-300 focus:outline-none "
+          className=" flex-1 mr-4 p-2 text-base tracking-normal  placeholder-gray-500 border-2 border-gray-300 focus:outline-none focus:placeholder-transparent hover:border-primary-100 transition duration-500  "
           name="massege"
           onChange={[Function]}
           placeholder="AboutPage.ContectMessage"

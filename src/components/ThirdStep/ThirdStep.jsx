@@ -62,7 +62,7 @@ function ThirdStep({ donor, onChange, setStep, onRegister }) {
             <div>
               <InputField
                 labelText={t('donate_third_page.name')}
-                placeholder={t('donate_third_page.name_placeholder')}
+                placeholder=""
                 onChange={onChange}
                 inputValue={donor.name}
                 inputName="name"
@@ -75,7 +75,7 @@ function ThirdStep({ donor, onChange, setStep, onRegister }) {
             <div>
               <InputField
                 labelText={t('donate_third_page.phone')}
-                placeholder={t('donate_third_page.phone_placeholder')}
+                placeholder=""
                 onChange={onChange}
                 inputValue={donor.phone}
                 inputName="phone"
@@ -88,7 +88,7 @@ function ThirdStep({ donor, onChange, setStep, onRegister }) {
             <div>
               <InputField
                 labelText={t('donate_third_page.email')}
-                placeholder={t('donate_third_page.email_placeholder')}
+                placeholder=""
                 onChange={onChange}
                 inputValue={donor.email}
                 inputName="email"

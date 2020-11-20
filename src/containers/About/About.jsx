@@ -17,7 +17,7 @@ function About() {
       <Helmet>
         <title>LifeVessel - About</title>
       </Helmet>
-      <div className="px-6 sm:px-0 py-8 sm-py-12  w-100 sm:w-8/12 mx-auto ">
+      <div className="px-6 sm:px-0 py-12  w-100 sm:w-8/12 mx-auto ">
         <Paragraph
           headerText={t('AboutPage.AboutTitle')}
           paragraphText={t('AboutPage.AboutDecs')}
@@ -26,7 +26,7 @@ function About() {
         />
       </div>
       <div className=" flex justify-center items-stretch flex-wrap pb-8 sm:pb-12 md:pb-20">
-        <div className=" sm:w-8/12 md:w-6/12 xl:w-5/12 mt-12 ">
+        <div className=" sm:w-8/12 md:w-6/12 xl:w-5/12 mt-4 ">
           <div className=" h-full w-10/12 lg:w-3/4 xl:w-1/2 shadow-lg border-1 border-gray-300  mx-auto">
             <Card
               cardImage={bloodplus}
@@ -36,7 +36,7 @@ function About() {
             />
           </div>
         </div>
-        <div className=" sm:w-8/12 md:w-6/12 xl:w-5/12 mt-12 ">
+        <div className=" sm:w-8/12 md:w-6/12 xl:w-5/12 mt-4 ">
           <div className=" h-full w-10/12  lg:w-3/4 xl:w-1/2 shadow-lg border-1 border-gray-300  mx-auto">
             <Card
               cardImage={globalhealth}
