@@ -10,7 +10,7 @@
   },
   "ready_donate": {
     "header": "Ready to Donate?",
-    "text": "It does not make much time and every donation has the power to save up to three lives",
+    "text": "It doesn't take much time and every donation has the power to save up to three lives.",
     "button": "Donate"
   },
   "table": {
@@ -22,11 +22,11 @@
   },
   "Process": {
     "titlePrograph": "Follow our tips to make your blood donation experience pleasant, safe and straightforward.",
-    "titleInstructionCard": "instruction for your donation",
-    "descTitleprog": "ensure the safety of both patients and donors, these are some of the requirements donors must meet to be eligible to donate blood It's important you review this information before donation.",
+    "titleInstructionCard": "Instruction for your donation",
+    "descTitleprog": "Ensure the safety of both patients and donors, these are some of the requirements donors must meet to be eligible to donate blood It's important you review this information before donation.",
     "age": "Age",
     "descAge": "Must be at least 16 years old (16- and 17-year-olds must bring a signed permission form from a parent .",
-    "weight": "weight",
+    "weight": "Weight",
     "weightdesc": "Weighs at least 110 pounds. Certain height/weight criteria may apply for donors 22 years old or younger.",
     "generalhealth": "General health",
     "general_health_desc": "Consult your doctor before donating blood if there are any health issues or concerns.",
@@ -34,7 +34,7 @@
     "eat_desc": "For your safety and to ensure a positive donation experience, make sure you eat within two hours ahead of your donation.",
     "drink": "Drink",
     "drinkdesc": "Drink plenty of water that day and drink an extra four (8 oz.) glasses of liquids .",
-    "wait": "wait",
+    "wait": "Wait",
     "waitdesc": "You must wait eight weeks between whole blood donations. ",
     "title_blood_donation": "The Blood Donation Process    ",
     "secondtitle_blood_donation": " (What to Expect at Your Donation)",
@@ -43,11 +43,11 @@
   "HomePage": {
     "donate": "Donate",
     "HeroTitle1": "Save Another Life ",
-    "HeroTitle2": "By donating your blood",
+    "HeroTitle2": "By Donating Your Blood",
     "DonateOverviewTitle": "Donate Blood Overview",
     "DonateOverviewDecs": "What do we all have in common that instantly connects us and gives us the power to do more? It’s the blood pulsing within each of us. Donating blood is one of the easiest ways to give back to your community. If you’ve never donated blood before, we encourage you to try. Blood helps trauma and burn patients, premature infants, heart surgery patients, organ transplant recipients and those fighting cancer, among others. In emergencies, it’s the blood already on hospital shelves that saves lives.",
     "DonateProcessTitle": "Donation Process",
-    "DonateProcessDecs": " It takes about an hour from the time you arrive to the time you leave to complete a whole blood donation. The actual donation time is only about 10 minutes.for more info about the donation process",
+    "DonateProcessDecs": " It takes about an hour from the time you arrive to the time you leave to complete a whole blood donation. The actual donation time is only about 10 minutes.",
     "CommonConcernTitle": "Common Concerns",
     "CommonConcernDecs": "Many people are reluctant to make their first blood donation, but once they do, they find the donation process to be easy and gratifying.",
     "CardOneTitle": "I Don't Like Needles",
@@ -69,13 +69,13 @@
   },
   "donate_first_page": {
     "title": "Register your interest in becoming a blood donor.",
-    "paragrph": "Thank you for your interest in saving lives and donating blood. You will be joining a community of blood donors who are called upon when needed by the NHS. We need 5,000 blood donations every day.",
+    "paragrph": "Thank you for your interest in saving lives and donating blood. You will be joining a community of blood donors who are called upon when needed by the people who need blood transfusions. We need 5,000 blood donations every day.",
     "subHeader1": "A few questions before we get started",
     "subHeader2": "All fields marked with * are required",
-    "subparagrph": "A few quick questions up front to find out if you can donate blood or not. If you can't donate, don't worry you can help the NHS in other ways.",
-    "birth_text": "1 . Date of birth*",
-    "radio_text1": "2 . Do you weigh more than 50kg (7 stone 12lbs)?*",
-    "radio_text2": "3 . Have you ever had a cancer other than basal cell carcinoma or cervical carcinoma insitu (CIN)?*",
+    "subparagrph": "A few quick questions up front to find out if you can donate blood or not. If you can't donate, don't worry you can help the people who need blood transfusions in other ways.",
+    "birth_text": "1. Date of birth*",
+    "radio_text1": "2. Do you weigh more than 50kg (7 stone 12lbs)?*",
+    "radio_text2": "3. Have you ever had a cancer other than basal cell carcinoma or cervical carcinoma insitu (CIN)?*",
     "radio_option_yes": "Yes",
     "radio_option_no": "No",
     "button": "Next",
@@ -87,7 +87,7 @@
   "donate_second_page": {
     "great": "Great!",
     "title": "It looks like you can join the community to donate.",
-    "paragrph": "Being one of those who can donate blood it means that you are going to help those who need blood as a result of sickness or accidents",
+    "paragrph": "Being one of those who can donate blood means that you are going to help those who need blood as a result of sickness or accidents",
     "subHeader1": "Finding out more about you",
     "subHeader2": "All fields marked with * are required",
     "subparagrph": "Knowing more about you is really important and helps us to prioritise when we might ask you to donate. We only collect the right amount and types of blood to meet hospital demand as we don’t want to waste your donation if it’s not needed right now.",
@@ -102,7 +102,7 @@
     "errorBlood": "Choose your blood type"
   },
   "donate_third_page": {
-    "title": "We needs people like you.",
+    "title": "We need people like you.",
     "paragrph": "Male donors are particularly needed because they can donate more frequently and have higher iron levels.",
     "subHeader1": "Personal Information",
     "subparagrph": "We just need a little more information about you, to help us finish this stage and contact you about the next steps.",
@@ -181,7 +181,7 @@
     "CardTwoTitle": "Innovative",
     "CardTwoDecs": "LifeVessels is an innovative approach to address global health. We provide immediate access to blood donors.",
     "CardThreeTitle": "Totally Free",
-    "CardThreeDecs": "LifeVessels  Connect's ultimate goal is to provide an easy-to-use, easy-to-access, fast, efficient, and reliable way to get life-saving blood, totally Free of cost",
+    "CardThreeDecs": "LifeVessels ultimate goal is to provide an easy-to-use, easy-to-access, fast, efficient, and reliable way to get life-saving blood, totally Free of cost",
     "CardFourTitle": "LifeVessels ",
     "CardFourDecs": "We are a non profit foundation and our main objective is to make sure that everything is done to protect vulnerable persons."
   },
