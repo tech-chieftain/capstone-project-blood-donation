@@ -15,7 +15,8 @@ exports[`renders correctly 1`] = `
         htmlFor="name"
       />
       <input
-        className="flex-1  mr-4 p-2 text-sm sm:text-base tracking-normal  border-2 border-gray-300 focus:outline-none  bg-white placeholder-gray-500"
+        autoComplete="off"
+        className="flex-1  mr-4 p-2 text-sm sm:text-base tracking-normal  border-2 border-gray-300 focus:outline-none hover:border-primary-100 transition duration-500 focus:placeholder-transparent  bg-white placeholder-gray-500"
         id="name"
         name="name"
         onChange={[Function]}
@@ -32,7 +33,8 @@ exports[`renders correctly 1`] = `
         htmlFor="email"
       />
       <input
-        className="flex-1  mr-4 p-2 text-sm sm:text-base tracking-normal  border-2 border-gray-300 focus:outline-none  bg-white placeholder-gray-500"
+        autoComplete="off"
+        className="flex-1  mr-4 p-2 text-sm sm:text-base tracking-normal  border-2 border-gray-300 focus:outline-none hover:border-primary-100 transition duration-500 focus:placeholder-transparent  bg-white placeholder-gray-500"
         id="email"
         name="email"
         onChange={[Function]}
@@ -43,7 +45,7 @@ exports[`renders correctly 1`] = `
     </div>
   </div>
   <textarea
-    className=" flex-1 mr-4 p-2 text-base tracking-normal  placeholder-gray-500 border-2 border-gray-300 focus:outline-none "
+    className=" flex-1 mr-4 p-2 text-base tracking-normal  placeholder-gray-500 border-2 border-gray-300 focus:outline-none focus:placeholder-transparent hover:border-primary-100 transition duration-500  "
     name="massege"
     onChange={[Function]}
     placeholder="AboutPage.ContectMessage"
