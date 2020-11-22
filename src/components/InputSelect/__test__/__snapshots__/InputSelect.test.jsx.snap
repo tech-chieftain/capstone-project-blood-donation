@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className=""
+>
+  <label
+    className="block"
+    htmlFor="nowhere"
+  >
+    <div
+      className="font-medium text-sm sm:text-base md:text-lg  inline-block mb-4 sm:mb-6"
+    >
+      3. Please select your city ?*
+    </div>
+    <select
+      className="form-select block w-full border-gray-300 border-2 py-2 px-4 text-sm sm:text-base md:text-lg focus:outline-none "
+      name="city"
+      onBlur={[Function]}
+      onChange={[Function]}
+      value="Abyan"
+    >
+      <option>
+        Abyan
+      </option>
+      <option>
+        Aden
+      </option>
+      <option>
+        Al Mahrah
+      </option>
+      <option>
+        Hadramaut
+      </option>
+      <option>
+        Lahij
+      </option>
+      <option>
+        Shabwah
+      </option>
+      <option>
+        Dhale
+      </option>
+      <option>
+        Amran
+      </option>
+      <option>
+        Al Bayda
+      </option>
+      <option>
+        Al Hudaydah
+      </option>
+      <option>
+        Al Jawf
+      </option>
+      <option>
+        Al Mahwit
+      </option>
+      <option>
+        Dhamar
+      </option>
+      <option>
+        Hajjah
+      </option>
+      <option>
+        Ibb
+      </option>
+      <option>
+        Ma'rib
+      </option>
+      <option>
+        Raymah
+      </option>
+      <option>
+        Saada
+      </option>
+      <option>
+        Sana'a
+      </option>
+      <option>
+        Taiz
+      </option>
+      <option>
+        Socotra
+      </option>
+    </select>
+  </label>
+</div>
+`;

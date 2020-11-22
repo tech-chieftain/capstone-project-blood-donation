@@ -1,0 +1,253 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="px-6 sm:px-0 py-12  w-100 sm:w-8/12 mx-auto "
+  >
+    <div>
+      <h1
+        className="text-primary-100  sm:text-xl md:text-2xl lg:text-3xl pt-1 font-semibold  text-center"
+      >
+        AboutPage.AboutTitle
+      </h1>
+      <p
+        className=" pt-3 pb-5  text-sm sm:text-base md:text-lg   text-center "
+      >
+        AboutPage.AboutDecs
+      </p>
+    </div>
+  </div>
+  <div
+    className=" flex justify-center items-stretch flex-wrap pb-8 sm:pb-12 md:pb-20"
+  >
+    <div
+      className=" sm:w-8/12 md:w-6/12 xl:w-5/12 mt-4 "
+    >
+      <div
+        className=" h-full w-10/12 lg:w-3/4 xl:w-1/2 shadow-lg border-1 border-gray-300  mx-auto"
+      >
+        <div
+          className="rounded"
+        >
+          <div
+            className="flex justify-center"
+          >
+            <img
+              alt="icon"
+              className="w-16 h-12 sm:w-20 sm:h-16"
+              src="bloodplus.svg"
+            />
+          </div>
+          <div
+            className="px-6 py-0 pb-6 my-5"
+          >
+            <div
+              className="text-primary-100 text-lg sm:text-xl md:text-2xl font-bold my-3 text-center"
+            >
+              AboutPage.CardOneTitle
+            </div>
+            <p
+              className="text-sm sm:text-base md:text-lg  text-center"
+            >
+              AboutPage.CardOneDecs
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className=" sm:w-8/12 md:w-6/12 xl:w-5/12 mt-4 "
+    >
+      <div
+        className=" h-full w-10/12  lg:w-3/4 xl:w-1/2 shadow-lg border-1 border-gray-300  mx-auto"
+      >
+        <div
+          className="rounded"
+        >
+          <div
+            className="flex justify-center"
+          >
+            <img
+              alt="icon"
+              className="w-16 h-12 sm:w-20 sm:h-16"
+              src="globalhealth.svg"
+            />
+          </div>
+          <div
+            className="px-6 py-0 pb-6 my-5"
+          >
+            <div
+              className="text-primary-100 text-lg sm:text-xl md:text-2xl font-bold my-3 text-center"
+            >
+              AboutPage.CardTwoTitle
+            </div>
+            <p
+              className="text-sm sm:text-base md:text-lg  text-center"
+            >
+              AboutPage.CardTwoDecs
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className=" sm:w-8/12 md:w-6/12 xl:w-5/12 mt-12 "
+    >
+      <div
+        className=" h-full w-10/12  lg:w-3/4 xl:w-1/2 shadow-lg border-1 border-gray-300  mx-auto"
+      >
+        <div
+          className="rounded"
+        >
+          <div
+            className="flex justify-center"
+          >
+            <img
+              alt="icon"
+              className="w-16 h-12 sm:w-20 sm:h-16"
+              src="free.svg"
+            />
+          </div>
+          <div
+            className="px-6 py-0 pb-6 my-5"
+          >
+            <div
+              className="text-primary-100 text-lg sm:text-xl md:text-2xl font-bold my-3 text-center"
+            >
+              AboutPage.CardThreeTitle
+            </div>
+            <p
+              className="text-sm sm:text-base md:text-lg  text-center"
+            >
+              AboutPage.CardThreeDecs
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className=" sm:w-8/12 md:w-6/12 xl:w-5/12 mt-12 "
+    >
+      <div
+        className=" h-full w-10/12  lg:w-3/4 xl:w-1/2 shadow-lg border-1 border-gray-300  mx-auto"
+      >
+        <div
+          className="rounded"
+        >
+          <div
+            className="flex justify-center"
+          >
+            <img
+              alt="icon"
+              className="w-16 h-12 sm:w-20 sm:h-16"
+              src="save.svg"
+            />
+          </div>
+          <div
+            className="px-6 py-0 pb-6 my-5"
+          >
+            <div
+              className="text-primary-100 text-lg sm:text-xl md:text-2xl font-bold my-3 text-center"
+            >
+              AboutPage.CardFourTitle
+            </div>
+            <p
+              className="text-sm sm:text-base md:text-lg  text-center"
+            >
+              AboutPage.CardFourDecs
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className=" p-8"
+  >
+    <div
+      className="px-6 sm:px-0 w-100 sm:w-8/12 mx-auto "
+    >
+      <div>
+        <h1
+          className="text-primary-100  sm:text-xl md:text-2xl lg:text-3xl pt-1 font-semibold  text-center"
+        >
+          AboutPage.ContectTitle
+        </h1>
+        <p
+          className=" pt-3 pb-5  text-sm sm:text-base md:text-lg   text-center "
+        >
+          AboutPage.ContectDecs
+        </p>
+      </div>
+    </div>
+    <div
+      className="md:w-100 xl:w-10/12 mx-auto "
+    >
+      <form
+        className="md:shadow-xl w-10/12 lg:w-8/12 mx-auto  flex flex-col  p-2 sm:p-4 md:p-8 bg-white"
+      >
+        <div
+          className="flex flex-col md:flex-row"
+        >
+          <div
+            className="flex-1 flex flex-col  mb-4 "
+          >
+            <label
+              className="flex-1 mb-2 text-sm sm:text-base font-semibold"
+              htmlFor="name"
+            />
+            <input
+              autoComplete="off"
+              className="flex-1  mr-4 p-2 text-sm sm:text-base tracking-normal  border-2 border-gray-300 focus:outline-none hover:border-primary-100 transition duration-500 focus:placeholder-transparent  bg-white placeholder-gray-500"
+              id="name"
+              name="name"
+              onChange={[Function]}
+              placeholder="AboutPage.ContectName"
+              type="text"
+              value=""
+            />
+          </div>
+          <div
+            className="flex-1 flex flex-col  mb-4 "
+          >
+            <label
+              className="flex-1 mb-2 text-sm sm:text-base font-semibold"
+              htmlFor="email"
+            />
+            <input
+              autoComplete="off"
+              className="flex-1  mr-4 p-2 text-sm sm:text-base tracking-normal  border-2 border-gray-300 focus:outline-none hover:border-primary-100 transition duration-500 focus:placeholder-transparent  bg-white placeholder-gray-500"
+              id="email"
+              name="email"
+              onChange={[Function]}
+              placeholder="AboutPage.ContectEmail"
+              type="email"
+              value=""
+            />
+          </div>
+        </div>
+        <textarea
+          className=" flex-1 mr-4 p-2 text-base tracking-normal  placeholder-gray-500 border-2 border-gray-300 focus:outline-none focus:placeholder-transparent hover:border-primary-100 transition duration-500  "
+          name="massege"
+          onChange={[Function]}
+          placeholder="AboutPage.ContectMessage"
+          rows="6"
+          value=""
+        />
+        <div
+          className="self-center"
+        >
+          <button
+            className="inline-block text-white text-base md:text-lg  text-center md:font-medium bg-primary  md:mt-8 mt-4 px-8 md:px-12 lg:px-16 py-1 lg:py-2 focus:outline-none   shadow-md transition duration-500 ease-in-out transform hover:scale-95"
+            onClick={[Function]}
+            type="button"
+          >
+            AboutPage.ContectSend
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+`;

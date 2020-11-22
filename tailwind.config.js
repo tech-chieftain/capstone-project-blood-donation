@@ -26,6 +26,7 @@ module.exports = {
         default: '#A41F04',
         100: '#B72507',
       },
+      secondary: '#FBFBFB',
 
       gray: {
         100: '#f7fafc',
@@ -288,6 +289,7 @@ module.exports = {
         '"Courier New"',
         'monospace',
       ],
+      body: ['Montserrat'],
     },
     fontSize: {
       xs: '0.75rem',

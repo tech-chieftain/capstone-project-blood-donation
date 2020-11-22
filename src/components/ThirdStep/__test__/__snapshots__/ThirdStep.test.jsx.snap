@@ -1,0 +1,216 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className=" w-11/12 xl:w-10/12 mb-6 sm:mb-8 md:mb-12"
+  >
+    <div>
+      <h1
+        className="text-primary-100  sm:text-xl md:text-2xl lg:text-3xl pt-1 font-semibold  "
+      >
+        donate_third_page.title
+      </h1>
+      <p
+        className=" pt-3 pb-5  text-sm sm:text-base md:text-lg    "
+      >
+        donate_third_page.paragrph
+      </p>
+    </div>
+  </div>
+  <div
+    className="p-6 sm:p-8 md:p-10 border-gray-300 shadow-xl border-2 rounded"
+  >
+    <div
+      className="flex  items-center w-10/12  mb-10"
+    >
+      <div
+        className="text-base md:text-lg lg:text-xl font-semibold  mx-4 sm:mx-8"
+      >
+        donate_first_page.step
+        <span
+          className="mx-2"
+        >
+          3 / 3
+        </span>
+      </div>
+      <div
+        className="flex-1 h-6 sm:h-8 md:h-10 bg-gray-100"
+      >
+        <div
+          className="h-6 sm:h-8 md:h-10  bg-primary null null w-100"
+        />
+      </div>
+    </div>
+    <div
+      className="text-base md:text-lg lg:text-xl font-medium mb-6"
+    >
+      donate_third_page.subHeader1
+    </div>
+    <div
+      className="text-sm sm:text-base md:text-lg  mb-10 leading-relaxed w-10/12"
+    >
+      donate_third_page.subparagrph
+    </div>
+    <div
+      className="flex items-start "
+    >
+      <div
+        className="w-9/12 md:flex-1 "
+      >
+        <div
+          className="text-base md:text-lg lg:text-xl font-medium mb-6"
+        >
+          donate_first_page.subHeader2
+        </div>
+        <div>
+          <div
+            className="flex-1 flex flex-col  mb-4 "
+          >
+            <label
+              className="flex-1 mb-2 text-sm sm:text-base font-semibold"
+              htmlFor="name"
+            >
+              donate_third_page.name
+            </label>
+            <input
+              autoComplete="off"
+              className="flex-1  mr-4 p-2 text-sm sm:text-base tracking-normal  border-2 border-gray-300 focus:outline-none hover:border-primary-100 transition duration-500 focus:placeholder-transparent  bg-white placeholder-gray-500"
+              id="name"
+              name="name"
+              onChange={[Function]}
+              placeholder=""
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          className="mb-8 md:mb-16 text-red-600"
+        >
+          
+        </div>
+        <div>
+          <div
+            className="flex-1 flex flex-col  mb-4 "
+          >
+            <label
+              className="flex-1 mb-2 text-sm sm:text-base font-semibold"
+              htmlFor="phone"
+            >
+              donate_third_page.phone
+            </label>
+            <input
+              autoComplete="off"
+              className="flex-1  mr-4 p-2 text-sm sm:text-base tracking-normal  border-2 border-gray-300 focus:outline-none hover:border-primary-100 transition duration-500 focus:placeholder-transparent  bg-white placeholder-gray-500"
+              id="phone"
+              name="phone"
+              onChange={[Function]}
+              placeholder=""
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          className="mb-8 md:mb-16 text:sm text-red-600"
+        >
+          
+        </div>
+        <div>
+          <div
+            className="flex-1 flex flex-col  mb-4 "
+          >
+            <label
+              className="flex-1 mb-2 text-sm sm:text-base font-semibold"
+              htmlFor="email"
+            >
+              donate_third_page.email
+            </label>
+            <input
+              autoComplete="off"
+              className="flex-1  mr-4 p-2 text-sm sm:text-base tracking-normal  border-2 border-gray-300 focus:outline-none hover:border-primary-100 transition duration-500 focus:placeholder-transparent  bg-white placeholder-gray-500"
+              id="email"
+              name="email"
+              onChange={[Function]}
+              placeholder=""
+              type="email"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          className="mb-8 md:mb-16 text:sm text-red-600"
+        >
+          
+        </div>
+        <div>
+          <label
+            className="inline-flex items-start"
+            htmlFor="check"
+          >
+            <input
+              checked={false}
+              className="form-checkbox h-6 w-6 "
+              name="agree"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <span
+              className="mx-2 text-sm sm:text-base "
+            >
+              donate_third_page.agree
+               
+              <a
+                className="border-b-2  border-primary text-sm sm:text-base  text:sm text-primary"
+                href="/Terms"
+                target="_blank"
+              >
+                donate_third_page.terms
+              </a>
+            </span>
+          </label>
+        </div>
+      </div>
+      <div
+        className="hidden md:block md:flex-1 shadow-sm"
+      >
+        <img
+          alt="donate"
+          className="w-10/12 mx-auto object-contain"
+          src="donate.svg"
+          style={
+            Object {
+              "height": "600px",
+            }
+          }
+        />
+      </div>
+    </div>
+    <div
+      className="flex button_flex items-center  mb-8"
+    >
+      <div
+        className="mx-4 sm:mx-8 text-center"
+      >
+        <button
+          className="inline-block text-primary-100 text-base md:text-lg  text-center md:font-medium bg-white  md:mt-8 mt-4 px-8 md:px-12 lg:px-16 py-1 lg:py-2 focus:outline-none   shadow-md transition duration-500 ease-in-out transform hover:scale-95"
+          onClick={[Function]}
+          type="button"
+        >
+          donate_third_page.button_previous
+        </button>
+      </div>
+      <div>
+        <button
+          className="inline-block text-white text-base md:text-lg  text-center md:font-medium bg-primary  md:mt-8 mt-4 px-8 md:px-12 lg:px-16 py-1 lg:py-2 focus:outline-none   shadow-md transition duration-500 ease-in-out transform hover:scale-95"
+          onClick={[Function]}
+          type="button"
+        >
+          donate_third_page.button_next
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

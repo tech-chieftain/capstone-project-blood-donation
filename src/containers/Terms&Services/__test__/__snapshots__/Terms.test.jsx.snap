@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="p-10 "
+>
+  <div>
+    <h1
+      className="text-primary-100  sm:text-xl md:text-2xl lg:text-3xl pt-1 font-semibold  text-center"
+    >
+      Terms.TermsAndServices
+    </h1>
+    <p
+      className=" pt-3 pb-5  text-sm sm:text-base md:text-lg   text-center "
+    >
+      Terms.TermsText
+    </p>
+  </div>
+  <h1
+    className="text-primary  md:text-lg lg:text-xl font-medium  pb-5 pt-5"
+  >
+    Terms.TermsOfUse
+  </h1>
+  <ol
+    className="list-decimal"
+  >
+    <li
+      className="sm:text-sm md:text-base lg:text-lg leading-8 "
+    >
+      Terms.firstTerm
+    </li>
+    <li
+      className="sm:text-sm md:text-base lg:text-lg leading-8 "
+    >
+      Terms.secondTerm
+    </li>
+    <li
+      className="sm:text-sm md:text-base lg:text-lg leading-8 "
+    >
+      Terms.thirdTerm
+    </li>
+    <li
+      className="sm:text-sm md:text-base lg:text-lg leading-8 "
+    >
+      Terms.forthTerm
+    </li>
+    <li
+      className="sm:text-sm md:text-base lg:text-lg leading-8 "
+    >
+      Terms.fifthTerm
+    </li>
+    <li
+      className="sm:text-sm md:text-base lg:text-lg leading-8 "
+    >
+      Terms.sixthTerm
+    </li>
+    <li
+      className="sm:text-sm md:text-base lg:text-lg leading-8 "
+    >
+      Terms.seventhTerm
+    </li>
+  </ol>
+  <h1
+    className="text-primary  md:text-lg lg:text-xl font-medium  pb-5 pt-5"
+  >
+     
+    Terms.Services
+  </h1>
+  <ol
+    className="list-decimal"
+  >
+    <li
+      className="sm:text-sm md:text-base lg:text-lg leading-8 "
+    >
+      Terms.firstService
+    </li>
+    <li
+      className="sm:text-sm md:text-base lg:text-lg leading-8 "
+    >
+      Terms.secondService
+    </li>
+    <li
+      className="sm:text-sm md:text-base lg:text-lg leading-8 "
+    >
+      Terms.thirdService
+    </li>
+    <li
+      className="sm:text-sm md:text-base lg:text-lg leading-8 "
+    >
+      Terms.forthService
+    </li>
+    <li
+      className="sm:text-sm md:text-base lg:text-lg leading-8 "
+    >
+      Terms.fifthService
+    </li>
+  </ol>
+</div>
+`;

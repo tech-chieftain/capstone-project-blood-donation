@@ -1,0 +1,152 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <div
+    className="flex w-100 py-12  md:py-16 lg:py-20 xl:py-0 xl:h-screen bg-no-repeat  bg-cover"
+    style={
+      Object {
+        "backgroundImage": "linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(search.png)",
+      }
+    }
+  >
+    <div
+      className=" bg-white bg-opacity-25 w-8/12 sm:w-6/12  lg:w-4/12 mx-auto self-center px-8 py-12"
+    >
+      <p
+        className="text-white text-base md:text-lg mb-6 text-center"
+      >
+        search_page.herotext
+      </p>
+      <div
+        className="mb-4"
+      >
+        <div
+          className=""
+        >
+          <label
+            className="block"
+            htmlFor="nowhere"
+          >
+            <div
+              className="text-white text-sm sm:text-base md:text-lg  inline-block mb-4 sm:mb-6"
+            >
+              search_page.bloodtype
+            </div>
+            <select
+              className="form-select block w-full border-gray-300 border-2 py-2 px-4 text-sm sm:text-base md:text-lg focus:outline-none "
+              name="bloodType"
+              onBlur={[Function]}
+              onChange={[Function]}
+              value="O-"
+            >
+              <option>
+                b
+              </option>
+              <option>
+                l
+              </option>
+              <option>
+                o
+              </option>
+              <option>
+                o
+              </option>
+              <option>
+                d
+              </option>
+              <option>
+                T
+              </option>
+              <option>
+                y
+              </option>
+              <option>
+                p
+              </option>
+              <option>
+                e
+              </option>
+              <option>
+                s
+              </option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <div
+        className="mb-4"
+      >
+        <div
+          className=""
+        >
+          <label
+            className="block"
+            htmlFor="nowhere"
+          >
+            <div
+              className="text-white text-sm sm:text-base md:text-lg  inline-block mb-4 sm:mb-6"
+            >
+              search_page.city
+            </div>
+            <select
+              className="form-select block w-full border-gray-300 border-2 py-2 px-4 text-sm sm:text-base md:text-lg focus:outline-none "
+              name="city"
+              onBlur={[Function]}
+              onChange={[Function]}
+              value=""
+            >
+              <option>
+                c
+              </option>
+              <option>
+                i
+              </option>
+              <option>
+                t
+              </option>
+              <option>
+                i
+              </option>
+              <option>
+                e
+              </option>
+              <option>
+                s
+              </option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <div
+        className="flex justify-end"
+      >
+        <button
+          className="inline-block text-white text-base md:text-lg  text-center md:font-medium bg-primary  md:mt-8 mt-4 px-8 md:px-12 lg:px-16 py-1 lg:py-2 focus:outline-none   shadow-md transition duration-500 ease-in-out transform hover:scale-95"
+          onClick={[Function]}
+          type="button"
+        >
+          search_page.searchbutton
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="my-6 sm:my-8 w-11/12 sm:w-9/12 md:w-8/12 mx-auto"
+  >
+    <div>
+      <h1
+        className="text-primary-100  sm:text-xl md:text-2xl lg:text-3xl pt-1 font-semibold  text-center"
+      >
+        search_page.tableHeader
+      </h1>
+      <p
+        className=" pt-3 pb-5  text-sm sm:text-base md:text-lg   text-center "
+      >
+        search_page.tableText
+      </p>
+    </div>
+  </div>
+  <div />
+</div>
+`;

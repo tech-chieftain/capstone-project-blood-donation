@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className=" w-11/12 xl:w-10/12 mb-6 sm:mb-8 md:mb-12"
+>
+  <div>
+    <h1
+      className="text-primary-100  sm:text-xl md:text-2xl lg:text-3xl pt-1 font-semibold  "
+    >
+      donate_fourth_page.title
+    </h1>
+    <p
+      className=" pt-3 pb-5  text-sm sm:text-base md:text-lg    "
+    >
+      donate_fourth_page.paragrph
+    </p>
+  </div>
+</div>
+`;
